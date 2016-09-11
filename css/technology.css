@@ -1,0 +1,56 @@
+/*删除类*/
+/*.rxDelect{
+	padding-right: 10px;
+	background: url(../img/delete2.png) right top no-repeat;
+}*/
+
+
+/*con1*/
+.cs3input{
+	width: 90px;
+}
+
+/*con2*/
+.cx2Lspan{
+	padding-right: 25px;
+}
+.cx2Rspan{
+	margin-left: 25px;
+}
+
+/*con4*/
+
+.c4Ul{
+	padding-left: 45px;
+	margin-bottom: 5px;
+}
+.c4Ul:first-child{
+	padding-left: 20px;
+	background:url(../img/key2.png)no-repeat left center;
+}
+.c4Ul li{
+	padding-left: 25px;
+	display: inline-block;
+}
+.c4Ul li:first-child{
+	padding-left: 0;
+}
+
+/*con6*/
+.con6tech{
+	padding-bottom: 200px;
+}
+
+/*con7*/
+.c7inpwidtech{
+	width: 60px;
+}
+
+.c7Ultech li{
+	width: 32%;
+	display: inline-block;
+}
+
+
+
+
