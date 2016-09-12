@@ -29,9 +29,7 @@ input,
 label{
 	padding: 0 5px;
 }
-/*input[type="text"]{
-	width: auto;
-}*/
+
 
 /*清除浮动*/
 .clearfix::before,
@@ -581,6 +579,7 @@ button{
 	padding-right: 0;
 }
 
+
 /*con5开始*/
 .con5{
 	border-bottom: 1px solid #009843;
@@ -906,7 +905,7 @@ button{
 }
 /*新增商品属性部分*/
 .c7Popup{
-	top: 335px;
+	top: 332px;
 	left: 0;
 	padding-bottom: 10px;
 }

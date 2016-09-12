@@ -1,0 +1,32 @@
+
+/*con6中服务项目新增中的项目类型*/
+.c6pType{
+	margin:10px 0 0 20px;
+}
+.c6pBoxone{
+	margin:5px 15px 10px 15px;
+	padding-bottom: 10px;
+	border: 1px solid #999;
+	border-radius: 10px;
+}
+.c6pBoxtext{
+	width:560px;
+	height: 50px;
+	margin-left:50px;
+	margin-bottom: 5px;
+	background: #EEEEEE;	
+}
+.c6pBoxright{ 
+	background: #FC6700;
+	padding: 2px 5px;
+	color: #FFFFFF;
+	border-radius: 3px;
+	margin-left: 560px;	
+}
+
+.c6pBoxtwo ul{
+	margin:5px 15px 10px 15px;
+	padding: 5px;
+	border: 1px solid #999;
+	border-radius: 5px;
+}
