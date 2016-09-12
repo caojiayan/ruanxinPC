@@ -338,6 +338,10 @@ button{
 	padding-left: 20px;
 	background: url(../img/keylitter.png) left center no-repeat;
 }
+/*设置“自定义服务方式”的input宽度*/
+.cs3input{
+	width: 90px;
+}
 
 /*con2部分开始*/
 .con2{
