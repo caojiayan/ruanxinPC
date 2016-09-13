@@ -397,6 +397,7 @@ button{
 .con3{
 	border-bottom: 1px solid #009843;
 	padding:5px 5px 10px 16px ;
+	position: relative;
 }
 
 .cx1{
@@ -419,11 +420,11 @@ button{
 
 .cx2{
 	width: 620px;
-	/*height: 100px;*/
 	padding: 10px;
 	margin: 0 auto;
 	background: #EEEEEE;
-	border-radius: 20px;
+	border-radius: 10px;
+	display: none;
 }
 
 .cx2 form fieldset:first-child input,
@@ -436,16 +437,28 @@ button{
 .cx2 form fieldset{
 	padding-bottom: 10px;
 }
-
-.cx2 form fieldset:nth-of-type(3){
-	padding-bottom: 0;
-}
-.cx2 form fieldset:nth-of-type(3) span{
-	color: red;
-}
 .cx2 form fieldset:last-child{
 	padding-bottom: 0;
 }
+.cx2Lspan{
+	padding-right: 25px;
+}
+.cx2Rspan{
+	margin-left: 25px;
+}
+
+.cx2Lspan input{
+	width: 70px;
+	margin-left: 25px;
+}
+.cx2Rspan input{
+	width: 35px;
+}
+.cx2Fieinput input[type=text]{
+	width: 65px;
+}
+
+
 .cx3 fieldset h4{
 	font-size: 13px;
 	padding-top: 10px;
@@ -624,7 +637,7 @@ button{
 	padding: 5px 0;
 }
 .con6 fieldset input{
-	width: 35px;
+	width: 70px;
 }
 .con6 p{
 	padding: 5px 0 5px 20px;
@@ -733,7 +746,7 @@ button{
 }
 .c6pone li:first-child,
 .c6pone li:nth-of-type(2){
-	width: 33%;	
+	width: 42%;	
 }
 .c6pone li:last-child{
 	float: right;
@@ -752,7 +765,9 @@ button{
 .c6pthree img{
 	margin-left: 10px;
 }
-.c6five{
+.c6five,
+.c6six,
+.c6seven{
 	padding-bottom: 10px;
 }
 .c6five .c6f1{

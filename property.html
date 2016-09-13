@@ -187,17 +187,19 @@
 		<div class="cx1">
 			<form action="" method="">
 				<p>交易类型</p>
-				<label><input name="交易类型" type="radio" value="" />零售</label> 
-                <label><input name="交易类型" type="radio" value="" />批发 </label> 
-                <label><input name="交易类型" type="radio" value="" />租赁</label> 
-                <label><input name="交易类型" type="radio" value="" />招商</label>
-                <label><input name="交易类型" type="radio" value="" />代管</label> 
-                <label><input name="交易类型" type="radio" value="" />预售 </label> 
-                <label><input name="交易类型" type="radio" value="" />涨价拍卖</label> 
-                <label><input name="交易类型" type="radio" value="" />跌价拍卖</label>
+				<label><input name="交易类型" type="radio" value="cx1one" id="cx1one" onclick="aCheck1()"/>零售</label> 
+                <label><input name="交易类型" type="radio" value="cx1two" id="cx1two" onclick="bCheck2()" />批发 </label> 
+                <label><input name="交易类型" type="radio" value="cx1three" id="cx1three" onclick="cCheck3()"/>租赁</label> 
+                <label><input name="交易类型" type="radio" value="cx1four" id="cx1four" onclick="dCheck4()"/>招商</label>
+                <label><input name="交易类型" type="radio" value="cx1five" id="cx1five" onclick="eCheck5()" />代管</label> 
+                <label><input name="交易类型" type="radio" value="cx1six" id="cx1six" onclick="fCheck6()"/>预售 </label> 
+                <label><input name="交易类型" type="radio" value="cx1seven" id="cx1seven" onclick="gCheck7()" checked="checked"/>拍卖</label> 
+                <label><input name="交易类型" type="radio" value="cx1eight" id="cx1eight" onclick="hCheck8()" />团购</label>
 			</form>
 		</div>
-		<div class="cx2">
+		<!--con3交易类型-->
+		<!--拍卖-->
+		<div class="cx2" id="cx17" style="display: block;">
 			<form action="" method="">
 				<fieldset>
 					<legend></legend>
@@ -244,6 +246,199 @@
 				</fieldset>
 			</form>
 		</div>
+		<!--零售-->
+		<div class="cx2" id="cx11">
+			<form>
+				<fieldset>
+					<legend></legend>
+					<span class="cx2Lspan">周期购</span>
+					<label><input name="周期购" type="radio" value="" />不支持</label> 
+                    <label><input name="周期购" type="radio" value="" />支持</label>
+                    <span class="cx2Rspan">支持周期</span>
+                    <input type="checkbox" checked="checked">隔N天/次
+                    <input type="checkbox" checked="checked">每周固定周几
+                    <input type="checkbox" checked="checked">每月固定日期
+				</fieldset>
+				<fieldset>
+					<legend></legend>
+					<span class="cx2Lspan">定制&nbsp</span>
+					<label><input name="定制" type="radio" value="" />不支持</label> 
+                    <label><input name="定制" type="radio" value="" />支持</label>
+                    <span class="cx2Rspan">定制方式</span>
+                    <input type="checkbox" checked="checked">按图片
+                    <input type="checkbox" checked="checked">按样板
+                    <input type="checkbox" checked="checked">设计稿
+				</fieldset>
+				<fieldset>
+					<span class="cx2Lspan">数量至少<input type="text" value="1000" onfocus="javascript:if(this.value=='10000')this.value='';"/>包</span>
+					<span class="cx2Rspan">定金占比
+						<input type="text" value="35" onfocus="javascript:if(this.value=='35')this.value='';"/>%
+					</span>
+					若验收失败
+					<label><input name="定制" type="radio" value="" />全额退款</label> 
+                    <label><input name="定制" type="radio" value="" />条件退款</label>
+                    <label><input name="定制" type="radio" value="" />不退款</label>
+				</fieldset>
+			</form>
+		</div>
+		<!--批发-->
+		<div class="cx2" id="cx12" >
+			<form>
+				<fieldset>
+					<legend></legend>
+					<span class="cx2Lspan">周期购</span>
+					<label><input name="周期购" type="radio" value="" />不支持</label> 
+                    <label><input name="周期购" type="radio" value="" />支持</label>
+                    <span class="cx2Rspan">支持周期</span>
+                    <input type="checkbox" checked="checked">隔N天/次
+                    <input type="checkbox" checked="checked">每周固定周几
+                    <input type="checkbox" checked="checked">每月固定日期
+				</fieldset>
+				<fieldset>
+					<legend></legend>
+					<span class="cx2Lspan">定制&nbsp</span>
+					<label><input name="定制" type="radio" value="" />不支持</label> 
+                    <label><input name="定制" type="radio" value="" />支持</label>
+                    <span class="cx2Rspan">定制方式</span>
+                    <input type="checkbox" checked="checked">按图片
+                    <input type="checkbox" checked="checked">按样板
+                    <input type="checkbox" checked="checked">设计稿
+				</fieldset>
+				<fieldset>
+					<span class="cx2Lspan">数量至少<input type="text" value="1000" onfocus="javascript:if(this.value=='10000')this.value='';"/>包</span>
+					<span class="cx2Rspan">定金占比
+						<input type="text" value="35" onfocus="javascript:if(this.value=='35')this.value='';"/>%
+					</span>
+					若验收失败
+					<label><input name="定制" type="radio" value="" />全额退款</label> 
+                    <label><input name="定制" type="radio" value="" />条件退款</label>
+                    <label><input name="定制" type="radio" value="" />不退款</label>
+				</fieldset>
+				<fieldset class="cx2Fieinput">
+					<span class="cx2Lspan">混批&nbsp</span>
+					<label><input name="混批" type="radio" value="" />不支持</label> 
+                    <label><input name="混批" type="radio" value="" />支持</label>
+                    <span class="cx2Rspan">混批条件</span>
+                    1笔订单
+                    <input type="text" value="单价" onfocus="javascript:if(this.value=='单价')this.value='';"/>
+                    <input type="text" value="数量" onfocus="javascript:if(this.value=='总数量')this.value='';"/>
+                                                     达到
+                    <input type="text" value="输入总金额" onfocus="javascript:if(this.value=='输入总金额')this.value='';"/>元
+				</fieldset>
+				<fieldset class="cx2Fieinput">
+					<span class="cx2Lspan" style="padding-right: 13px;">免费拿样</span>
+					<label><input name="免费拿样" type="radio" value="" />不支持</label> 
+                    <label><input name="免费拿样" type="radio" value="" />支持</label>
+                    <span class="cx2Rspan">返钱条件</span> 1笔订单
+                    <input type="text" value="35" onfocus="javascript:if(this.value=='35')this.value='';"/>天内单笔订单达
+                    <input type="text" value="2900" onfocus="javascript:if(this.value=='2900')this.value='';"/>元抵扣拿样费用
+				</fieldset>
+			</form>
+		</div>
+		<!--租赁-->
+		<div class="cx2" id="cx13" >
+			<form>
+			    <fieldset>
+					<span class="cx2Lspan">租赁时长</span>
+					    <select name="租赁时长" >
+                            <option value="">小时</option>
+                            <option value="">天</option>
+                            <option value="">月</option>
+                            <option value="">年</option>
+                        </select>
+					<span class="cx2Rspan">最小起租
+						<input type="text" value="2" onfocus="javascript:if(this.value=='2')this.value='';"/>小时
+					</span>
+				</fieldset>
+				<fieldset class="cx2Fieinput">
+					<span class="cx2Lspan">诚信金</span>
+					<label>
+						<input name="诚信金" type="radio" value="" />
+					     按比例<input type="text" value="15" onfocus="javascript:if(this.value=='15')this.value='';"/>%
+					</label> 
+                    <label>
+                    	<input name="诚信金" type="radio" value="" />
+                    	固定金额<input type="text" value="2" onfocus="javascript:if(this.value=='2')this.value='';"/>%
+                    	<select name="固定金额" >
+                            <option value="">万元</option>
+                            <option value="">百元</option>
+                            <option value="">十元</option>
+                            <option value="">元</option>
+                        </select>
+                    </label>
+                    <label>
+                    	<input name="购买数量" type="radio" value="" />无
+                    </label>
+				</fieldset>
+			</form>
+		</div>
+		<!--招商-->
+		<div class="cx2" id="cx14" >
+			<form>
+				<fieldset class="cx2Fieinput">
+					<span class="cx2Lspan">诚信金</span>
+					<label>
+						<input name="诚信金" type="radio" value="" />
+					     按比例<input type="text" value="15" onfocus="javascript:if(this.value=='15')this.value='';"/>%
+					</label> 
+                    <label>
+                    	<input name="诚信金" type="radio" value="" />
+                    	固定金额<input type="text" value="2" onfocus="javascript:if(this.value=='2')this.value='';"/>%
+                    	<select name="固定金额" >
+                            <option value="">万元</option>
+                            <option value="">百元</option>
+                            <option value="">十元</option>
+                            <option value="">元</option>
+                        </select>
+                    </label>
+                    <label>
+                    	<input name="购买数量" type="radio" value="" />无
+                    </label>
+				</fieldset>
+			</form>
+		</div>
+		<!--代卖-->
+		<div class="cx2" id="cx15">
+			<form>
+				<fieldset class="cx2Fieinput">
+					<span class="cx2Lspan">代卖佣金占比</span>
+					<input type="text" value="15" onfocus="javascript:if(this.value=='15')this.value='';"/>%
+				</fieldset>
+			</form>
+		</div>
+		<!--预售-->
+		<div class="cx2" id="cx16" >
+			<form>
+				<fieldset class="cx2Fieinput">
+					<span class="cx2Lspan">佣金占比</span>
+					<input type="text" value="25" onfocus="javascript:if(this.value=='25')this.value='';"/>%
+				</fieldset class="cx2Fieinput">
+				<fieldset class="cx2Fieinput">
+					<span class="cx2Lspan">发货日期</span>
+					<input type="text" value="2016.9.19" onfocus="javascript:if(this.value=='2016.9.19')this.value='';"/>
+					<span class="cx2Rspan">撤单日期</span>
+					<input type="text" value="2016.9.16" onfocus="javascript:if(this.value=='2016.9.16')this.value='';"/>
+				</fieldset>
+				<fieldset class="cx2Fieinput">
+					<span class="cx2Lspan">余款期限</span>
+					<input type="text" value="2016.9.15" onfocus="javascript:if(this.value=='2016.9.15')this.value='';"/>
+					<span class="cx2Rspan">未收到余款，则</span>
+					<label><input name="未收到余款" type="radio" value="" />撤销订单
+					<label><input name="未收到余款" type="radio" value="" />转为到付
+				</fieldset>
+			</form>
+		</div>
+		<!--团购-->
+		<div class="cx2" id="cx18" >
+			<form>
+				<fieldset class="cx2Fieinput">
+					<span class="cx2Lspan">起团人数
+						<input type="text" value="100" onfocus="javascript:if(this.value=='100')this.value='';"/>人
+					</span>
+				</fieldset>
+			</form>
+		</div>
+		<!--cont2交易类型结束-->
 		<div class="cx3">
 			<form action="" method="">
 			<fieldset>
@@ -315,9 +510,7 @@
 			            </select>
 	             客户购买1个服务=<select name="计数单位" >
 				            <option value="">个</option>
-			            </select>
-			          
-			        
+			           </select>
 			        </fieldset>
 			        <fieldset>
 			         	<table class="cvTable"><tbody>
@@ -358,7 +551,7 @@
 			         			<li>增购<input type="text" value="1" onfocus="javascript:if(this.value=='1')this.value='';"/>确定</li>
 			         			<li>一口价<input type="text" value="1" onfocus="javascript:if(this.value=='1')this.value='';"/>确定</li>
 			         		</ul>
-			         		<ul class="cv2Ul2">
+			         		<ul class="cv2Ul2" onclick="delTableRow(this)">
 			         			<li><img src="img/delete2.png"></li>
 			         			<li>天堂美食*R标</li>
 			         			<li>1元/客户</li>
@@ -591,8 +784,8 @@
 	    					<ul>
 	    						<li>
 	    							<span>新增属性</span>
-	    					        <input type="text" value="请输入属性名称" onfocus="javascript:if(this.value=='请输入属性名称')this.value='';"/>
-	    					        <input type="text" value="请输入属性内容" onfocus="javascript:if(this.value=='请输入属性内容')this.value='';"/>
+	    					        <input type="text" style="width: 85px;" value="请输入属性名称" onfocus="javascript:if(this.value=='请输入属性名称')this.value='';"/>
+	    					        <input type="text" style="width: 85px;" value="请输入属性内容" onfocus="javascript:if(this.value=='请输入属性内容')this.value='';"/>
 	    						</li>
 	    						<li>
 	    							<span>数据类型</span>
@@ -700,6 +893,14 @@
 	    						</ul>
 	    					</div>
 	    				</div>
+	    				<div class="c6six">
+	    					<span class="coRed">待审核</span>
+	    					天堂美食
+	    				</div>
+	    				<div class="c6seven">
+	    					<span style="color: #009843;">已审核通过</span>
+	    					**食品    **食品  **食品  **食品
+	    				</div>
 	    			</div>
 	    		</fieldset>
 	    		<!--服务资源新增结束-->
@@ -713,7 +914,7 @@
 	    			<ul class="c7one">
 	    				<li><span class="coRed">服务约定</span><span>(服务>产权类>商标）</span></li>
 	    				<li><button type='submit'>新增约定</button></li>
-	    				<li><span>提示：与类目有关的“公共属性”</span></li>
+	    				<li><span >提示：与类目有关的“公共属性”</span></li>
 	    			</ul>
 	    		</fieldset>
 	    		<fieldset>

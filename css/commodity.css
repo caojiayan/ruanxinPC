@@ -1,0 +1,67 @@
+/*con1*/
+.con1,
+.cont2,
+.cont3{
+	border-bottom: 1px solid #009843;
+}
+.cont1Choice{
+	margin: 10px 20px;
+}
+.cont1Choice fieldset:first-child{
+	margin-bottom: 10px;
+}
+.Choiceright{
+	margin-left: 50px;
+}
+
+/*cont2*/
+.cont2,
+.cont3{
+	padding: 10px 10px 5px 20px;
+}
+.cont2 input{
+	width: 60px;
+}
+.cont2Table {
+	margin: 10px 0 5px 0;
+}
+.cont2Table tr:first-child{
+	background: #EEEEEE;
+}
+.cont2Table td{
+	text-align: center;
+	padding: 3px 0;
+}
+/*cont3*/
+.cont3{
+	position: relative;
+}
+.cont3Ul{
+	margin: 5px 0;
+}
+.cont3Ul:first-child{
+	margin-top: 10px;
+}
+.cont3Ul input[type=date]{
+	width: 110px;
+}
+.cont3Ul li{
+	display: inline-block;
+	width: 47%;
+}
+.cont3Box{
+	margin: 5px 20px;
+	padding: 10px;
+	background: #EEEEEE;
+	border-radius: 10px;
+}
+.cont3Space{
+	margin-top: 5px;
+}
+.cont3Ultwo{
+	margin: 10px 0 5px 25px;
+}
+/*cont4*/
+.con8{
+	border-bottom:none;
+}

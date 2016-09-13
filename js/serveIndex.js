@@ -28,6 +28,93 @@ $(document).ready(function(){
 	});
 });
 
+//con3中交易类型选择
+
+function aCheck1(){ 
+document.getElementById("cx11").style.display="block"; 
+document.getElementById("cx12").style.display="none";
+document.getElementById("cx13").style.display="none";
+document.getElementById("cx14").style.display="none";
+document.getElementById("cx15").style.display="none";
+document.getElementById("cx16").style.display="none";
+document.getElementById("cx17").style.display="none";
+document.getElementById("cx18").style.display="none";
+}
+function bCheck2(){ 
+document.getElementById("cx11").style.display="none"; 
+document.getElementById("cx12").style.display="block";
+document.getElementById("cx13").style.display="none";
+document.getElementById("cx14").style.display="none";
+document.getElementById("cx15").style.display="none";
+document.getElementById("cx16").style.display="none";
+document.getElementById("cx17").style.display="none";
+document.getElementById("cx18").style.display="none";
+}
+function cCheck3(){ 
+document.getElementById("cx11").style.display="none"; 
+document.getElementById("cx12").style.display="none";
+document.getElementById("cx13").style.display="block";
+document.getElementById("cx14").style.display="none";
+document.getElementById("cx15").style.display="none";
+document.getElementById("cx16").style.display="none";
+document.getElementById("cx17").style.display="none";
+document.getElementById("cx18").style.display="none";
+}
+function dCheck4(){ 
+document.getElementById("cx11").style.display="none"; 
+document.getElementById("cx12").style.display="none";
+document.getElementById("cx13").style.display="none";
+document.getElementById("cx14").style.display="block";
+document.getElementById("cx15").style.display="none";
+document.getElementById("cx16").style.display="none";
+document.getElementById("cx17").style.display="none";
+document.getElementById("cx18").style.display="none";
+}
+function eCheck5(){ 
+document.getElementById("cx11").style.display="none"; 
+document.getElementById("cx12").style.display="none";
+document.getElementById("cx13").style.display="none";
+document.getElementById("cx14").style.display="none";
+document.getElementById("cx15").style.display="block";
+document.getElementById("cx16").style.display="none";
+document.getElementById("cx17").style.display="none";
+document.getElementById("cx18").style.display="none";
+}
+function fCheck6(){ 
+document.getElementById("cx11").style.display="none"; 
+document.getElementById("cx12").style.display="none";
+document.getElementById("cx13").style.display="none";
+document.getElementById("cx14").style.display="none";
+document.getElementById("cx15").style.display="none";
+document.getElementById("cx16").style.display="block";
+document.getElementById("cx17").style.display="none";
+document.getElementById("cx18").style.display="none";
+}
+function gCheck7(){ 
+document.getElementById("cx11").style.display="none"; 
+document.getElementById("cx12").style.display="none";
+document.getElementById("cx13").style.display="none";
+document.getElementById("cx14").style.display="none";
+document.getElementById("cx15").style.display="none";
+document.getElementById("cx16").style.display="none";
+document.getElementById("cx17").style.display="block";
+document.getElementById("cx18").style.display="none";
+}
+function hCheck8(){ 
+document.getElementById("cx11").style.display="none"; 
+document.getElementById("cx12").style.display="none";
+document.getElementById("cx13").style.display="none";
+document.getElementById("cx14").style.display="none";
+document.getElementById("cx15").style.display="none";
+document.getElementById("cx16").style.display="none";
+document.getElementById("cx17").style.display="none";
+document.getElementById("cx18").style.display="block";
+}
+
+//con4中点击删除当列
+function delTableRow(n){
+       n.parentNode.removeChild(n); 
+    }
 
 //con6中的服务资源新增
 function msgbox(n){
