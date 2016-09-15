@@ -9,11 +9,10 @@
 	</head>
 	<body>
 		<div class="bj1">
-	<div style="width: 700px; margin-left: auto; margin-right: auto;">
+	<div class="bj1box">
 	<p>软信商家账号<a style="margin-left: 10px;"></a><a href="#">退出</a><a style="margin-left: 20px;"></a><a href="#">消息</a></p>
-  <div class="nav">
-    <ul>
-      <li><a href="#">卖家中心|</a>
+    <ul class="bj1nav">
+      <li style="padding-right: 0;"><a href="#">卖家中心 |</a>
       <ul>
       	<li><a href="#">卖家中心</a></li>
         <li><a href="#">卖家中心</a></li>
@@ -21,7 +20,7 @@
         <li><a href="#">卖家中心</a></li>
       </ul>
       </li>
-      <li><a href="#">开发平台|</a>
+      <li><a href="#">开发平台 |</a>
     <ul>
       	<li><a href="#">卖家中心</a></li>
         <li><a href="#">卖家中心</a></li>
@@ -29,7 +28,7 @@
         <li><a href="#">卖家中心</a></li>
       </ul>
       </li>
-      <li><a href="#">软信下载|</a>
+      <li><a href="#">软信下载 |</a>
      <ul>
       	<li><a href="#">卖家中心</a></li>
         <li><a href="#">卖家中心</a></li>
@@ -37,7 +36,7 @@
         <li><a href="#">卖家中心</a></li>
       </ul>
       </li>
-      <li><a href="#">软信商城|</a>
+      <li><a href="#">软信商城 |</a>
       <ul>
       	<li><a href="#">卖家中心</a></li>
         <li><a href="#">卖家中心</a></li>
@@ -45,7 +44,7 @@
         <li><a href="#">卖家中心</a></li>
       </ul>
       </li>
-      <li><a href="#">软信官网|</a>
+      <li><a href="#">软信官网 |</a>
       	<ul>
       	<li><a href="#">卖家中心</a></li>
         <li><a href="#">卖家中心</a></li>
@@ -55,10 +54,9 @@
       </li>
     </ul>
   </div>
-  </div>
 </div>
 <div class="bj2">
-  <p><a style="margin-left: 22px;"></a>商家经营规则更新通知<a style="margin-left: 10px;"></a>详情</p>
+  <p>商家经营规则更新通知</a><span>详情</span></a></p>
 </div>
 <div class="bj3">
   <ul>
@@ -205,20 +203,22 @@
 					<legend></legend>
 					预约时间   <input type="date" name="star_date" /> 至 
 					<input type="date" name="stop_date" />
-					预约：最长15天
+					<span>预约：最长15天</span>
 				</fieldset>
 				<fieldset>
 					<legend></legend>
 					拍卖时间   <input type="date" name="star_date" /> 至 
 					<input type="date" name="stop_date" />
-					拍卖：最长30分钟
+					<span>拍卖：最长30分钟</span>
 				</fieldset>
 				<fieldset>
 					<legend></legend>
 					拍卖地点
 					<label><input name="网络拍卖" type="radio" value="" />网络拍卖</label> 
                     <label><input name="线下拍卖" type="radio" value="" />线下拍卖</label>
-                                                 调价幅度：<input type="text"  value="100" onfocus="javascript:if(this.value=='100')this.value='';"/> 元/次
+                    <span>调价幅度：
+                    	<input type="text"  value="100" onfocus="javascript:if(this.value=='100')this.value='';"/> 元/次
+                    </span>
 				</fieldset>
 				<fieldset>
 					详细地址
@@ -451,7 +451,7 @@
 				<img src="img/cxno.png" />
 				<input type="checkbox" checked="checked">到付<span>(到付，下单后商家发货，客户验收合格后全额支付货款）</span>
 			</div>
-			<div class="cx3_in">服务费 
+			<div class="cx3_in"><span class="cx3Inspan">服务费 </span>
 				<label><input name="服务费" type="radio" value="" />商家出</label> 
                 <label><input name="服务费" type="radio" value="" />客户出 </label>
 			</div>
@@ -567,14 +567,12 @@
 	        <!--con5开始-->
 	        <div class="con5">
 	    	<form>
-	    		<div class="c51">
-	    		<fieldset>
+	    		<fieldset class="c51">
 	    			<span>签约方式</span>
                     <input type="checkbox" checked="checked">网络签约
                     <input type="checkbox" checked="checked">到店签约
                     <input type="checkbox" checked="checked">上面签约
 	    		</fieldset>
-	    		</div>
 	    		<fieldset>
 	    			<span>提前预定</span>
 	    			<label><input name="提前预定" type="radio" value="" />免预订</label> 
@@ -636,32 +634,35 @@
 	    <div class="con6">
 	    	<p>服务设置<span>资源管理</span></p>
 	    	<form>
-	    		<fieldset>
-	    			<div class="c61">
-	    			<span>服务资源</span>资源归属
-	    			<select name="资源归属" >
-				        <option value="">中国商标</option>
-				        <option value="">香港商标</option>
-				        <option value="">台湾商标</option>
-				        <option value="">国外商标</option>
-			        </select>
-			        <input type="button" style="background: url(img/addlitter.png) no-repeat center;"/> <!--新增按钮-->
-			        <span>选择资源</span>
-			        <select name="选择资源" >
-				        <option value="">天堂美食</option>
-				        <option value="">天堂美食</option>
-				        <option value="">天堂美食</option>
-				        <option value="">天堂美食</option>
-			        </select>
-			        <input type="button" style="background: url(img/addlitter.png) no-repeat center;" onclick="msgbox(1)" value=""> <!--新增按钮-->
-			        <span>资源来源</span>
-			        <select name="资源来源" >
-				        <option value="">公司所有</option>
-				        <option value="">公司所有</option>
-				        <option value="">公司所有</option>
-				        <option value="">公司所有</option>
-			        </select>
-			        <ul class="c6trademark">
+	    		<fieldset class="c61">
+	    			<span>服务资源</span>
+	    				<div class="c61one">资源归属
+	    			        <select name="资源归属" >
+				                <option value="">中国商标</option>
+				                <option value="">香港商标</option>
+				                <option value="">台湾商标</option>
+				                <option value="">国外商标</option>
+			                </select>
+			                <input type="button" style="background: url(img/addlitter.png) no-repeat center;"/> <!--新增按钮-->
+	    				</div>
+			            <div class="c61one">选择资源
+			                <select name="选择资源" >
+				                <option value="">天堂美食</option>
+				                <option value="">天堂美食</option>
+				                <option value="">天堂美食</option>
+				                <option value="">天堂美食</option>
+			                </select>
+			                <input type="button" style="background: url(img/addlitter.png) no-repeat center;" onclick="msgbox(1)" value=""> <!--新增按钮-->
+			            </div>
+			            <div class="c61one">资源来源
+			                <select name="资源来源" >
+				                <option value="">公司所有</option>
+				                <option value="">公司所有</option>
+				                <option value="">公司所有</option>
+				                <option value="">公司所有</option>
+			                </select>
+			            </div>
+			        <ul class="c6trademark clearfix">
 			        	<li>状态：R标</li>
 			        	<li>注册号：1234567</li>
 			        	<li>商标类别：29</li>
@@ -669,7 +670,6 @@
 			        	<li>证件类型：注册证</li>
 			        	<li>发证日期：2015.8.11</li>
 			        </ul>
-	    		    </div>
 	    		</fieldset>
 	    		<fieldset>
 	    			<p>服务项目</p>
@@ -708,7 +708,7 @@
 				        <img src="img/addlitter.png" />
 			        </select>
 			        <button type='submit'>加入</button>
-			        <table width="680" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
+			        <table width="950" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
 			        	<tbody></tbody>
 			        	<tr>
 			        		<td><img src="img/trash.png"><img src="img/square.png"></td>
@@ -735,11 +735,11 @@
 			        		<td>&nbsp</td>
 			        	</tr>
 			        </table>
-			        <div style="height:2px;width:680px;background: #EEEEEE;"></div>
+			        <div style="height:2px;width:950px;background: #EEEEEE; margin-left: 20px;"></div>
 	    		</fieldset>
 	    		<fieldset>
 	    			<span>其他《时间安排表》</span><button type='submit'>编辑</button>
-	    			<table width="680" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
+	    			<table width="950" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
 			        	<tbody></tbody>
 			        	<tr>
 			        		<td><img src="img/trash.png"><img src="img/square.png"></td>
@@ -775,7 +775,7 @@
 	    			<div class="c6popup box" id="inputbox">
 	    				<div class="c6ptitle">
 	    					<ul>
-	    						<li><a class='x' href=''; onclick="msgbox(1)"; return false;"><img src="img/delect1.png"></a> </li>
+	    						<li><a class='x' href=''; onclick="msgbox(1)"; return="false;"><img src="img/delect1.png"></a> </li>
 	    						<li>服务资源新增</li>
 	    						<li><a href="">保存</a></li>
 	    					</ul>
@@ -784,8 +784,8 @@
 	    					<ul>
 	    						<li>
 	    							<span>新增属性</span>
-	    					        <input type="text" style="width: 85px;" value="请输入属性名称" onfocus="javascript:if(this.value=='请输入属性名称')this.value='';"/>
-	    					        <input type="text" style="width: 85px;" value="请输入属性内容" onfocus="javascript:if(this.value=='请输入属性内容')this.value='';"/>
+	    					        <input type="text" style="width: 120px;" value="请输入属性名称" onfocus="javascript:if(this.value=='请输入属性名称')this.value='';"/>
+	    					        <input type="text" style="width: 120px;" value="请输入属性内容" onfocus="javascript:if(this.value=='请输入属性内容')this.value='';"/>
 	    						</li>
 	    						<li>
 	    							<span>数据类型</span>

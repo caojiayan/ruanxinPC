@@ -8,14 +8,7 @@ a{
 	text-decoration:none;
 	color:#999;
 }
-hr {
-	width: 118px;
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #999;
-	margin-right: auto;
-	margin-left: auto;
-}
+/*显示红色*/
 .coRed{
 	color: red;
 	padding-right: 10px;
@@ -89,12 +82,20 @@ input,select{
 }
 /*button的样式设置*/
 button{
-	padding: 2px 5px;
+	padding: 5px 12px;
+	margin-left: 10px;
 	background: #a0a0a0;
-	border-radius: 5px;
+	border-radius: 10px;
 	border: #a0a0a0;
 	color:#FFFFFF;
 }
+body{
+	margin: 0 auto;
+	font-family:"microsoft yahei" ,sans-serif;
+	font-size: 16px;
+}
+
+
 
 /*header开始*/
 #libg {
@@ -105,71 +106,76 @@ button{
 	font-size:12px; width:125px; text-align:left;
 }
 .bj1{
-	width: 1000px;
-	height: 20px;
-	margin-left: auto;
-	margin-right: auto;
+	height: 30px;
+	margin: 0 auto;
 	background-color: #eeeeee;
 }
-.bj1 ul {
-	width: 500px;
-	float: right;
-	height: 20px;
+
+.bj1box{
+	width: 1080px;
+	margin: 0 auto;
 }
-.bj1 ul li {
+.bj1 ul {
+	width: 660px;
+	float: right;
+	height: 30px;
+}
+.bj1nav li {
 	float: right;
 	list-style-type: none;
-	line-height: 20px;
+	line-height: 30px;
 	width: 80px;
+	padding-right: 25px;
 	position: relative;
 }
-.bj1 ul li ul{
+
+.bj1nav li ul{
 	display: none;
 	position: absolute;
-	width: 80px;
-	
+	width: 105px;
+	left: 0;
 }
-.bj1 ul li:hover ul{
+.bj1nav li:hover ul{
 	display:block;
 	z-index: 1000;
 }
-.bj1 ul li a {
-	font-size: 12px;
+.bj1nav li a {
 	display: block;
+}
+.bj1navli a{
+	padding-right: 0;
 }
 .bj1 a:hover{
 	color: #FFFFFF;
 }
 .bj1 p {
-	width: 150px;
-	font-size: 12px;
-	line-height: 20px;
+	width: 250px;
+	line-height: 30px;
 	float: left;
 	color: #999;
-	height: 20px;
+	height: 30px;
 }
 .bj2{
-	width: 1000px;
-	height: 20px;
-	margin-left: auto;
-	margin-right: auto;
+	height: 30px;
+	margin: 0 auto;
 	background-color: #fff79a;
 	color: #999;
 }
 .bj2 p {
-	width: 700px;
-	font-size: 12px;
-	margin-right: auto;
-	margin-left: auto;
-	line-height: 20px;
-	background-image: url(../img/99.png);
-	background-repeat: no-repeat;
+	width: 1050px;
+	margin: 0 auto;
+	line-height: 30px;
+	padding-left: 30px;
+	background: url(../img/99.png) no-repeat center left;
 }
+.bj2 p span{
+	padding: 0 25px;
+}
+
 .bj3{
-	width: 703px;
-	height: 35px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 1082px;
+	height: 50px;
+	margin: 0 auto;
 	background-color: #ff6600;
 }
 .bj3 ul {
@@ -177,37 +183,35 @@ button{
 .bj3 ul li {
 	float: left;
 	list-style-type: none;
-	line-height: 35px;
-	height: 35px;
-	width: 60px;
+	line-height: 50px;
+	height: 50px;
+	width: 96px;
 	text-align: center;
 }
 .bj3 ul li a {
 	color: #FFF;
+	font-size: 22px;
 	text-decoration: none;
 	display: block;
 }
 .bj3 ul li a:hover {
-	background-image: url(../img/100.png);
+	/*background-image: url(../img/100.png);*/
 	background-repeat: no-repeat;
 }
 .bj3 ul li:first-child a{
-	background-image: url(../img/100.png);
+	/*background-image: url(../img/100.png);*/
 	background-repeat: no-repeat;
 }
 .bj4{
-	width: 1000px;
-	height: 20px;
+	height: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #eeeeee;
 }
 .bj4 p {
-	width: 700px;
-	margin-right: auto;
-	margin-left: auto;
-	font-size: 12px;
-	line-height: 20px;
+	width: 1080px; 
+	margin: 0 auto;
+	line-height:30px;
 }
 .bj4 p span {
 	float: right;
@@ -215,20 +219,18 @@ button{
 
 /*正文开始*/
 .content {
-	width: 701px;
+	width: 1080px;
 	border: 1px solid #a0a0a0;
 	border-top: none;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 	color:#A0A0A0;
-	font-size: 12px;
-	font-family:"microsoft yahei" sans-serif;
 }
 
 /*con1开始*/
+
 .con1_nav{
-	height: 45px;
-	line-height: 45px;
+	height: 55px;
+	line-height: 55px;
 	padding-left: 18px;
 }
 .con1_nav p{
@@ -238,7 +240,7 @@ button{
 .con1_nav p span{
 	margin-left: 160px;
 	color: #999;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: bold;
 }
 .con1_msg{
@@ -254,6 +256,7 @@ button{
 }
 
 .con1Category{
+	padding-bottom: 10px;
 	border-bottom: 1px solid #009843;
 }
 
@@ -268,30 +271,25 @@ button{
 .con1Ca1,
 .con1Ca2,
 .con1Ca3{
-	height: 25px;
+	height: 30px;
 }
 .con1Ca1{
 	margin-top: 5px;
 }
 /*con1中类别选择新增*/
 .c1input {
-	width: 20px;
+	width:35px;
 	float: left;
 }
-.cs3 input[type='button'],
-.c1input input{
-	background: url(../img/addlitter.png) center no-repeat;
-	width: 20px;
+.cs3 input[type="button"],
+.c1input {
+	background:url(../img/addlitter.png) no-repeat center right;
 	border-bottom-width: 0;	
 }
 
 .cs1{
 	padding:0 10px 0 30px;
 	background:url(../img/select.png) no-repeat left center;
-}
-
-.cs1 input{
-	width: 60px;
 }
 
 .cs2{
@@ -332,18 +330,13 @@ button{
 }
 .cs3right span{
 	margin-left: 10px;
-	height: 18px;
 	padding-left: 20px;
 	background: url(../img/keylitter.png) left center no-repeat;
-}
-/*设置“自定义服务方式”的input宽度*/
-.cs3input{
-	width: 90px;
 }
 
 /*con2部分开始*/
 .con2{
-	padding:10px 5px 10px 16px ;
+	padding:10px 16px ;
 	border-bottom: 1px solid #009946;
 }
 .con2 .cs1 {
@@ -353,16 +346,6 @@ button{
 .con2 .cs0{
 	padding-left: 30px;
 	float: left;
-}
-.con2 .cs0 button{
-	background: #999999;
-	padding: 2px 5px ;
-	border-radius: 5px;
-	border: #999999;
-}
-
-.con2 .cs0 input{
-	width:90px;
 }
 
 .con2 fieldset:nth-of-type(2){
@@ -381,8 +364,8 @@ button{
 }
 .con2_nav ul{
 	background: #EEEEEE;
-	width: 580px;
-	padding: 5px 0 5px 30px;
+	width: 950px;
+	padding: 5px 5px 5px 30px;
 	margin: 0 auto;
 	border-radius: 5px;
 }
@@ -419,8 +402,8 @@ button{
 }
 
 .cx2{
-	width: 620px;
-	padding: 10px;
+	width: 950px;
+	padding: 10px 10px 10px 15px;
 	margin: 0 auto;
 	background: #EEEEEE;
 	border-radius: 10px;
@@ -468,9 +451,12 @@ button{
 	border-bottom: 1px solid #EEEEEE;
 	padding-top:10px;
 }
-
+.cx3Inspan{
+	margin-right: 25px;
+	padding-left:0 !important;
+}
 .cx3 .cx3_in span{
-	padding-left: 80px;
+	padding-left:20%;
 }
 
 .cx3 .cx3_in:nth-of-type(6) input,
@@ -479,7 +465,7 @@ button{
 }
 .cx3 .cx3_in:nth-of-type(3),
 .cx3 .cx3_in:nth-of-type(6){
-	padding-left: 35px;
+	padding-left: 42px;
 }
 
 .cx3 .cx3_in:nth-of-type(3) span{
@@ -513,7 +499,7 @@ button{
 }
 
 .cvTable tbody tr td{
-	padding: 5px 20px;
+	padding: 5px 30px;
 }
 .cvTaimg1{
 	background: url(../img/key2.png) left center no-repeat;
@@ -521,15 +507,13 @@ button{
 .cvTaimg2{
 	background: url(../img/keylitter.png) 18px center no-repeat;
 }
-.cvTaimg2 input{
-	width: 100px;
-}
+
 .cv2{
 	padding-bottom: 100px;
 }
 
 .cv2Ul1{
-	width: 696px;
+	width: 100%;
 	padding-left: 5px;
 	margin-top: 5px;
 	background: #EEEEEE;
@@ -561,10 +545,7 @@ button{
 	background: url(../img/square.png) left center no-repeat;
 }
 
-/*.cv2Ul1 li:nth-of-type(6){
-	padding-left: 16px;
-	background: url(../img/key3.png) left center no-repeat;
-}*/
+
 .cv2Ul1 li:nth-of-type(2),
 .cv2Ul2 li:nth-of-type(2){
 	padding-left: 0;
@@ -598,29 +579,30 @@ button{
 	border-bottom: 1px solid #009843;
 	padding:10px 5px 10px 16px ;
 }
+.c51{
+	background: url(../img/flower.png) center left no-repeat;
+}
 .con5 form fieldset{
 	padding: 5px 0;
-	margin-left: 20px;
+	padding-left: 25px;
 }
+
 .con5 form fieldset input{
-	width: 25px;
+	width: 60px;
 }
 .con5 form fieldset label:nth-of-type(2){
 	padding-left: 12px;
 }
 
-.c51{
-	background: url(../img/flower.png) left center no-repeat;
-}
 .c5one{
 	background: #EEEEEE;
 	border-radius: 10px;
 }
 .c5one fieldset:nth-of-type(2) input[value="no"]{
-	margin-left: 35px;
+	margin-left: 45px;
 }
 .c5one .c5span{
-	margin-left: 78px;
+	margin-left: 150px;
 }
 
 .con5 input[type="checkbox"]{
@@ -630,17 +612,24 @@ button{
 /*con6开始*/
 .con6{
 	border-bottom: 1px solid #009843;
-	padding:10px 5px 0px 16px ;
+	padding:10px 16px ;
 	position: relative;
 }
 .con6 fieldset{
 	padding: 5px 0;
 }
-.con6 fieldset input{
-	width: 70px;
+.c61 span{
+	float: left;
+}
+.c61one{ 
+	float: left;
+	width: 30%;
+}
+.c61one input{
+	width: 30px;
 }
 .con6 p{
-	padding: 5px 0 5px 20px;
+	padding: 5px 0 5px 25px;
 	background: url(../img/aa.png) left center no-repeat;
 }
 .con6 p span{
@@ -649,12 +638,12 @@ button{
 }
 
 .con6 form fieldset span{
-	padding: 0 10px 0 20px;
+	padding: 0 10px 0 25px;
 }
-.con6 .c6trademark{
+.c6trademark{
 	margin-top: 10px;
 	padding: 5px 0 5px 32px;
-	background: #EEEEEE;
+/*	background: #EEEEEE;*/
 	border-radius: 5px;
 }
 .con6 .c6trademark li{
@@ -665,7 +654,7 @@ button{
 	padding-left: 0;
 }
 .con6 table{
-	margin: 5px 0 10px 0px;
+	margin: 5px 0 10px 20px;
 }
 .con6 table td{
 	text-align: center;
@@ -690,7 +679,7 @@ button{
 /*con6服务资源新增*/
 .c6popup,
 .c7Popup{
-	width: 690px;
+	width: 1000px;
 	margin: 0 auto ;
 	margin-left: 5px;
 	border: 1px solid #EEEEEE;
@@ -701,7 +690,7 @@ button{
 	z-index: 2;
 }
 .c6popup{
-	top: 65px;
+	top: 70px;
 	left: 0;
 }
 .c6popup ul li,
@@ -726,6 +715,7 @@ button{
 .c6ptitle li:last-child,
 .c7ptitle li:last-child{
 	float: right;
+	text-align: center;
 }	
 
 .c6ptitle li:nth-of-type(2),
@@ -734,9 +724,12 @@ button{
 }
 .c6pone ul{
 	margin: 15px;
-	padding:5px 20px 5px 5px;
+	padding:5px;
 	border: 1px solid #999;
 	border-radius: 5px;
+}
+.c6pone ul li{
+	height: 30px;
 }
 .c6pone ul li:first-child span{
 	padding-left: 0;
@@ -746,7 +739,7 @@ button{
 }
 .c6pone li:first-child,
 .c6pone li:nth-of-type(2){
-	width: 42%;	
+	width: 44%;	
 }
 .c6pone li:last-child{
 	float: right;
@@ -773,7 +766,7 @@ button{
 .c6five .c6f1{
 	border: 1px solid #999;
 	margin: 5px 16px;
-	padding-left: 20px;
+	padding: 5px 0 5px 20px;
 	border-radius: 10px;
 }
 .c6five .c6f1 li{
@@ -865,7 +858,7 @@ button{
 }
 
 .c7five{
-	width: 597px;
+	width: 950px;
 	height: 60px;
 	margin-left:53px ;
 	border-radius: 5px;
@@ -946,7 +939,7 @@ button{
 	padding: 5px 0;
 }
 .c8one{
-	background: url(../img/map2.png) left center no-repeat;
+	background:url(../img/map2.png) left center no-repeat;
 }
 .c8one li{
 	display: inline-block;
@@ -978,7 +971,7 @@ button{
 	float: left;
 }
 .c8right{
-	width: 565px;
+	width: 950px;
 	float: right;
 	padding-left: 20px;
 	background: url(../img/up.png) left top no-repeat;
@@ -989,7 +982,7 @@ button{
 	line-height: 22px;
 }
 .con8 .c8left:nth-of-type(1){
-	background: url(../img/picture.png) left no-repeat top;
+	background:url(../img/picture.png) left no-repeat top;
 }
 .c8photo a{
 	margin-right: 30px;
@@ -1002,7 +995,7 @@ button{
 }
 /*编辑器部分*/
 .editor-box{
-	width: 565px;
+	width: 950px;
 	height: 120px;/*设置编辑器大小*/
 }
 
@@ -1026,20 +1019,23 @@ button{
 }
 
 .c9two{
-	width: 620px;
+	width: 880px;
 	border: 1px solid #999;
 	border-radius: 10px;
+	padding-left: 70px;
 }
 .c9two li{
-	padding:10px 15px;
+	width: 13%;
 }
-
+.c9two li:last-child{
+	padding-left: 40px;
+}
 .c9three {
 	margin-left: 150px;
 }
 
 .c9three li{
-	padding: 5px 20px;
+	padding: 8px 40px;
 	margin-right: 50px;
 	border-radius: 5px;
 	background: #c9c9c9;
@@ -1047,10 +1043,13 @@ button{
 .c9three li a{
 	color: #FFFFFF;
 	font-weight: 900;
+	font-size: 20px;
 }
 .c9three li:nth-of-type(2){
 	background: #999;
+	margin:0 60px;
 }
 .c9three li:nth-of-type(3){
 	background: #009946;
+	margin-left:60px;
 }
