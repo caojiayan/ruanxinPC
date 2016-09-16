@@ -82,7 +82,7 @@ input,select{
 }
 /*button的样式设置*/
 button{
-	padding: 5px 12px;
+	padding: 3px 10px;
 	margin-left: 10px;
 	background: #a0a0a0;
 	border-radius: 10px;
@@ -195,11 +195,11 @@ body{
 	display: block;
 }
 .bj3 ul li a:hover {
-	/*background-image: url(../img/100.png);*/
+	background-image: url(../img/100.png);
 	background-repeat: no-repeat;
 }
 .bj3 ul li:first-child a{
-	/*background-image: url(../img/100.png);*/
+	background-image: url(../img/100.png);
 	background-repeat: no-repeat;
 }
 .bj4{
@@ -360,12 +360,12 @@ body{
 .con2_nav{
 	float: left;
 	padding-top: 10px;
-	padding-left: 30px;
+	padding-left: 42px;
 }
 .con2_nav ul{
 	background: #EEEEEE;
 	width: 950px;
-	padding: 5px 5px 5px 30px;
+	padding: 5px 5px 5px 15px;
 	margin: 0 auto;
 	border-radius: 5px;
 }
@@ -584,7 +584,7 @@ body{
 }
 .con5 form fieldset{
 	padding: 5px 0;
-	padding-left: 25px;
+	padding-left: 30px;
 }
 
 .con5 form fieldset input{
@@ -629,7 +629,7 @@ body{
 	width: 30px;
 }
 .con6 p{
-	padding: 5px 0 5px 25px;
+	padding: 5px 0 5px 30px;
 	background: url(../img/aa.png) left center no-repeat;
 }
 .con6 p span{
@@ -643,18 +643,17 @@ body{
 .c6trademark{
 	margin-top: 10px;
 	padding: 5px 0 5px 32px;
-/*	background: #EEEEEE;*/
 	border-radius: 5px;
 }
 .con6 .c6trademark li{
 	display: inline-block;
-	padding: 0 5px;
 }
 .con6 .c6trademark li:first-child{
 	padding-left: 0;
+	padding-top: 10px;
 }
 .con6 table{
-	margin: 5px 0 10px 20px;
+	margin: 10px 0 10px 20px;
 }
 .con6 table td{
 	text-align: center;
@@ -664,9 +663,10 @@ body{
 	background: #EEEEEE;
 }
 
-.con6 table tr:nth-of-type(3) td{
-	padding: 3px 0;
+.c6FieBOx input{
+	width: 50px;
 }
+
 /*con6新增按钮*/
 .c61 input[type='image']{
 	border-bottom-width: 0px;
@@ -782,7 +782,7 @@ body{
 	position: relative;
 }
 .con7 fieldset{
-	padding: 5px 0 5px 20px;
+	padding: 5px 0 5px 25px;
 }
 .con7 fieldset:nth-of-type(6){
 	background: url(../img/move.png) no-repeat left top;
@@ -873,6 +873,7 @@ body{
 	background: #EEEEEE;
 	margin-left: 53px;
 	padding: 5px;
+	margin: 10px 0;
 	border-radius: 5px;
 }
 
@@ -892,9 +893,10 @@ body{
 }
 
 .c7seven{
-	margin-top: 5px;
+	margin:10px 0;
 }
 .c7seven li{
+	padding: 5px 0;
 	margin: 0 35px 0 20px;
 	padding-right: 10px;
     background-size: 10px 10px;
@@ -913,7 +915,7 @@ body{
 }
 /*新增商品属性部分*/
 .c7Popup{
-	top: 332px;
+	top: 360px;
 	left: 0;
 	padding-bottom: 10px;
 }
@@ -933,7 +935,7 @@ body{
 .c8one,
 .c8three,
 .c8left{
-	padding-left: 20px;
+	padding-left: 30px;
 }
 .con8 fieldset{
 	padding: 5px 0;
@@ -953,11 +955,15 @@ body{
 }
 
 .c8two{
-	margin-left: 73px;
+	margin: 10px 0 0 73px;
 	height: auto;
 	background: #EEEEEE;
 	padding: 5px 25px;
 	border-radius: 5px;
+}
+.c8two li,
+.c8three li{
+	padding: 5px 0;
 }
 .c8three{
 	background: url(../img/tax.png) no-repeat left top;
@@ -971,9 +977,10 @@ body{
 	float: left;
 }
 .c8right{
-	width: 950px;
+	width: 870px;
 	float: right;
-	padding-left: 20px;
+	padding-left: 30px;
+	margin-left: 50px;
 	background: url(../img/up.png) left top no-repeat;
 }
 
@@ -982,7 +989,10 @@ body{
 	line-height: 22px;
 }
 .con8 .c8left:nth-of-type(1){
-	background:url(../img/picture.png) left no-repeat top;
+	background:url(../img/picture.png) left no-repeat;
+}
+.c8photo{
+	margin-top: 10px;
 }
 .c8photo a{
 	margin-right: 30px;
@@ -1022,7 +1032,7 @@ body{
 	width: 880px;
 	border: 1px solid #999;
 	border-radius: 10px;
-	padding-left: 70px;
+	padding:5px 0px 5px 70px;
 }
 .c9two li{
 	width: 13%;
