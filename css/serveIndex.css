@@ -443,7 +443,7 @@ body{
 
 
 .cx3 fieldset h4{
-	font-size: 13px;
+	font-size: 16px;
 	padding-top: 10px;
 }
 
@@ -477,6 +477,15 @@ body{
 }
 .cx3 .cx3_do{
 	padding-top:10px;
+}
+.c5Appleft{
+	padding-left: 120px !important;
+}
+.letterSpace{
+	padding-left: 16px;
+}
+.cright{
+	padding-right: 25px;
 }
 
 /*con4开始*/
@@ -1003,11 +1012,11 @@ body{
 #fileToUpload{
 	display: none ;
 }
-/*编辑器部分*/
-.editor-box{
-	width: 950px;
-	height: 120px;/*设置编辑器大小*/
-}
+/*/*设置编辑器大小*/*/
+/*.editor-box{
+	width: 800px;
+	height: 300px;
+}*/
 
 
 
