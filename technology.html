@@ -676,8 +676,263 @@
 	    </div>
 	    <!--con5结束-->
 	    <!--con6开始-->
-	    <div class="con6 con6tech">
-	    	<p>服务设置<span>资源管理</span></p>
+	    <div class="con6">
+	    	<form>
+	    		<p><span class="cright">服务设置</span><span class="letterBlue">资源管理</span></p>
+	    		<fieldset class="c6Techone">
+	    			<span class="cright">服务要素</span>
+	    			<input type="checkbox" checked="checked">服务资源
+	    			<input type="checkbox" checked="checked">服务人员
+	    			<input type="checkbox" checked="checked">服务项目
+	    			<input type="checkbox" checked="checked">时间表
+	    		</fieldset>
+	    		<fieldset class="c6Techtwo">
+	    			<span class="cright">服务资源</span>
+	    			<span class="cright">
+	    				资源归属
+	    				<select name="资源归属" >
+                            <option value="">**市**区**分店</option>
+                            <option value="">**市**区**分店</option>
+                            <option value="">**市**区**分店</option>
+                            <option value="">**市**区**分店</option>
+                       </select>
+                       <input type="image" src="img/addlitter.png" align="center"/>
+	    			</span>
+	    			<span class="cright">
+	    				选择资源
+	    				<select name="选择资源" >
+                            <option value="">3号厅</option>
+                            <option value="">2号厅</option>
+                            <option value="">1号厅</option>
+                            <option value="">4号厅</option>
+                       </select>
+                       <input type="image" src="img/addlitter.png" align="center"/>
+	    			</span>
+	    			<span class="cright">
+	    				资源来源
+	    				<select name="资源来源" >
+                            <option value="">组织所有</option>
+                            <option value="">个人所有</option>
+                       </select>
+                       <input type="image" src="img/addlitter.png" align="center"/>
+	    			</span>
+	    			<ul class="c6trademark">
+			        	<li>荧屏：22M*16M</li>
+			        	<li>3D投影：支持</li>
+			        	<li>行数：15</li>
+			        	<li>列数：26列</li>
+			        	<li>座位总数：286座</li>
+			        	<li>情侣座：8</li>
+			        </ul>
+	    		</fieldset>
+	    		<fieldset class="c6Techthree">
+	    			<span class="cright">服务人员</span>
+	    			<input type="image" src="img/addlitter.png" align="center">
+	    			<span class="">
+	    				服务员
+	    				<select name="服务员" >
+                            <option value="">李德光</option>
+                            <option value="">李德光</option>
+                            <option value="">李德光</option>
+                            <option value="">李德光</option>
+                        </select>
+                        <input type="checkbox" checked="checked">本人
+                        <button type='submit'>加入</button>
+	    			</span>
+	    			<table width="950" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
+			        	<tbody></tbody>
+			        	<tr>
+			        		<td><img src="img/trash.png"><img src="img/square.png"></td>
+			        		<td>姓名</td>
+			        		<td>性别</td>
+			        		<td>身份证</td>
+			        		<td>驾龄</td>
+			        		<td>软信号</td>
+			        	</tr>
+			        	<tr>
+			        		<td><img src="img/delete2.png"><img src="img/squ1.png"></td>
+			        		<td>张三</td>
+			        		<td>男</td>
+			        		<td>5777********0000</td>
+			        		<td>8年</td>
+			        		<td>88888888</td>
+			        	</tr>
+			        	<tr>
+			        		<td>&nbsp</td>
+			        		<td>&nbsp</td>
+			        		<td>&nbsp</td>
+			        		<td>&nbsp</td>
+			        		<td>&nbsp</td>
+			        		<td>&nbsp</td>
+			        	</tr>
+			        </table>
+	    		</fieldset>
+	    		<fieldset>
+	    			<p>服务项目</p>
+	    			<span>当前《时间安排表》</span><button type='submit'>保存</button>
+	    			<span>资源</span>
+	    			<select name="资源" >
+				        <option value="">3号厅</option>
+				        <option value="">号厅</option>
+				        <option value="">1号厅</option>
+				        <option value="">4号厅</option>
+			        </select>
+			        日期<input type="date" name="date" /> 
+	    		</fieldset>
+	    		<fieldset class="c6FieBOx">
+	    			<span>项目</span>
+	    			<select name="项目" >
+				        <option value="">星际迷航：超越星辰</option>
+				        <option value="">大话西游3</option>
+				        <option value="">铁拳</option>
+				        <option value="">幸运是我</option>
+			        </select>
+			        <img src="img/addlitter.png"/>
+			        时长<input type="text" value="120" onfocus="javascript:if(this.value=='120')this.value='';"/>
+			        <select name="分钟" >
+				        <option value="">分钟</option>
+				        <option value="">小时</option>
+				        <option value="">天</option>
+			        </select>
+			        开始<input type="text" value="11:00" onfocus="javascript:if(this.value=='11:00')this.value='';"/>
+			        结束<input type="text" value="13:00" onfocus="javascript:if(this.value=='13:00')this.value='';"/>
+			        间隔开始<input type="text" value="5" onfocus="javascript:if(this.value=='5')this.value='';"/>
+			        <select name="分钟" >
+				        <option value="">分钟</option>
+				        <option value="">小时</option>
+				        <option value="">天</option>
+				        <img src="img/addlitter.png" />
+			        </select>
+			        <button type='submit'>加入</button>
+			        <table width="950" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
+			        	<tbody></tbody>
+			        	<tr>
+			        		<td><img src="img/trash.png"><img src="img/square.png"></td>
+			        		<td>资源名称</td>
+			        		<td>服务上限</td>
+			        		<td>服务项目</td>
+			        		<td>服务时段</td>
+			        		<td>服务时长</td>
+			        	</tr>
+			        	<tr>
+			        		<td><img src="img/delete2.png"><img src="img/squ1.png"></td>
+			        		<td>3号厅</td>
+			        		<td>286</td>
+			        		<td>星际迷航3：超越星辰</td>
+			        		<td>11:00至13:00</td>
+			        		<td>120分钟</td>
+			        	</tr>
+			        	<tr>
+			        		<td>&nbsp</td>
+			        		<td>3号厅</td>
+			        		<td>286</td>
+			        		<td>大话西游3</td>
+			        		<td>13:05至15:25</td>
+			        		<td>140分钟</td>
+			        	</tr>
+			        </table>
+			        <div style="height:2px;width:680px;background: #EEEEEE;"></div>
+	    		</fieldset>
+	    		<fieldset>
+	    			<span>其他《时间安排表》</span><button type='submit'>编辑</button>
+	    			<table width="950" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
+			        	<tbody></tbody>
+			        	<tr>
+			        		<td><img src="img/trash.png"><img src="img/square.png"></td>
+			        		<td>资源名称</td>
+			        		<td>服务上线</td>
+			        		<td>服务项目</td>
+			        		<td>日期</td>
+			        		<td>服务时段</td>
+			        		<td>服务时长</td>
+			        	</tr>
+			        	<tr>
+			        		<td><img src="img/delete2.png"><img src="img/squ1.png"></td>
+			        		<td>2号厅</td>
+			        		<td>286</td>
+			        		<td>幸运是我</td>
+			        		<td>8:27</td>
+			        		<td>11:00至13:00</td>
+			        		<td>120分钟</td>
+			        	</tr>
+			        	<tr>
+			        		<td>&nbsp</td>
+			        		<td>3号厅</td>
+			        		<td>286</td>
+			        		<td>铁拳</td>
+			        		<td>8:27</td>
+			        		<td>13:05至15:25</td>
+			        		<td>140分钟</td>
+			        	</tr>
+			        </table>
+	    		</fieldset>
+	    		<div class="c6popup">
+	    			<div class="c6ptitle">
+	    				<ul>
+	    					<li><a class="" href=''><img src="img/delect1.png"></a></li>
+	    					<li>服务资源新增</li>
+	    					<li><a href="">保存</a></li>
+	    				</ul>
+	    			</div>
+	    		    <div class="c6Techpop">
+	    		    	<ul>
+	    		    		<li>
+	    		    			姓名：
+	    		    			<input type="text" value="欧阳某女" onfocus="javascript:if(this.value=='欧阳某女')this.value='';"/>
+	    		    		</li>
+	    		    		<li>
+	    		    			<select name="性别" >
+                                    <option value="">女</option>
+                                    <option value="">男</option>
+                               </select>
+	    		    		</li>
+	    		    		<li>
+	    		    			软信号
+	    		    			<input type="text" value="12345678" onfocus="javascript:if(this.value=='12345678')this.value='';"/>
+	    		    		</li>
+	    		    	</ul>
+	    		    	<ul>
+	    		    		<li>
+	    		    			身份证
+	    		    			<input type="text" value="12345678***" onfocus="javascript:if(this.value=='12345678***')this.value='';"/>
+	    		    		</li>
+	    		    		<li>
+	    		    			实力指标
+	    		    			<select name="实力指标" >
+                                    <option value="">驾龄</option>
+                                    <option value="">驾龄</option>
+                                    <option value="">驾龄</option>
+                                    <option value="">驾龄</option>
+                                </select>
+                                <input type="text" value="5年" onfocus="javascript:if(this.value=='5年')this.value='';" style="width: 50px;"/>
+	    		    		</li>
+	    		    		<li>
+	    		    			<button type='submit'>新增指标</button>
+	    		    		</li>
+	    		    	</ul>
+	    		    	<ul>
+	    		    		<li>本人正面实拍</li>
+	    		    		<li>身份证正面实拍</li>
+	    		    		<li>身份证背面实拍</li>
+	    		    	</ul>
+	    		    	<ul>
+	    		    		<li>
+	    		    			<a href="#"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
+	    						<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+	    		    		</li>
+	    		    		<li>
+	    		    			<a href="#"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
+	    						<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+	    		    		</li>
+	    		    		<li>
+	    		    			<a href="#"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
+	    						<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+	    		    		</li>
+	    		    	</ul>
+	    		    </div>
+	    		    
+	    		</div>
+	    	</form>
 	    </div>
 	    <!--con6结束-->
 	     <!--con7开始-->

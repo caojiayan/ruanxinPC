@@ -13,6 +13,10 @@ a{
 	color: red;
 	padding-right: 10px;
 }
+/*显示蓝色*/
+.letterBlue{
+	color: #66b0fe;
+}
 /*每个列表行间距离设置为10px的*/
 li{
 	line-height: 22px;
@@ -89,12 +93,18 @@ button{
 	border: #a0a0a0;
 	color:#FFFFFF;
 }
+input[type="image"]{
+	border-bottom-width: 0;
+}
 body{
 	margin: 0 auto;
 	font-family:"microsoft yahei" ,sans-serif;
 	font-size: 16px;
 }
-
+/*右内边距25px*/
+.cright{
+	padding-right: 25px !important;
+}
 
 
 /*header开始*/
@@ -627,9 +637,7 @@ body{
 .con6 fieldset{
 	padding: 5px 0;
 }
-.c61 span{
-	float: left;
-}
+
 .c61one{ 
 	float: left;
 	width: 30%;
@@ -641,21 +649,20 @@ body{
 	padding: 5px 0 5px 30px;
 	background: url(../img/aa.png) left center no-repeat;
 }
-.con6 p span{
-	padding-left: 10px;
-	color: dodgerblue;
-}
 
 .con6 form fieldset span{
 	padding: 0 10px 0 25px;
 }
 .c6trademark{
 	margin-top: 10px;
-	padding: 5px 0 5px 32px;
+	margin-left: 22px;
+	padding: 0 0 5px 26px;
 	border-radius: 5px;
+	background: #EEEEEE;
 }
 .con6 .c6trademark li{
 	display: inline-block;
+	padding: 0 20px;
 }
 .con6 .c6trademark li:first-child{
 	padding-left: 0;
@@ -729,7 +736,7 @@ body{
 
 .c6ptitle li:nth-of-type(2),
 .c7ptitle li:nth-of-type(2){
-	padding-left: 280px;
+	padding-left:42%;
 }
 .c6pone ul{
 	margin: 15px;

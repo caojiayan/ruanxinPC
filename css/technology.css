@@ -18,11 +18,13 @@
 	padding-left: 0;
 }
 
-/*con6*/
-.con6tech{
-	padding-bottom: 200px;
+/*con6部分*/
+.c6Techpop ul{
+	margin: 10px 0 5px 100px;
 }
-
+.c6Techpop ul li{
+	width: 30%;
+}
 /*con7*/
 .c7inpwidtech{
 	width: 60px;
