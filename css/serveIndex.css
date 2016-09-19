@@ -105,7 +105,10 @@ body{
 .cright{
 	padding-right: 25px !important;
 }
-
+/*左内边距16px*/
+.cleft16px{
+	padding-left: 16px;
+}
 
 /*header开始*/
 #libg {
@@ -276,7 +279,7 @@ body{
 }
 
 .con1Ca3{
-	padding:0 0 5px 16px;
+	padding:0 0 0 16px;
 }
 .con1Ca1,
 .con1Ca2,
@@ -287,12 +290,14 @@ body{
 	margin-top: 5px;
 }
 /*con1中类别选择新增*/
-.c1input {
+.c1Proinput1,
+.c1Proinput2 {
 	width:35px;
 	float: left;
 }
 .cs3 input[type="button"],
-.c1input {
+.c1Proinput1,
+.c1Proinput2 {
 	background:url(../img/addlitter.png) no-repeat center right;
 	border-bottom-width: 0;	
 }
@@ -335,12 +340,12 @@ body{
 
 .cs3left{
 	margin-right: 40px;
-	padding: 0 10px;
+	padding: 0 10px 0 0;
 	color: #fc6700;
 }
 .cs3right span{
-	margin-left: 10px;
-	padding-left: 20px;
+	/*margin-left: 10px;*/
+	padding-left: 25px;
 	background: url(../img/keylitter.png) left center no-repeat;
 }
 
@@ -489,7 +494,7 @@ body{
 	padding-top:10px;
 }
 .c5Appleft{
-	padding-left: 120px !important;
+	padding-left: 125px !important;
 }
 .letterSpace{
 	padding-left: 16px;
@@ -640,13 +645,13 @@ body{
 
 .c61one{ 
 	float: left;
-	width: 30%;
+	width: 28%;
 }
 .c61one input{
 	width: 30px;
 }
 .con6 p{
-	padding: 5px 0 5px 30px;
+	padding: 5px 0 5px 25px;
 	background: url(../img/aa.png) left center no-repeat;
 }
 
@@ -682,7 +687,10 @@ body{
 .c6FieBOx input{
 	width: 50px;
 }
-
+.c61 .cright{
+	float: left;
+	padding-top: 5px;
+}
 /*con6新增按钮*/
 .c61 input[type='image']{
 	border-bottom-width: 0px;
@@ -695,7 +703,7 @@ body{
 /*con6服务资源新增*/
 .c6popup,
 .c7Popup{
-	width: 1000px;
+	width: 1060px;
 	margin: 0 auto ;
 	margin-left: 5px;
 	border: 1px solid #EEEEEE;
@@ -762,14 +770,17 @@ body{
 }
 .c7pone ul,
 .c6ptwo ul{
-	margin: 5px 0;
+	margin: 5px 16px;
 }
 .c6ptwo ul li{
-	width: 30%;
+	width: 32%;
+}
+.c6ptwo ul li:nth-of-type(2){
+	width: 35%;
 }
 .c6pthree,
 .c6pfour{
-	margin: 10px 0;
+	margin: 10px 16px;
 }
 .c6pthree img{
 	margin-left: 10px;
@@ -778,6 +789,7 @@ body{
 .c6six,
 .c6seven{
 	padding-bottom: 10px;
+	padding-left: 16px;
 }
 .c6five .c6f1{
 	border: 1px solid #999;
@@ -811,7 +823,9 @@ body{
 .c7seven li{
 	display: inline-block;
 }
-
+.c7oneProli{
+	padding-right: 20px;
+}
 .c7two li:first-child input{
 	width: 50px;
 }
@@ -821,7 +835,7 @@ body{
 
 .c7one li,
 .c7two li{
-	width: 32%;
+	width: 30%;
 }
 .c7two li:first-child{
 	padding: 0;
@@ -962,9 +976,9 @@ body{
 .c8one li{
 	display: inline-block;
 }
-.c8one li:nth-of-type(2){
+/*.c8one li:nth-of-type(2){
 	padding-left: 50px;
-}
+}*/
 .c8one li:nth-of-type(2) span{
 	color: dodgerblue;
 	padding: 0 10px;

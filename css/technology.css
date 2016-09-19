@@ -25,13 +25,19 @@
 .c6Techpop ul li{
 	width: 30%;
 }
+/*con6中服务设置中默认隐藏*/
+.c6Techtwo,
+.c6Techthree,
+.c6Techfour{
+	display: none;
+}
 /*con7*/
 .c7inpwidtech{
 	width: 60px;
 }
 
 .c7Ultech li{
-	width: 32%;
+	width: 30%;
 	display: inline-block;
 }
 

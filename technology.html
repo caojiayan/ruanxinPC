@@ -76,7 +76,7 @@
             </ul>
         </div>
         <!--content开始-->
-<div class="content">
+    <div class="content">
 	<div class="con1 clearfix">
 		<div class="con1_nav">
 			<p>展开左侧<span>新增 - 服务（技术类）</span></p>
@@ -89,14 +89,16 @@
 				<form action="" method="">
 					<fieldset>
 					    <legend></legend>
-					        <div class="cs1">类目搜索 <input type="text"  value="动画制作" onfocus="javascript:if(this.value=='动画制作')this.value='';"/>
+					        <div class="cs1">
+					        	<span class="cright">类目搜索 </span>
+					        	<input type="text"  value="动画制作" onfocus="javascript:if(this.value=='动画制作')this.value='';"/>
 					            <button type='submit'>确定</button>
 					        </div>
 				    </fieldset>
 				    <fieldset>
-					    <legend>类别选择</legend>
+					    <legend class="cright">类别选择</legend>
 					        <div class="cs2">1 级
-					            <select name="1级" class="cs21technology" id="">
+					            <select name="1级" class="cs21technology cs2one" id="">
 					        	    <option value="服务">服务</option>
 					        	    <option value="服务1">服务1</option>
 					        	    <option value="服务2">服务2</option>
@@ -104,7 +106,7 @@
 					            </select>
 					        </div>
 					        <div class="cs2">2 级
-					            <select name="1级" class="cs22technology" id="">
+					            <select name="1级" class="cs22technology cs2two" id="">
 					        	    <option value="产权类">技术类</option>
 					        	    <option value="产权类1">技术类1</option>
 					        	    <option value="产权类2">技术类2</option>
@@ -112,7 +114,7 @@
 					            </select>
 					        </div>
 					        <div class="cs2">3 级
-					            <select name="1级" class="cs23technology" id="">
+					            <select name="1级" class="cs23technology cs2three" id="">
 					        	    <option value="商标">动画制作</option>
 					        	    <option value="商标1">动画制作1</option>
 					        	    <option value="商标2">动画制作2</option>
@@ -120,17 +122,17 @@
 					            </select>
 					        </div>
 				    </fieldset>
-				    <div class="c1input">
-				    	<input type="button" id="c1techbtn">  
+				    <div class="c1Proinput1">
+				    	<input type="button" style="background: url(img/addlitter.png) no-repeat center;" id="" value=""> 
 				    </div>
-			</div>
+			    </div>
 			<div class="con1Ca2">
 				<div class="cs3">
 					<fieldset>
-				    <span>选定类目</span>
+				    <span class="cright">选定类目</span>
 				    <div class="cs3left"></div>
 				    	<div class="cs3right">
-				    		<span>服务方式</span>
+				    		<span class="cright">服务方式</span>
 					    <label><input name="服务方式" type="radio" value="" />插画</label> 
                         <label><input name="服务方式" type="radio" value="" />配音 </label> 
                         <label><input name="服务方式" type="radio" value="" />培训</label> 
@@ -139,13 +141,16 @@
                              <input class="cs3input" value="自定义服务方式"  onfocus="javascript:if(this.value=='自定义服务方式')this.value='';"/>
                         </label>
                        </div>
-				    	<input type="button" /> 
+				    	<div class="c1Proinput2 c1Techinput2">
+				    		<input type="button" style="background: url(img/addlitter.png) no-repeat center;" id="" value=""> 
+				    	</div> 
 				    </fieldset>
 			    </div>
 		    </div>
 		    <div class="con1Ca3 clearfix">
 		        <fieldset>
-				    <div class="cs1">服务项目  
+				    <div class="cs1">
+				    	<span class="cright">连锁品牌</span>
 				    	<input type="text"  value="**动漫" onfocus="javascript:if(this.value=='**动漫')this.value='';"/>
 				        <button type='submit'>确定</button>
 				        <button type='submit'>新增品牌</button>
@@ -156,14 +161,13 @@
 	</div>
 </div>
 <!--con1结束-->
-		
-
 <!--con2开始-->
 <div class="con2 clearfix">
 	<form action="" method="">
 		<fieldset>
 			<legend></legend>
-				<div class="cs1">服务项目 
+				<div class="cs1">
+					<span class="cright">服务项目</span>
 					<input type="text"  value="卡通类动画合成制作" onfocus="javascript:if(this.value=='卡通类动画合成制作')this.value='';"/>
 				</div>
 				<p>10个中文内 提示：（用户搜索时，系统会自动匹配您的商品的相应属性，无须写标题）</p>
@@ -171,7 +175,8 @@
 		
 		<fieldset>
 			<legend></legend>
-			     <div class="cs0">服务别称   
+			     <div class="cs0">
+			     	<span class="cright">服务别称</span>
 			     	<input type="text"  value="请输入服务别称" onfocus="javascript:if(this.value=='请输入服务别称')this.value='';"/>
 			        <button type='submit'>新增</button>
 			     </div>
@@ -256,18 +261,18 @@
 					        <label><input name="周期购" type="radio" value="" />不支持</label> 
                             <label><input name="周期购" type="radio" value="" />支持</label>
                             <span class="cx2Rspan">支持周期</span>
-                            <input type="checkbox" checked="checked">隔N天/次
-                            <input type="checkbox" checked="checked">每周固定周几
-                            <input type="checkbox" checked="checked">每月固定日期
+                            <input type="checkbox" >隔N天/次
+                            <input type="checkbox" >每周固定周几
+                            <input type="checkbox" >每月固定日期
 				        </fieldset>
 				        <fieldset>
 					        <span class="cx2Lspan letterSpace">定制</span>
 					        <label><input name="定制" type="radio" value="" />不支持</label> 
                             <label><input name="定制" type="radio" value="" />支持</label>
                             <span class="cx2Rspan">定制方式</span>
-                            <input type="checkbox" checked="checked">按图片
-                            <input type="checkbox" checked="checked">按样板
-                            <input type="checkbox" checked="checked">设计稿
+                            <input type="checkbox" >按图片
+                            <input type="checkbox" >按样板
+                            <input type="checkbox" >设计稿
 				        </fieldset>
 				        <fieldset>
 					        <span class="cx2Lspan">数量至少
@@ -291,18 +296,18 @@
 					        <label><input name="周期购" type="radio" value="" />不支持</label> 
                             <label><input name="周期购" type="radio" value="" />支持</label>
                             <span class="cx2Rspan">支持周期</span>
-                            <input type="checkbox" checked="checked">隔N天/次
-                            <input type="checkbox" checked="checked">每周固定周几
-                            <input type="checkbox" checked="checked">每月固定日期
+                            <input type="checkbox" >隔N天/次
+                            <input type="checkbox" >每周固定周几
+                            <input type="checkbox" >每月固定日期
 				        </fieldset>
 				        <fieldset>
 					        <span class="cx2Lspan letterSpace">定制</span>
 					        <label><input name="定制" type="radio" value="" />不支持</label> 
                             <label><input name="定制" type="radio" value="" />支持</label>
                             <span class="cx2Rspan">定制方式</span>
-                            <input type="checkbox" checked="checked">按图片
-                            <input type="checkbox" checked="checked">按样板
-                            <input type="checkbox" checked="checked">设计稿
+                            <input type="checkbox" >按图片
+                            <input type="checkbox" >按样板
+                            <input type="checkbox" >设计稿
 				        </fieldset>
 				        <fieldset>
 					        <span class="cx2Lspan">数量至少
@@ -447,11 +452,11 @@
 			                <h4>付款方式</h4>
 			                <div class="cx3_in">
 				                <img src="img/cxno.png" />
-				                <input type="checkbox" checked="checked">全付<span>(全付，先金额付款再发货，不支持预售交易类型）</span>
+				                <input type="checkbox" >全付<span>(全付，先金额付款再发货，不支持预售交易类型）</span>
 			                </div>
 			                <div class="cx3_in">
 				                <img src="img/cxno.png" />
-				                <input type="checkbox" checked="checked">到付<span>(到付，下单后商家发货，客户验收合格后全额支付货款）</span>
+				                <input type="checkbox" >到付<span>(到付，下单后商家发货，客户验收合格后全额支付货款）</span>
 			                </div>
 			                <div class="cx3_in">服务费 
 				                <label><input name="服务费" type="radio" value="" />商家出</label> 
@@ -459,11 +464,11 @@
 			                </div>
                             <div class="cx3_in">
             	                <img src="img/cxno.png" />
-            	                <input type="checkbox" checked="checked">面付<span>(面付，面对面交易，常用于同城、附近的交易支付）</span>
+            	                <input type="checkbox" >面付<span>(面付，面对面交易，常用于同城、附近的交易支付）</span>
                             </div>
 			                <div class="cx3_in">
 				                <img src="img/cxno.png" />
-				                <input type="checkbox" checked="checked">分段<span>(分段，即先付定金，验收合格后再付尾款）</span>
+				                <input type="checkbox" >分段<span>(分段，即先付定金，验收合格后再付尾款）</span>
 			                </div>
 			                <div class="cx3_in">订金占比
 				                <input type="text"  value="35" onfocus="javascript:if(this.value=='35')this.value='';"/>%  
@@ -473,10 +478,10 @@
 			                </div>
                             <div class="cx3_on">
                                 <span class="cright">支持货币</span>
-                                <input type="checkbox" checked="checked">人民币
-                                <input type="checkbox" checked="checked">软信币
-                                <input type="checkbox" checked="checked">美元
-                                <input type="checkbox" checked="checked">其他
+                                <input type="checkbox" >人民币
+                                <input type="checkbox" >软信币
+                                <input type="checkbox" >美元
+                                <input type="checkbox" >其他
                                 <select name="区级" id="">
 				                    <option value="">欧元</option>
 				                    <option value="">日元</option>
@@ -613,9 +618,9 @@
 	    		<div class="c51">
 	    		<fieldset>
 	    			<span>签约方式</span>
-                    <input type="checkbox" checked="checked">网络签约
-                    <input type="checkbox" checked="checked">到店签约
-                    <input type="checkbox" checked="checked">上面签约
+                    <input type="checkbox" >网络签约
+                    <input type="checkbox" >到店签约
+                    <input type="checkbox" >上面签约
 	    		</fieldset>
 	    		</div>
 	    		<fieldset>
@@ -662,9 +667,9 @@
 	    		</div>
 	    		<fieldset>
 	    			<span>退单保障</span>
-	    			<input type="checkbox" checked="checked">随时可退
-                    <input type="checkbox" checked="checked">过期自动退
-                    <input type="checkbox" checked="checked">有条件退款 （客户不满意，协商退款）
+	    			<input type="checkbox" >随时可退
+                    <input type="checkbox" >过期自动退
+                    <input type="checkbox" >有条件退款 （客户不满意，协商退款）
 	    		</fieldset>
 	    		<fieldset>
 	    			<span>营业时间</span>
@@ -681,10 +686,9 @@
 	    		<p><span class="cright">服务设置</span><span class="letterBlue">资源管理</span></p>
 	    		<fieldset class="c6Techone">
 	    			<span class="cright">服务要素</span>
-	    			<input type="checkbox" checked="checked">服务资源
-	    			<input type="checkbox" checked="checked">服务人员
-	    			<input type="checkbox" checked="checked">服务项目
-	    			<input type="checkbox" checked="checked">时间表
+	    			<input type="checkbox" id="c6Techcheck1" value="点击隐藏">服务资源
+	    			<input type="checkbox" id="c6Techcheck2" value="点击隐藏">服务人员
+	    			<input type="checkbox" id="c6Techcheck3" value="点击隐藏">服务项目
 	    		</fieldset>
 	    		<fieldset class="c6Techtwo">
 	    			<span class="cright">服务资源</span>
@@ -696,7 +700,7 @@
                             <option value="">**市**区**分店</option>
                             <option value="">**市**区**分店</option>
                        </select>
-                       <input type="image" src="img/addlitter.png" align="center"/>
+                       <input type="button" style="background: url(img/addlitter.png) no-repeat center;"onclick="sgbox(1)" value=""/> <!--新增按钮-->
 	    			</span>
 	    			<span class="cright">
 	    				选择资源
@@ -705,8 +709,8 @@
                             <option value="">2号厅</option>
                             <option value="">1号厅</option>
                             <option value="">4号厅</option>
-                       </select>
-                       <input type="image" src="img/addlitter.png" align="center"/>
+                      </select>
+                        <img src="img/addlitter.png" align="center" onclick="sgbox(1)"; return="false;">
 	    			</span>
 	    			<span class="cright">
 	    				资源来源
@@ -714,7 +718,7 @@
                             <option value="">组织所有</option>
                             <option value="">个人所有</option>
                        </select>
-                       <input type="image" src="img/addlitter.png" align="center"/>
+                       <img src="img/addlitter.png" align="center">
 	    			</span>
 	    			<ul class="c6trademark">
 			        	<li>荧屏：22M*16M</li>
@@ -736,7 +740,7 @@
                             <option value="">李德光</option>
                             <option value="">李德光</option>
                         </select>
-                        <input type="checkbox" checked="checked">本人
+                        <input type="checkbox" >本人
                         <button type='submit'>加入</button>
 	    			</span>
 	    			<table width="950" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
@@ -767,6 +771,7 @@
 			        	</tr>
 			        </table>
 	    		</fieldset>
+	    		<div class="c6Techfour">
 	    		<fieldset>
 	    			<p>服务项目</p>
 	    			<span>当前《时间安排表》</span><button type='submit'>保存</button>
@@ -866,10 +871,12 @@
 			        	</tr>
 			        </table>
 	    		</fieldset>
-	    		<div class="c6popup">
+	    		</div>
+	    		<!--服务资源新增-->
+	    		<div class="c6popup" id="c6Techpopup" style="top:110px;">
 	    			<div class="c6ptitle">
 	    				<ul>
-	    					<li><a class="" href=''><img src="img/delect1.png"></a></li>
+	    					<li><a class='x' href=''; onclick="sgbox(1)"; return="false;"><img src="img/delect1.png"></a></li>
 	    					<li>服务资源新增</li>
 	    					<li><a href="">保存</a></li>
 	    				</ul>
@@ -940,7 +947,7 @@
 	    	<form>
 	    		<fieldset>
 	    			<ul class="c7one">
-	    				<li><span class="coRed">服务约定</span><span>(服务>技术类>动画制作）</span></li>
+	    				<li><span class="coRed cright">服务约定</span></li>
 	    				<li class="c7spantech" ><button type='submit'>新增约定</button></li>
 	    				<li><span>提示：与类目有关的“公共属性”</span></li>
 	    			</ul>
@@ -970,8 +977,8 @@
 	    				</li>
 	    				<li>
 	    					<span>需求文档</span>
-	    					<input type="checkbox" checked="checked">客户提供
-                            <input type="checkbox" checked="checked">协商拟定
+	    					<input type="checkbox">客户提供
+                            <input type="checkbox">协商拟定
 	    				</li>
 	    				<li>
 	    					<span>服务合同</span>
@@ -981,7 +988,7 @@
 	    			</ul>
 	    		</fieldset>
 	    		<fieldset>
-	    			<span class="coRed">服务内容</span>
+	    			<span class="coRed cright">服务内容</span>
 	    			<img src="img/why.png">
 	    			<span>提示：重点内容、服务优势等简要说明，限100字数</span>
 	    		</fieldset>
@@ -1006,12 +1013,12 @@
 	    				<span>提示：软信支持“创建电话订单”</span>
 	    				</li>
 	    				<li>接单类型
-	    					<input type="checkbox" checked="checked">下单
+	    					<input type="checkbox">下单
 	    				</li>
 	    			</ul>
 	    		</fieldset>
 	    		<fieldset>
-	    			<span class="coRed">商家补充属性</span>
+	    			<span class="coRed cright">商家补充属性</span>
 	    			<input type='button' class="c7but" onclick="msbox(1)" value="新增属性">  <!--新增商品属性按钮-->
 	    			（提交后通过审核即可显示在APP端、网页端等）<br />
 	    			<ul class="c7seven">
@@ -1078,7 +1085,7 @@
 	    	<form>
 	    		<fieldset>
 	    			<ul class="c8one">
-	    				<li>周边服务</li>
+	    				<li class="cright">周边服务</li>
 	    				<li>前往<span>配送管理</span></li>
 	    			</ul>
 	    			<ul class="c8two">
@@ -1100,15 +1107,15 @@
 	    		<fieldset>
 	    			<ul class="c8three">
 	    				<li>
-	    					<span>提供发票</span>
+	    					<span class="cright">提供发票</span>
 	    					<label><input name="提供发票" type="radio" value="" />无
 	    					<label><input name="提供发票" type="radio" value="" />电子发票
 	    					<label><input name="提供发票" type="radio" value="" />纸质发票
 	    				</li>
 	    				<li>
-	    					<span>税点加收</span>
+	    					<span class="cright">税点加收</span>
 	    					<input type="text" value="0" onfocus="javascript:if(this.value=='0')this.value='';"/>%
-	    					<input type="checkbox" checked="checked">下单时计入贷款内（若客户需要开具发票）
+	    					<input type="checkbox" >下单时计入贷款内（若客户需要开具发票）
 	    				</li>
 	    			</ul>
 	    		</fieldset>

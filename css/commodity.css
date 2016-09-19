@@ -19,9 +19,9 @@
 .cont3{
 	padding: 10px 10px 5px 20px;
 }
-.cont2 input{
+/*.cont2 input{
 	width: 60px;
-}
+}*/
 .cont2Table {
 	margin: 10px 0 5px 0;
 }
@@ -61,6 +61,7 @@
 .cont3Ultwo{
 	margin: 10px 0 5px 25px;
 }
+
 /*cont4*/
 .con8{
 	border-bottom:none;

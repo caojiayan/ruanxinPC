@@ -1,12 +1,3 @@
-//con1中类目选择新增
-$(document).ready(function(){
-	$("#c1techbtn").click(function(){
-		var cx1=$(".cs21technology option").val();
-		var cx2=$(".cs22technology option").val(); 
-		var cx3=$(".cs23technology option").val(); 
-		$(".cs3left").append(cx1+">"+cx2+">"+cx3);
-	});
-});
 
 
 //con4中删除项目
@@ -52,3 +43,47 @@ $(document).ready(function(){
 	});
 });
 
+//con6
+$(function(){
+  $('#c6Techcheck1').click(function(){
+    if($('.c6Techtwo').is(':hidden')){
+      $('.c6Techtwo').show();
+      $('#c6Techcheck1').val('点击隐藏');
+    }
+    else{
+      $('.c6Techtwo').hide();
+      $('#c6Techcheck1').val('点击显示');
+    }
+  });
+});
+
+$(function(){
+  $('#c6Techcheck2').click(function(){
+    if($('.c6Techthree').is(':hidden')){
+      $('.c6Techthree').show();
+      $('#c6Techcheck2').val('点击隐藏');
+    }
+    else{
+      $('.c6Techthree').hide();
+      $('#c6Techcheck2').val('点击显示');
+    }
+  });
+});
+
+$(function(){
+  $('#c6Techcheck3').click(function(){
+    if($('.c6Techfour').is(':hidden')){
+      $('.c6Techfour').show();
+      $('#c6Techcheck3').val('点击隐藏');
+    }
+    else{
+      $('.c6Techfour').hide();
+      $('#c6Techcheck3').val('点击显示');
+    }
+  });
+});
+
+//con3中的服务资源新增
+function sgbox(n){
+            document.getElementById('c6Techpopup').style.display=n?'block':'none';     /* 点击按钮打开/关闭 对话框 */
+   }

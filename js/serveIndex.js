@@ -3,11 +3,12 @@
 
 //con1中类目选择新增
 $(document).ready(function(){
-	$("#c1btn").click(function(){
-		var cx1=$(".cs2one option").val();
-		var cx2=$(".cs2two option").val(); 
-		var cx3=$(".cs2three option").val(); 
-		$(".cs3left").append(cx1+">"+cx2+">"+cx3);
+	$(".c1Proinput1").click(function(){
+		var cx1=$(".cs2one option:selected").text();
+		var cx2=$(".cs2two option:selected").text(); 
+		var cx3=$(".cs2three option:selected").text();
+		$('.cs3left').html('');
+		$(".cs3left").append(cx1+">"+cx2+">"+cx3);//将下拉框的值追加到cs3left后面
 	});
 });
 
