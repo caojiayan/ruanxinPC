@@ -97,29 +97,68 @@
 				    </fieldset>
 				    <fieldset>
 					    <legend class="cright">类别选择</legend>
-					        <div class="cs2">1 级
-					            <select name="1级" class="cs21technology cs2one" id="">
-					        	    <option value="服务">服务</option>
-					        	    <option value="服务1">服务1</option>
-					        	    <option value="服务2">服务2</option>
-					        	    <option value="服务3">服务3</option>
-					            </select>
+					        <div class="cs2">
+					        	<div class="padleft5px">1级</div>
+					            <div class="dropdown">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor cs2one" type="text" value="服务" onfocus="javascript:if(this.value=='服务')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=服务>服务</li>
+				                        <li data-value=服务112>服务112</li>
+				                        <li data-value=服务223>服务223</li>
+				                        <li data-value=服务224>服务224</li>
+				                        <li data-value=服务335>服务335</li>
+				                        <li data-value=服务336>服务336</li>
+				                        <li data-value=服务447>服务447</li>
+				                        <li data-value=服务448>服务448</li>
+				                        <li data-value=服务559>服务559</li>
+			                        </ul>
+		                        </div>
 					        </div>
-					        <div class="cs2">2 级
-					            <select name="1级" class="cs22technology cs2two" id="">
-					        	    <option value="产权类">技术类</option>
-					        	    <option value="产权类1">技术类1</option>
-					        	    <option value="产权类2">技术类2</option>
-					        	    <option value="产权类3">技术类3</option>
-					            </select>
+					        <div class="cs2">
+					        	<div class="padleft5px">2级</div>
+					            <div class="dropdown">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor cs2two" type="text" value="技术类" onfocus="javascript:if(this.value=='技术类')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=技术类>技术类</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </div>
 					        </div>
-					        <div class="cs2">3 级
-					            <select name="1级" class="cs23technology cs2three" id="">
-					        	    <option value="商标">动画制作</option>
-					        	    <option value="商标1">动画制作1</option>
-					        	    <option value="商标2">动画制作2</option>
-					        	    <option value="商标3">动画制作3</option>
-					            </select>
+					        <div class="cs2">
+					        	<div class="padleft5px">3 级</div>
+					            <div class="dropdown">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor cs2three" type="text" value="动画制作" onfocus="javascript:if(this.value=='动画制作')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=动画制作>动画制作</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </div>
 					        </div>
 				    </fieldset>
 				    <div class="c1Proinput1">
@@ -482,12 +521,24 @@
                                 <input type="checkbox" >软信币
                                 <input type="checkbox" >美元
                                 <input type="checkbox" >其他
-                                <select name="区级" id="">
-				                    <option value="">欧元</option>
-				                    <option value="">日元</option>
-				                    <option value="">港币</option>
-				                    <option value="">泰铢</option>
-			                    </select>
+                                <span class="dropdown padleft5px">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor cs2three" type="text" value="欧元" onfocus="javascript:if(this.value=='欧元')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=欧元>欧元</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span>
 			                </div>
 			                <div class="cx3_do">
 				                <span>软信币抵扣比例</span>
@@ -503,19 +554,44 @@
 	    	<form action="" method="">
 	    		<div class="cv1">
 	    		<fieldset>
-	    		        <span>设置单位 </span>计量
-	    		        <select name="计量单位" >
-				            <option value="">秒</option>
-				            <option value="">分</option>
-				            <option value="">小时</option>
-				            <option value="">天</option>
-			            </select>
-			                      计价<select name="计价单位" >
-				            <option value="">元</option>
-				            <option value="">百</option>
-				            <option value="">千</option>
-				            <option value="">万</option>
-			            </select>
+	    		        <span>设置单位 </span>
+	    		        计量
+	    		        <span class="dropdown padleft5px numWidth">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor cs2three" type="text" value="秒" onfocus="javascript:if(this.value=='秒')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=秒>秒</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span>
+			                      计价<span class="dropdown padleft5px numWidth">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor cs2three" type="text" value="元" onfocus="javascript:if(this.value=='元')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=元>元</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span>
 	                                                       客户购买1个服务=
 				            <input type="text" value="10" size="5" onfocus="javascript:if(this.value=='10')this.value='';"/>秒
 			        </fieldset>

@@ -158,108 +158,232 @@
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright">有机食品</span>
-            					<select name="有机食品" >
-                                    <option value="">否/COFCC-R-0401-0XXX</option>
-                                    <option value="">否/COFCC-R-0401-0XXX</option>
-                                    <option value="">否/COFCC-R-0401-0XXX</option>
-                                    <option value="">否/COFCC-R-0401-0XXX</option>
-                                </select>
+            					<span class="dropdown" style="z-index: 10010;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="有机食品" onfocus="javascript:if(this.value=='有机食品')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=有机食品>有机食品</li>
+				                        <li data-value=服务112>服务112</li>
+				                        <li data-value=服务223>服务223</li>
+				                        <li data-value=服务224>服务224</li>
+				                        <li data-value=服务335>服务335</li>
+				                        <li data-value=服务336>服务336</li>
+				                        <li data-value=服务447>服务447</li>
+				                        <li data-value=服务448>服务448</li>
+				                        <li data-value=服务559>服务559</li>
+			                        </ul>
+		                        </span>
+		                        <a href="#"><img class="normalFace" src="img/upload.png" fileSelect();"></a>
+	    						<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
             				</li>
             				<li>
             					<span class="cright">绿色食品</span>
-            					<select name="绿色食品" >
-                                    <option value="">否/COFCC-R-0401-0XXX</option>
-                                    <option value="">否/COFCC-R-0401-0XXX</option>
-                                    <option value="">否/COFCC-R-0401-0XXX</option>
-                                    <option value="">否/COFCC-R-0401-0XXX</option>
-                                </select>
+            					<span class="dropdown" style="z-index: 10010;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="否/LB-06-07" onfocus="javascript:if(this.value=='否/LB-06-07')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=否/LB-06-07>否/LB-06-07</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+		                        <img src="img/addlitter.png" align="center"/>
             				</li>
             			</ul>
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright">加工工艺</span>
-            					<select name="加工工艺" >
-                                    <option value="">若无匹配可新增</option>
-                                    <option value="">若无匹配可新增</option>
-                                    <option value="">若无匹配可新增</option>
-                                    <option value="">若无匹配可新增</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10009;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=加工工艺>加工工艺</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center" />
             				</li>
             				<li>
             					<span class="cright">包装方式</span>
-            					<select name="加工工艺" >
-                                    <option value="">袋装/礼品盒/散装</option>
-                                    <option value="">袋装</option>
-                                    <option value="">礼品盒</option>
-                                    <option value="">散装</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10009;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="袋装/礼盒装" onfocus="javascript:if(this.value=='袋装/礼盒装')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=袋装/礼盒装/散装>袋装/礼盒装/散装</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center"/>
             				</li>
             			</ul>
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright">原料产地</span>
-            					<select name="原料产地" >
-                                    <option value="">**市（行政区域）</option>
-                                    <option value="">**市（行政区域）</option>
-                                    <option value="">**市（行政区域）</option>
-                                    <option value="">**市（行政区域）</option>
-                                </select>
+            					<span class="dropdown" style="z-index: 10008;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=加工工艺>加工工艺</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
                                 <img src="img/addlitter.png" />
             				</li>
             				<li>
             					<span class="cright">生产方式</span>
-            					<select name="生产方式" >
-                                    <option value="">自有工厂/代工</option>
-                                    <option value="">自有工厂</option>
-                                    <option value="">代工</option>
-                                </select>
+            					<span class="dropdown" style="z-index: 10008;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=加工工艺>加工工艺</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
                                 <img src="img/addlitter.png" />
             				</li>
             			</ul>
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright cleft16px">品牌方</span>
-            					<select name="品牌方" >
-                                    <option value="">**市**公司</option>
-                                    <option value="">**市**公司</option>
-                                    <option value="">**市**公司</option>
-                                    <option value="">**市**公司</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10007;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="**市**公司" onfocus="javascript:if(this.value=='**市**公司')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=**市**公司>**市**公司</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center" />
             				</li>
             				<li>
             					<span class="cright">社会信用代码</span>
-            					<select name="社会信用代码" >
-                                    <option value="">91440111347372970E</option>
-                                    <option value="">91440111347372970E</option>
-                                    <option value="">91440111347372970E</option>
-                                    <option value="">91440111347372970E</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10007;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="91440111347" onfocus="javascript:if(this.value=='91440111347')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=91440111347739>91440111347739</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center"/>
             				</li>
             			</ul>
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright cleft16px">保质期</span>
-            					<select name="保质期" >
-                                    <option value="">12个月</option>
-                                    <option value="">6个月</option>
-                                    <option value="">3个月</option>
-                                    <option value="">18个月</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10006;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="12个月" onfocus="javascript:if(this.value=='12个月')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=12个月>12个月</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center" />
             				</li>
             				<li>
             					<span class="cright">储藏方式</span>
-            					<select name="储藏方式" >
-                                    <option value="">通风干燥处</option>
-                                    <option value="">通风干燥处</option>
-                                    <option value="">通风干燥处</option>
-                                    <option value="">通风干燥处</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10006;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="通风干燥处" onfocus="javascript:if(this.value=='通风干燥处')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=通风干燥处>通风干燥处</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center"/>
             				</li>
             			</ul>
             			<ul class="cont3Ul">
@@ -270,36 +394,72 @@
             				</li>
             				<li>
             					<span class="cright">食用方式</span>
-            					<select name="食用方式" >
-                                    <option value="">开袋即食</option>
-                                    <option value="">开袋即食</option>
-                                    <option value="">开袋即食</option>
-                                    <option value="">开袋即食</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10005;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor cs2two" type="text" value="开袋即食" onfocus="javascript:if(this.value=='开袋即食')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=开袋即食>开袋即食</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center"/>
             				</li>
             			</ul>
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright">执行标准号</span>
-            					<select name="执行标准号" >
-                                    <option value="">国家 GB/T19586</option>
-                                    <option value="">国家 GB/T19586</option>
-                                    <option value="">国家 GB/T19586</option>
-                                    <option value="">国家 GB/T19586</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10004;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor cs2two" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=加工工艺>加工工艺</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center"/>
                                 （国际/行业/企业）
             				</li>
             				<li>
             					<span class="cright">品种/种类</span>
-            					<select name="品种/种类" >
-                                    <option value="">吐鲁番葡萄干</option>
-                                    <option value="">吐鲁番葡萄干</option>
-                                    <option value="">吐鲁番葡萄干</option>
-                                    <option value="">吐鲁番葡萄干</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10004;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor cs2two" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=加工工艺>加工工艺</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center"/>
             				</li>
             			</ul>
             			<ul class="cont3Ul">
@@ -307,13 +467,25 @@
             					<span class="cright">食品添加剂</span>
             					<label><input name="食品添加剂" type="radio" value="" />无
             					<label><input name="食品添加剂" type="radio" value="" />有
-            					<select name="食品添加剂" >
-                                    <option value="">若无匹配可新增</option>
-                                    <option value="">若无匹配可新增</option>
-                                    <option value="">若无匹配可新增</option>
-                                    <option value="">若无匹配可新增</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10003;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor cs2two" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=加工工艺>加工工艺</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center"/>
             				</li>
             			</ul>
             			<div class="cont3Box">
@@ -348,45 +520,93 @@
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright cleft16px">生产方</span>
-            					<select name="生产方" >
-                                    <option value="">**市**公司</option>
-                                    <option value="">**市**公司</option>
-                                    <option value="">**市**公司</option>
-                                    <option value="">**市**公司</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10004;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="**市**公司" onfocus="javascript:if(this.value=='**市**公司')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=**市**公司>**市**公司</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center" />
             				</li>
             				<li>
             					<span class="cright">QS许可编号</span>
-            					<select name="QS许可编号" >
-                                    <option value="">QS6501 1702 0000</option>
-                                    <option value="">QS6501 1702 0000</option>
-                                    <option value="">QS6501 1702 0000</option>
-                                    <option value="">QS6501 1702 0000</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10004;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="QS6501 1702" onfocus="javascript:if(this.value=='QS6501 1702')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=QS6501 1702>QS6501 1702</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center"/>
             				</li>
             			</ul>
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright">工厂地址</span>
-            					<select name="工厂地址" >
-                                    <option value="">**省**市**区**街道**工业区**号</option>
-                                    <option value="">**省**市**区**街道**工业区**号</option>
-                                    <option value="">**省**市**区**街道**工业区**号</option>
-                                    <option value="">**省**市**区**街道**工业区**号</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10003;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=加工工艺>加工工艺</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center"/>
             				</li>
             				<li>
             					<span class="cright cleft16px">工厂电话</span>
-            					<select name="工厂电话" >
-                                    <option value="">若无匹配可新增</option>
-                                    <option value="">若无匹配可新增</option>
-                                    <option value="">若无匹配可新增</option>
-                                    <option value="">若无匹配可新增</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10003;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=加工工艺>加工工艺</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center" />
             				</li>
             			</ul>
             		</fieldset>
@@ -395,47 +615,95 @@
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright">婴幼儿可食用</span>
-            					<select name="婴幼儿可食用" >
-                                    <option value=""> < 3周岁，禁食</option>
-                                    <option value="">< 3周岁，禁食</option>
-                                    <option value="">< 3周岁，禁食</option>
-                                    <option value="">< 3周岁，禁食</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10002;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="< 3周岁，禁食" onfocus="javascript:if(this.value=='< 3周岁，禁食')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=< 3周岁，禁食>< 3周岁，禁食</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center"/>
             				</li>
             				<li>
             					<span class="cright">老年人可食用</span>
-            					<select name="老年人可食用" >
-                                    <option value="">牙口不好者，禁食</option>
-                                    <option value="">牙口不好者，禁食</option>
-                                    <option value="">牙口不好者，禁食</option>
-                                    <option value="">牙口不好者，禁食</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10002;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="牙口不好者禁食" onfocus="javascript:if(this.value=='牙口不好者禁食')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=牙口不好者，禁食>牙口不好者，禁食</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center" />
             				</li>
             			</ul>
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright cleft16px">孕妇可食用</span>
-            					<select name="孕妇可食用" >
-                                    <option value="">正常食用</option>
-                                    <option value="">正常食用</option>
-                                    <option value="">正常食用</option>
-                                    <option value="">正常食用</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10001;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="正常食用" onfocus="javascript:if(this.value=='正常食用')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=正常食用>正常食用</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center" />
             				</li>
             			<!--</ul>
             			<ul class="cont3Ul">-->
             				<li>
             					<span class="cright cleft16px">病患禁食</span>
-            					<select name="病患禁食" >
-                                    <option value="">若无匹配可新增</option>
-                                    <option value="">若无匹配可新增</option>
-                                    <option value="">若无匹配可新增</option>
-                                    <option value="">若无匹配可新增</option>
-                                </select>
-                                <img src="img/addlitter.png" />
+            					<span class="dropdown" style="z-index: 10001;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=无匹配可新增>无匹配可新增</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=113>113</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=225>225</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span> 
+                                <img src="img/addlitter.png" align="center" />
             				</li>
             			</ul>
             			<div class="cont3Ultwo">

@@ -93,6 +93,81 @@ button{
 	border: #a0a0a0;
 	color:#FFFFFF;
 }
+/*下拉框样式*/
+.dropdown {
+	display:inline-block;
+	width:120px;
+	height:20px;
+	border:1px solid #a0a0a0;
+	position:relative; 
+	border-top-width: 0px;
+    border-right-width: 0px; 
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    z-index: 9999;
+}
+.dropdown .editor {
+	display:block;
+	border:0;
+	padding:0;
+	width:100%;
+	/*box-shadow: inset 1px 2px 3px #ddd;*/
+	height:inherit;
+}
+.dropdown .trigger {
+	position:absolute;
+	top:0;
+	right:0;
+	background:url(../img/downSelect.png) no-repeat center center; 
+	border-top-width: 0px;
+    border-right-width: 0px; 
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    padding:1px 8px;
+}
+.dropdown ul {
+	display:none;
+	width:100%;
+	height:140px;
+	/*padding:2px;*/
+	position:absolute;
+	top:100%;
+	background-color:#FFF;
+	border:1px solid #DDD;
+	border-radius: 0 0 5px 5px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+.dropdown ul li {
+	height:20px;
+	display:block;
+	font-size:12px;
+	overflow:hidden;
+	cursor:pointer;
+	width: 100% !important;
+}
+.dropdown ul li .hot {
+	color: red;
+}
+.dropdown ul li:hover {
+	background-color: #EEE;
+}
+.dropdown ul .search {
+	display:block;
+	border: 1px solid #EEEEEE;
+	border-bottom: 1px solid #808080;
+}
+.dropdown ul .search:hover{
+	background-color:#FFF;
+}
+.dropdown ul .search input {
+	padding:2px;
+	width:100%;
+	border:0;
+	font-size:14px;
+	background:none;
+}
+/*图片按钮去掉边框*/			
 input[type="image"]{
 	border-bottom-width: 0;
 }
@@ -109,7 +184,14 @@ body{
 .cleft16px{
 	padding-left: 16px;
 }
-
+/*右边距5px*/
+.padleft5px{
+	padding-right: 5px;
+}
+/*设置个别计量单位下拉框的长度*/
+.numWidth{
+	width: 63px;
+}
 /*header开始*/
 #libg {
 	background-color:#FFF;
@@ -519,7 +601,7 @@ body{
 
 .con4 .cv1 span,
 .con4 .cv1 select{
-	margin-right: 30px;
+	margin-right: 25px;
 }
 
 .cvTable tbody tr td{
@@ -656,7 +738,7 @@ body{
 }
 
 .con6 form fieldset span{
-	padding: 0 10px 0 25px;
+	margin: 0 0px 0 25px;
 }
 .c6trademark{
 	margin-top: 10px;
@@ -689,7 +771,7 @@ body{
 }
 .c61 .cright{
 	float: left;
-	padding-top: 5px;
+	/*margin-top: 5px;*/
 }
 /*con6新增按钮*/
 .c61 input[type='image']{
@@ -711,7 +793,7 @@ body{
 	background: #FFFFFF;
 	display:none; /* 默认对话框隐藏 */
 	position: absolute; 
-	z-index: 2;
+	z-index: 10000;
 }
 .c6popup{
 	top: 70px;
@@ -820,7 +902,9 @@ body{
 .c7three li,
 .c7four li,
 .c7six li,
-.c7seven li{
+.c7seven li,
+.c7Prothree li,
+.c7Profour li{
 	display: inline-block;
 }
 .c7oneProli{
@@ -843,48 +927,48 @@ body{
 .c7two li:last-child{
 	padding-right: 0;
 }
-.c7three{
+.c7Prothree{
 	padding: 2px 0;
 }
-.c7three li {
-	padding: 0 5px;
+.c7Prothree li {
+	padding: 0 15px;
 }
-.c7three li:first-child{
+.c7Prothree li:first-child{
 	padding: 0 ;
 }
 
-.c7three li:nth-of-type(6){
+.c7Prothree li:nth-of-type(6){
 	padding: 0 50px;
 }
 
-.c7four{
-	width: 380px;
+.c7Profour{
+	width: 550px;
 	height: 2px;
 	background: #EEEEEE;
 	position: relative;
-	left: 57px;
+	left: 75px;
 }
 
-.c7four ul{
+.c7Profour ul{
 	position: absolute;
 }
-.c7four ul li {
+.c7Profour ul li {
 	width: 3px;
 	height: 3px;
 	background:#999999;
 	border-radius: 1.5px;
 	float: left;
-	margin: 0 19px;
+	margin: 0 32px;
 }
 
-.c7four ul li:first-child{
-	margin-left: 10px;
+.c7Profour ul li:first-child{
+	margin-left: 22px;
 }
-.c7four li:nth-of-type(5){
-	margin: 0 76px 0 64px;
+.c7Profour li:nth-of-type(5){
+	margin: 0 86px 0 64px;
 }
-.c7four li:nth-of-type(7){
-	margin:0 0 0 27px ;
+.c7Profour li:nth-of-type(7){
+	margin:0 0 0 47px ;
 }
 
 .c7five{
