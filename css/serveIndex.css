@@ -693,8 +693,8 @@ body{
 	padding-left: 30px;
 }
 
-.con5 form fieldset input{
-	width: 60px;
+.con5 form fieldset input[type="text"]{
+	width: 50px;
 }
 .con5 form fieldset label:nth-of-type(2){
 	padding-left: 12px;
