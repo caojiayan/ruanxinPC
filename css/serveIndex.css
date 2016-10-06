@@ -93,6 +93,17 @@ button{
 	border: #a0a0a0;
 	color:#FFFFFF;
 }
+/*去掉点击框时自带的颜色*/
+input:focus,
+button:focus{
+	outline: none ;
+}
+/*鼠标变成“手型”*/
+button{
+	cursor:pointer;
+}
+
+
 /*下拉框样式*/
 .dropdown {
 	display:inline-block;
@@ -718,7 +729,7 @@ body{
 /*con6开始*/
 .con6{
 	border-bottom: 1px solid #009843;
-	padding:10px 16px ;
+	padding:10px 5px 10px 16px ;
 	position: relative;
 }
 .con6 fieldset{
