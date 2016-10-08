@@ -10,8 +10,8 @@
 		<script type="text/javascript" src="js/ueditor.all.min.js" ></script>
 		<script type="text/javascript" src="js/zh-cn.js" ></script>
 		<script type="text/javascript" src="js/index.js" ></script>
-		<link rel="stylesheet" href="css/serveIndex.css" />
 		<link rel="stylesheet" href="css/technology.css" />
+		<link rel="stylesheet" href="css/serveIndex.css" />
 		<link rel="stylesheet" href="css/ueditor.css" />
 	</head>
 	<body>
@@ -207,7 +207,7 @@
 			<legend></legend>
 				<div class="cs1">
 					<span class="cright">服务项目</span>
-					<input type="text"  value="卡通类动画合成制作" onfocus="javascript:if(this.value=='卡通类动画合成制作')this.value='';"/>
+					<input type="text" value="卡通类动画合成制作" onfocus="javascript:if(this.value=='卡通类动画合成制作')this.value='';"/>
 				</div>
 				<p>10个中文内 提示：（用户搜索时，系统会自动匹配您的商品的相应属性，无须写标题）</p>
 		</fieldset>
@@ -574,7 +574,7 @@
 				                        <li data-value=559>559</li>
 			                        </ul>
 		                        </span>
-			                      计价<span class="dropdown padleft5px numWidth">  <!-- 模拟 select 的标记， -->
+			                                                           计价<span class="dropdown padleft5px numWidth">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor cs2three" type="text" value="元" onfocus="javascript:if(this.value=='元')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -786,15 +786,14 @@
                             <option value="">1号厅</option>
                             <option value="">4号厅</option>
                       </select>
-                        <img src="img/addlitter.png" align="center" onclick="sgbox(1)"; return="false;">
+                        <input type="image" class="" src="img/addlitter.png" align="center" />
 	    			</span>
 	    			<span class="cright">
 	    				资源来源
 	    				<select name="资源来源" >
                             <option value="">组织所有</option>
                             <option value="">个人所有</option>
-                       </select>
-                       <img src="img/addlitter.png" align="center">
+                      </select>
 	    			</span>
 	    			<ul class="c6trademark">
 			        	<li>荧屏：22M*16M</li>
@@ -807,15 +806,10 @@
 	    		</fieldset>
 	    		<fieldset class="c6Techthree">
 	    			<span class="cright">服务人员</span>
-	    			<input type="image" src="img/addlitter.png" align="center">
-	    			<span class="">
+	    			<a href="#" class="c6TechpopClick"><img src="img/addlitter.png" align="center"></a>
+	    			<span>
 	    				服务员
-	    				<select name="服务员" >
-                            <option value="">李德光</option>
-                            <option value="">李德光</option>
-                            <option value="">李德光</option>
-                            <option value="">李德光</option>
-                        </select>
+	    				<input type="text" value="李德光" onfocus="javascript:if(this.value=='李德光')this.value='';"/>
                         <input type="checkbox" >本人
                         <button type='submit'>加入</button>
 	    			</span>
@@ -851,6 +845,7 @@
 	    		<fieldset>
 	    			<p>服务项目</p>
 	    			<span>当前《时间安排表》</span><button type='submit'>保存</button>
+	    			<span class="cright"></span>
 	    			<span>资源</span>
 	    			<select name="资源" >
 				        <option value="">3号厅</option>
@@ -868,7 +863,8 @@
 				        <option value="">铁拳</option>
 				        <option value="">幸运是我</option>
 			        </select>
-			        <img src="img/addlitter.png"/>
+			        <a href="#" class="c6PropopClick"><img src="img/addlitter.png" align="center"></a>  <!--服务项目按钮-->
+			        <span class="cright"></span>
 			        时长<input type="text" value="120" onfocus="javascript:if(this.value=='120')this.value='';"/>
 			        <select name="分钟" >
 				        <option value="">分钟</option>
@@ -912,7 +908,7 @@
 			        		<td>140分钟</td>
 			        	</tr>
 			        </table>
-			        <div style="height:2px;width:680px;background: #EEEEEE;"></div>
+			        <div style="height:2px;width:950px;background: #EEEEEE;margin-left: 20px;"></div>
 	    		</fieldset>
 	    		<fieldset>
 	    			<span>其他《时间安排表》</span><button type='submit'>编辑</button>
@@ -948,73 +944,339 @@
 			        </table>
 	    		</fieldset>
 	    		</div>
-	    		<!--服务资源新增-->
+	    		<!--服务人员新增-->
 	    		<div class="c6popup" id="c6Techpopup" style="top:110px;">
 	    			<div class="c6ptitle">
 	    				<ul>
-	    					<li><a class='x' href=''; onclick="sgbox(1)"; return="false;"><img src="img/delect1.png"></a></li>
-	    					<li>服务资源新增</li>
-	    					<li><a href="">保存</a></li>
+	    					<li><a href="#" class="c6TechpopClose"><img src="img/delect1.png"></a></li>
+	    					<li>服务人员新增</li>
+	    					<li><a href="#" class="c6TechpopClose"><img src="img/yes1.png" align="center"></a></li>
 	    				</ul>
 	    			</div>
 	    		    <div class="c6Techpop">
-	    		    	<ul>
-	    		    		<li>
-	    		    			姓名：
-	    		    			<input type="text" value="欧阳某女" onfocus="javascript:if(this.value=='欧阳某女')this.value='';"/>
-	    		    		</li>
-	    		    		<li>
-	    		    			<select name="性别" >
-                                    <option value="">女</option>
-                                    <option value="">男</option>
-                               </select>
-	    		    		</li>
-	    		    		<li>
-	    		    			软信号
-	    		    			<input type="text" value="12345678" onfocus="javascript:if(this.value=='12345678')this.value='';"/>
-	    		    		</li>
-	    		    	</ul>
-	    		    	<ul>
-	    		    		<li>
-	    		    			身份证
-	    		    			<input type="text" value="12345678***" onfocus="javascript:if(this.value=='12345678***')this.value='';"/>
-	    		    		</li>
-	    		    		<li>
-	    		    			实力指标
-	    		    			<select name="实力指标" >
-                                    <option value="">驾龄</option>
-                                    <option value="">驾龄</option>
-                                    <option value="">驾龄</option>
-                                    <option value="">驾龄</option>
-                                </select>
-                                <input type="text" value="5年" onfocus="javascript:if(this.value=='5年')this.value='';" style="width: 50px;"/>
-	    		    		</li>
-	    		    		<li>
-	    		    			<button type='submit'>新增指标</button>
-	    		    		</li>
-	    		    	</ul>
-	    		    	<ul>
-	    		    		<li>本人正面实拍</li>
-	    		    		<li>身份证正面实拍</li>
-	    		    		<li>身份证背面实拍</li>
-	    		    	</ul>
-	    		    	<ul>
-	    		    		<li>
-	    		    			<a href="#"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
-	    						<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    		    		</li>
-	    		    		<li>
-	    		    			<a href="#"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
-	    						<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    		    		</li>
-	    		    		<li>
-	    		    			<a href="#"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
-	    						<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    		    		</li>
-	    		    	</ul>
+	    		    	<table>
+	    		    		<tbody>
+	    		    			<tr style="background: #FFFFFF;">
+	    		    			    <td>
+	    		    			                           姓名：
+	    		    			        <input type="text" value="欧阳某女" onfocus="javascript:if(this.value=='欧阳某女')this.value='';"/>
+	    		    			    </td>
+	    		    			    <td>
+	    		    			    	性别
+	    		    			    	<select name="性别" >
+                                            <option value="">女</option>
+                                            <option value="">男</option>
+                                        </select>
+	    		    			    </td>
+	    		    			    <td>
+	    		    			    	软信号
+	    		    			        <input type="text" value="12345678" onfocus="javascript:if(this.value=='12345678')this.value='';"/>
+	    		    			    </td>
+	    		    			</tr>
+	    		    			<tr>
+	    		    				<td>
+	    		    					身份证
+	    		    			        <input type="text" value="12345678***" onfocus="javascript:if(this.value=='12345678***')this.value='';"/>
+	    		    				</td>
+	    		    				<td>
+	    		    					实力指标
+	    		    			        <select name="实力指标" >
+                                            <option value="">驾龄</option>
+                                            <option value="">驾龄</option>
+                                            <option value="">驾龄</option>
+                                            <option value="">驾龄</option>
+                                        </select>
+                                        <input type="text" value="5年" onfocus="javascript:if(this.value=='5年')this.value='';" style="width: 50px;"/>
+	    		    				</td>
+	    		    				<td>
+	    		    					<button type='submit'>新增指标</button>
+	    		    				</td>
+	    		    			</tr>
+	    		    			<tr>
+	    		    				<td>
+	    		    					本人正面实拍
+	    		    				</td>
+	    		    				<td>
+	    		    					身份证正面实拍
+	    		    				</td>
+	    		    				<td>
+	    		    					身份证背面实拍
+	    		    				</td>
+	    		    			</tr>
+	    		    			<tr>
+	    		    				<td>
+	    		    					<a href="#"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
+	    						        <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+	    		    				</td>
+	    		    				<td>
+	    		    					<a href="#"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
+	    						        <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+	    		    				</td>
+	    		    				<td>
+	    		    					<a href="#"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
+	    						        <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+	    		    				</td>
+	    		    			</tr>
+	    		    			<tr class="c6popupNew">
+	    		    				<td colspan="2">
+	    		    					<span class="cright"></span>
+	    		    					新增属性
+	    		    			        <input type="text" value="请输入属性名称" onfocus="javascript:if(this.value=='请输入属性名称')this.value='';" />
+	    		    			        <input type="text" value="请输入属性内容" onfocus="javascript:if(this.value=='请输入属性内容')this.value='';" />
+	    		    				    <span class="cright"></span>   
+	    		    				        数据类型
+	    		    			    <span class="dropdown padleft5px">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor cs2three" type="text" value="点下拉按钮选择" onfocus="javascript:if(this.value=='点下拉按钮选择')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=元>元</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                            </span>
+	    		    				</td>
+	    		    				<td>
+	    		    					<input type="button" class="c7but" value="补充属性" />
+	    		    				</td>
+	    		    			</tr>
+	    		    			<tr>
+	    		    				<td colspan="3">
+	    		    					<span class="coRed">新补充的属性</span>
+	    		    				</td>
+	    		    			</tr>
+	    		    			<tr>
+	    		    				<td>
+	    		    					新属性1=商家填写的内容（文本）
+	    		    				</td>
+	    		    				<td>
+	    		    					新属性2=商家填写的内容（数字）
+	    		    				</td>
+	    		    			</tr>
+	    		    			<tr>
+	    		    				<td>
+	    		    					新属性3=商家填写的内容（图片）
+	    		    				</td>
+	    		    				<td>
+	    		    					新属性4=商家填写的内容（文本）
+	    		    				</td>
+	    		    			</tr>
+	    		    		</tbody>
+	    		    	</table>
 	    		    </div>
-	    		    
 	    		</div>
+	    		<!--新增服务人员部分结束-->
+	    		<!--服务项目部分开始-->
+	    		    <div class="c6popup box" id="c6Projectpop">
+	    				<div class="c6ptitle">
+	    					<ul>
+	    						<li><a class='c6PropopClose' href='#';>
+	    							    <img src="img/delect1.png">
+	    						    </a>
+	    						</li>
+	    						<li>服务项目新增</li>
+	    						<li><a href="#" class="c6PropopClose">保存</a></li>
+	    					</ul>
+	    				</div>
+	    				<div class="c6pType">
+	    					<span style="padding-left: 10px;">项目类型</span>
+	    					<span class="dropdown numWidth" >  <!-- 模拟 select 的标记， -->
+			            <input class="editor" type="text" value="影片" onfocus="javascript:if(this.value=='影片')this.value='';"/> <!-- 显示当前值的输入框 -->
+			            <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			            <ul>   <!-- 列表菜单 -->
+				            <li class="search" style="border: 1px solid #EEEEEE;">
+					            <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				            </li>   <!-- 过滤输入的列表， -->
+				            <li data-value=分钟>分钟</li>
+				            <li data-value=112>112</li>
+				            <li data-value=113>113</li>
+				            <li data-value=224>224</li>
+				            <li data-value=225>225</li>
+				            <li data-value=336>336</li>
+				            <li data-value=447>447</li>
+				            <li data-value=448>448</li>
+				            <li data-value=559>559</li>
+			            </ul>
+		            </span> 
+                            <button type='button'>新增类型</button>
+                            <span class="cright"></span>
+                            <span class="cright">若无，可直接输入后点击“新增类型”增加</span>
+                            <button type='button' style="font-size: 14px;">再次新增项目</button>
+	    				</div>
+	    				<div class="c6pone">
+	    					<ul>
+	    						<li>
+	    							<span>新增属性</span>
+	    					        <input type="text" value="请输入属性名称" style="width: 130px;" onfocus="javascript:if(this.value=='请输入属性名称')this.value='';"/>
+	    					        <input type="text" value="请输入属性内容" style="width: 130px;" onfocus="javascript:if(this.value=='请输入属性内容')this.value='';"/>
+	    						</li>
+	    						<li>
+	    							<span>数据类型</span>
+	    							<select name="数据类型" >
+                                        <option value="">点击下拉按钮选择</option>
+                                        <option value="">点击下拉按钮选择</option>
+                                        <option value="">点击下拉按钮选择</option>
+                                        <option value="">点击下拉按钮选择</option>
+                                    </select>
+	    						</li>
+	    						<li style="margin-right: 10px;">
+	    							<button type='submit'>确认提交</button>
+	    						</li>
+	    					</ul>
+	    				</div>
+	    				<div class="c6pBoxone">
+	    				<div class="c6ptwo">
+	    					<ul>
+	    						<li>
+	    							<span>影片名称</span>
+	    					        <select name="影片名称" >
+                                        <option value="">星际迷航3</option>
+                                        <option value="">大话西游</option>
+                                        <option value="">幸运是我</option>
+                                        <option value="">铁拳</option>
+                                    </select>
+                                    <img src="img/addlitter.png"/>
+	    						</li>
+	    						<li>
+	    							<span>制作技术</span>
+	    					        <select name="制作技术" >
+                                        <option value="">3D</option>
+                                        <option value="">2D</option>
+                                        <option value="">普通</option>
+                                        <option value="">4维</option>
+                                    </select>
+                                    <img src="img/addlitter.png"/>
+	    						</li>
+	    						<li>
+	    							<span>使用语言</span>
+	    					        <select name="使用语言" >
+                                        <option value="">英文</option>
+                                        <option value="">普通话</option>
+                                        <option value="">广东话</option>
+                                        <option value="">法语</option>
+                                    </select>
+                                    <img src="img/addlitter.png"/>
+	    						</li>
+	    					</ul>
+	    					<ul>
+	    						<li>
+	    							<span>地区</span>
+	    					        <select name="地区" >
+                                        <option value="">美国</option>
+                                        <option value="">中国</option>
+                                        <option value="">中国相关</option>
+                                        <option value="">法国</option>
+                                    </select>
+                                    <img src="img/addlitter.png"/>
+	    						</li>
+	    						<li>
+	    							<span>影片类型</span>
+	    					       <select name="影片类型" >
+                                        <option value="">科幻</option>
+                                        <option value="">动画</option>
+                                        <option value="">爱情</option>
+                                        <option value="">亲情</option>
+                                    </select>
+                                    <img src="img/addlitter.png"/>
+	    						</li>
+	    						<li>
+	    							<span>是否连载</span>
+	    					        <select name="是否连载" >
+                                        <option value="">是</option>
+                                        <option value="">否</option>
+                                    </select>
+                                    <img src="img/addlitter.png"/>
+	    						</li>
+	    					</ul>
+	    					<ul>
+	    						<li>
+	    							<span>导演</span>
+	    					       <select name="导演" >
+                                        <option value="">林诣彬 </option>
+                                        <option value="">林诣彬 </option>
+                                        <option value="">林诣彬 </option>
+                                        <option value="">林诣彬 </option>
+                                    </select>
+                                    <img src="img/addlitter.png"/>
+	    						</li>
+	    						<li>
+	    							<span>主演</span>
+	    					        <select name="主演" >
+                                        <option value="">克里斯.派恩</option>
+                                        <option value="">克里斯.派恩</option>
+                                        <option value="">克里斯.派恩</option>
+                                        <option value="">克里斯.派恩</option>
+                                    </select>
+                                    <img src="img/addlitter.png"/>
+	    						</li>
+	    						<li>
+	    							<span>是否首映</span>
+	    					       <select name="是否首映" >
+                                        <option value="">是</option>
+                                        <option value="">否</option>
+                                    </select>
+                                    <img src="img/addlitter.png"/>
+	    						</li>
+	    					</ul>
+	    					<div class="c6pBoxSketch">
+	    						<span style="padding-left: 15px;">简述</span><br />
+	    						<textarea class="c6pBoxtext">
+科克船长（克里斯.沃恩  饰）带领企业号继续踏上宇宙探索的旅程，他向老骨头（卡尔.厄本 饰）讲述了自己对于船长身份的忧虑，而在他与最好的朋友史波克（扎克瑞。昆图 饰）互诉衷肠前，他们又接到了一个紧急救援的任务，而神秘敌人卡尔（伊德瑞斯.艾尔巴  饰）开始攻击企业号，而幸存的企业号成员也分散至一个行星上求生。
+	    						</textarea><br />
+	    						<a class="c6pBoxright">保存项目</a>
+	    					</div>
+	    				</div>
+	    				</div>
+	    				<div class="c6pBoxtThree1">
+	    					<span class="coRed">新补充的属性</span>
+	    					<div class="c6pBoxtThree2">
+	    					<table>
+	    						<tbody>
+	    							<tr style="background: #FFFFFF;">
+	    								<td>新属性1=商家填写的内容（文本）</td>
+	    								<td>新属性2=商家填写的内容（数字）</td>
+	    							</tr>
+	    							<tr>
+	    								<td>新属性3=商家填写的内容（图片）</td>
+	    								<td>新属性4=商家填写的内容（文字）</td>
+	    							</tr>
+	    						</tbody>
+	    					</table>
+	    					</div>
+	    				</div>
+	    				<div class="c6pBoxtwo">
+	    					<span>已添加项目</span>
+	    					<ul>
+	    					    <li class="">寄生兽
+			        		        <img class="cright"  src="img/delete2.png">
+			        		    </li>
+			        		    <li class="">在世界中心呼唤爱
+			        		        <img class="cright"  src="img/delete2.png">
+			        		    </li>
+			        		    <li class="">铁拳
+			        		        <img class="cright"  src="img/delete2.png">
+			        		    </li>
+			        		    <li class="">我们的十年
+			        		        <img class="cright"  src="img/delete2.png">
+			        		    </li>
+			        		    <li class="">七月与安生
+			        		        <img class="cright"  src="img/delete2.png">
+			        		    </li>
+			        		    <li class="">追凶者也
+			        		        <img class="cright" src="img/delete2.png">
+			        		    </li>
+	    					</ul>
+	    				</div>
+	    			</div>
+	    		<!--服务项目部分结束-->
 	    	</form>
 	    </div>
 	    <!--con6结束-->
@@ -1278,6 +1540,8 @@
 	    <!--con9结束-->
 	    </div>
 	    <!--content结束-->
+	    <!--遮盖层-->
+		<div class="maskingLayer"></div>
         <!--footer开始-->
         <div class="bj4">
             <p style="color:#999;">粤ICP路1507617号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@2016&nbsp;&nbsp;软信&nbsp;&nbsp;版权所有&nbsp; <span><a href="#">申请入驻</a>&nbsp;&nbsp;<a href="#">申请合作</a>&nbsp;&nbsp;<a href="#">开发平台</a>&nbsp;&nbsp;<a href="#">关于软信</a></span></p>

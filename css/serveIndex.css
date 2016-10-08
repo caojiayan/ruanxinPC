@@ -99,7 +99,7 @@ button:focus{
 	outline: none ;
 }
 /*鼠标变成“手型”*/
-button{
+button,input{
 	cursor:pointer;
 }
 
@@ -203,6 +203,9 @@ body{
 .numWidth{
 	width: 63px;
 }
+
+
+
 /*header开始*/
 #libg {
 	background-color:#FFF;
@@ -796,7 +799,7 @@ body{
 /*con6服务资源新增*/
 .c6popup,
 .c7Popup{
-	width: 1060px;
+	width: 1068px;
 	margin: 0 auto ;
 	margin-left: 5px;
 	border: 1px solid #EEEEEE;
@@ -804,6 +807,7 @@ body{
 	background: #FFFFFF;
 	display:none; /* 默认对话框隐藏 */
 	position: absolute; 
+	box-shadow:3px 3px 40px #EEEEEE;
 	z-index: 10000;
 }
 .c6popup{
@@ -817,8 +821,9 @@ body{
 .c6ptitle,
 .c7ptitle{
 	background: #EEEEEE;
-	border-radius: 10px;
-	padding: 0 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding:5px 10px;
 	font-weight: bold;
 }
 
@@ -849,7 +854,7 @@ body{
 	height: 30px;
 }
 .c6pone ul li:first-child span{
-	padding-left: 0;
+	padding-left: 10px !important;
 }
 .c6pone li:last-child button{
 	background: #009946;
@@ -893,6 +898,8 @@ body{
 .c6five .c6f1 li{
 	width: 19%;
 }
+
+
 /*con6服务资源新增结束*/
 
 /*con7开始*/

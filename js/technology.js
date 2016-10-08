@@ -83,7 +83,40 @@ $(function(){
   });
 });
 
-//con3中的服务资源新增
-function sgbox(n){
-            document.getElementById('c6Techpopup').style.display=n?'block':'none';     /* 点击按钮打开/关闭 对话框 */
-   }
+//服务人员新增
+//遮盖层与点击显示与隐藏
+$(function(){
+	$(".c6TechpopClick").click(function(){
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+            display:"block"
+        });
+		$("#c6Techpopup").show();
+	});
+	$(".c6TechpopClose").click(function(){
+		$("#c6Techpopup").hide();
+		$(".maskingLayer").hide();
+	});
+});
+
+//服务项目新增
+//遮盖层
+$(function(){
+	$(".c6PropopClick").click(function(){
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+            display:"block"
+        });
+		$("#c6Projectpop").show();
+	});
+	$(".c6PropopClose").click(function(){
+		$("#c6Projectpop").hide();
+		$(".maskingLayer").hide();
+	});
+});

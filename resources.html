@@ -830,7 +830,7 @@
 				            <li data-value=559>559</li>
 			            </ul>
 		            </span>
-			        <img src="img/addlitter.png" align="center" onclick="msgbox(1)" value=""> <!--新增按钮-->
+			        <img class="c6PropopClick" src="img/addlitter.png" align="center"> <!--新增按钮-->
 			        <span>资源使用</span>
 			        <span class="dropdown padleft5px">  <!-- 模拟 select 的标记， -->
 			            <input class="editor cs2three" type="text" value="多人" onfocus="javascript:if(this.value=='多人')this.value='';"/> <!-- 显示当前值的输入框 -->
@@ -977,7 +977,7 @@
 			        		<td>140分钟</td>
 			        	</tr>
 			        </table>
-			        <div style="height:2px;width:1020px;background: #EEEEEE; margin-left: 20px;"></div>
+			        <div style="height:2px;width:950px;background: #EEEEEE; margin-left: 20px;"></div>
 	    		</fieldset>
 	    		<fieldset>
 	    			<span>其他《时间安排表》</span><button type='submit'>编辑</button>
@@ -1012,37 +1012,50 @@
 			        	</tr>
 			        </table>
 	    		</fieldset>
-	    		<!--服务资源新增开始-->
+	    		<!--服务项目新增开始-->
 	    		<fieldset>
-	    			<div class="c6popup box" id="inputbox">
+	    			<div class="c6popup box" id="c6Projectpop">
 	    				<div class="c6ptitle">
 	    					<ul>
-	    						<li><a class='x' href=''; onclick="msgbox(1)"; return false;">
+	    						<li><a class='c6PropopClose' href='#';>
 	    							    <img src="img/delect1.png">
-	    						     </a>
+	    						    </a>
 	    						</li>
-	    						<li>服务资源新增</li>
-	    						<li><a href="">保存</a></li>
+	    						<li>服务项目新增</li>
+	    						<li><a href="#" class="c6PropopClose">保存</a></li>
 	    					</ul>
 	    				</div>
 	    				<div class="c6pType">
-	    					项目类型
-	    					<select name="影片" >
-                                <option value="">影片</option>
-                                <option value="">影片</option>
-                                <option value="">影片</option>
-                                <option value="">影片</option>
-                            </select>
-                            <button type='submit'>新增类型</button>
-                                                                           若无，可直接输入后点击“新增类型”增加
+	    					<span style="padding-left: 10px;">项目类型</span>
+	    					<span class="dropdown numWidth" >  <!-- 模拟 select 的标记， -->
+			            <input class="editor" type="text" value="影片" onfocus="javascript:if(this.value=='影片')this.value='';"/> <!-- 显示当前值的输入框 -->
+			            <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			            <ul>   <!-- 列表菜单 -->
+				            <li class="search" style="border: 1px solid #EEEEEE;">
+					            <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				            </li>   <!-- 过滤输入的列表， -->
+				            <li data-value=分钟>分钟</li>
+				            <li data-value=112>112</li>
+				            <li data-value=113>113</li>
+				            <li data-value=224>224</li>
+				            <li data-value=225>225</li>
+				            <li data-value=336>336</li>
+				            <li data-value=447>447</li>
+				            <li data-value=448>448</li>
+				            <li data-value=559>559</li>
+			            </ul>
+		            </span> 
+                            <button type='button'>新增类型</button>
+                            <span class="cright"></span>
+                            <span class="cright">若无，可直接输入后点击“新增类型”增加</span>
+                            <button type='button' style="font-size: 14px;">再次新增项目</button>
 	    				</div>
-	    				
 	    				<div class="c6pone">
 	    					<ul>
 	    						<li>
 	    							<span>新增属性</span>
-	    					        <input type="text" value="请输入属性名称" onfocus="javascript:if(this.value=='请输入属性名称')this.value='';"/>
-	    					        <input type="text" value="请输入属性内容" onfocus="javascript:if(this.value=='请输入属性内容')this.value='';"/>
+	    					        <input type="text" value="请输入属性名称" style="width: 130px;" onfocus="javascript:if(this.value=='请输入属性名称')this.value='';"/>
+	    					        <input type="text" value="请输入属性内容" style="width: 130px;" onfocus="javascript:if(this.value=='请输入属性内容')this.value='';"/>
 	    						</li>
 	    						<li>
 	    							<span>数据类型</span>
@@ -1053,7 +1066,7 @@
                                         <option value="">点击下拉按钮选择</option>
                                     </select>
 	    						</li>
-	    						<li>
+	    						<li style="margin-right: 10px;">
 	    							<button type='submit'>确认提交</button>
 	    						</li>
 	    					</ul>
@@ -1153,35 +1166,51 @@
 	    						</li>
 	    					</ul>
 	    					<div class="c6pBoxSketch">
-	    						<span>简述</span><br />
+	    						<span style="padding-left: 15px;">简述</span><br />
 	    						<textarea class="c6pBoxtext">
 科克船长（克里斯.沃恩  饰）带领企业号继续踏上宇宙探索的旅程，他向老骨头（卡尔.厄本 饰）讲述了自己对于船长身份的忧虑，而在他与最好的朋友史波克（扎克瑞。昆图 饰）互诉衷肠前，他们又接到了一个紧急救援的任务，而神秘敌人卡尔（伊德瑞斯.艾尔巴  饰）开始攻击企业号，而幸存的企业号成员也分散至一个行星上求生。
 	    						</textarea><br />
 	    						<a class="c6pBoxright">保存项目</a>
 	    					</div>
-	    					
 	    				</div>
+	    				</div>
+	    				<div class="c6pBoxtThree1">
+	    					<span class="coRed">新补充的属性</span>
+	    					<div class="c6pBoxtThree2">
+	    					<table>
+	    						<tbody>
+	    							<tr style="background: #FFFFFF;">
+	    								<td>新属性1=商家填写的内容（文本）</td>
+	    								<td>新属性2=商家填写的内容（数字）</td>
+	    							</tr>
+	    							<tr>
+	    								<td>新属性3=商家填写的内容（图片）</td>
+	    								<td>新属性4=商家填写的内容（文字）</td>
+	    							</tr>
+	    						</tbody>
+	    					</table>
+	    					</div>
 	    				</div>
 	    				<div class="c6pBoxtwo">
 	    					<span>已添加项目</span>
 	    					<ul>
 	    					    <li class="">寄生兽
-			        		        <img src="img/delete2.png">
+			        		        <img class="cright"  src="img/delete2.png">
 			        		    </li>
 			        		    <li class="">在世界中心呼唤爱
-			        		        <img src="img/delete2.png">
+			        		        <img class="cright"  src="img/delete2.png">
 			        		    </li>
 			        		    <li class="">铁拳
-			        		        <img src="img/delete2.png">
+			        		        <img class="cright"  src="img/delete2.png">
 			        		    </li>
 			        		    <li class="">我们的十年
-			        		        <img src="img/delete2.png">
+			        		        <img class="cright"  src="img/delete2.png">
 			        		    </li>
 			        		    <li class="">七月与安生
-			        		        <img src="img/delete2.png">
+			        		        <img class="cright"  src="img/delete2.png">
 			        		    </li>
 			        		    <li class="">追凶者也
-			        		        <img src="img/delete2.png">
+			        		        <img class="cright" src="img/delete2.png">
 			        		    </li>
 	    					</ul>
 	    				</div>
