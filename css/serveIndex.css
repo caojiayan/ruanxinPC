@@ -103,6 +103,31 @@ button,input{
 	cursor:pointer;
 }
 
+/*图片按钮去掉边框*/			
+input[type="image"]{
+	border-bottom-width: 0;
+}
+body{
+	margin: 0 auto;
+	font-family:"microsoft yahei" ,sans-serif;
+	font-size: 16px;
+}
+/*右内边距25px*/
+.cright{
+	padding-right: 25px !important;
+}
+/*左内边距16px*/
+.cleft16px{
+	padding-left: 16px;
+}
+/*右边距5px*/
+.padleft5px{
+	padding-right: 5px;
+}
+/*设置个别计量单位下拉框的长度*/
+.numWidth{
+	width: 63px;
+}
 
 /*下拉框样式*/
 .dropdown {
@@ -122,7 +147,6 @@ button,input{
 	border:0;
 	padding:0;
 	width:100%;
-	/*box-shadow: inset 1px 2px 3px #ddd;*/
 	height:inherit;
 }
 .dropdown .trigger {
@@ -178,33 +202,6 @@ button,input{
 	font-size:14px;
 	background:none;
 }
-/*图片按钮去掉边框*/			
-input[type="image"]{
-	border-bottom-width: 0;
-}
-body{
-	margin: 0 auto;
-	font-family:"microsoft yahei" ,sans-serif;
-	font-size: 16px;
-}
-/*右内边距25px*/
-.cright{
-	padding-right: 25px !important;
-}
-/*左内边距16px*/
-.cleft16px{
-	padding-left: 16px;
-}
-/*右边距5px*/
-.padleft5px{
-	padding-right: 5px;
-}
-/*设置个别计量单位下拉框的长度*/
-.numWidth{
-	width: 63px;
-}
-
-
 
 /*header开始*/
 #libg {
@@ -770,10 +767,11 @@ body{
 	padding-top: 10px;
 }
 .con6 table{
-	margin: 10px 0 10px 20px;
+	margin: 10px 0 20px 20px;
 }
 .con6 table td{
 	text-align: center;
+	padding: 5px 0;
 }
 
 .con6 table tr:first-child{
@@ -802,12 +800,13 @@ body{
 	width: 1068px;
 	margin: 0 auto ;
 	margin-left: 5px;
+	padding-bottom: 20px;
 	border: 1px solid #EEEEEE;
 	border-radius: 10px;
 	background: #FFFFFF;
 	display:none; /* 默认对话框隐藏 */
 	position: absolute; 
-	box-shadow:3px 3px 40px #EEEEEE;
+	/*box-shadow:3px 3px 40px #EEEEEE;*/
 	z-index: 10000;
 }
 .c6popup{
@@ -1041,8 +1040,8 @@ body{
 /*商家补充属性中新增属性按钮*/
 .c7but{
 	background: #009946;
-	padding: 2px 5px;
-	border-radius:5px;
+	padding: 3px 10px;
+	border-radius:10px;
 	color: #FFFFFF;
 }
 /*新增商品属性部分*/
@@ -1194,4 +1193,11 @@ body{
 .c9three li:nth-of-type(3){
 	background: #009946;
 	margin-left:60px;
+}
+
+/*选择、全选按钮*/
+.checkAllinp{
+	width: 20px;
+	height: 20px;
+	vertical-align:middle;
 }

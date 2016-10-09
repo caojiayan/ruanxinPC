@@ -83,10 +83,21 @@ $(function(){
   });
 });
 
-//服务人员新增
-//遮盖层与点击显示与隐藏
+//服务人员
+//遮盖层
 $(function(){
-	$(".c6TechpopClick").click(function(){
+	$(".c6TechpopClick").click(function(){   //服务人员新增
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+            display:"block"
+        });
+        $("#c6TechpopupN input").attr("value",""); //点击新增的时候，清空input里的value值
+		$("#c6TechpopupN").show();
+	});
+	$(".c6TechpopWrite").click(function(){  //服务人员修改
 		var bh = $("body").height();
         var bw = $("body").width();
         $(".maskingLayer").css({
@@ -97,15 +108,23 @@ $(function(){
 		$("#c6Techpopup").show();
 	});
 	$(".c6TechpopClose").click(function(){
-		$("#c6Techpopup").hide();
+		$("#c6Techpopup").hide(); //点击关闭
+		$("#c6TechpopupN").hide();
 		$(".maskingLayer").hide();
+	});
+	$(".c6TechpopHold").click(function(){
+		$("#c6Techpopup").hide(); //点击关闭
+		$("#c6TechpopupN").hide();
+		$(".maskingLayer").hide();
+		alert("已保存数据")
 	});
 });
 
-//服务项目新增
+
+//服务项目
 //遮盖层
 $(function(){
-	$(".c6PropopClick").click(function(){
+	$(".c6PWriClick").click(function(){   //服务项目新增
 		var bh = $("body").height();
         var bw = $("body").width();
         $(".maskingLayer").css({
@@ -113,10 +132,32 @@ $(function(){
             width:bw,
             display:"block"
         });
-		$("#c6Projectpop").show();
+		$("#c6ProWriteN").show();
 	});
-	$(".c6PropopClose").click(function(){
-		$("#c6Projectpop").hide();
+	$(".c6ProWriClose").click(function(){
+		$("#c6ProWrite").hide();
 		$(".maskingLayer").hide();
+		alert("已保存数据")
+	});
+	$(".c6ProWClick").click(function(){   //服务项目修改
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+            display:"block"
+        });
+		$("#c6ProWrite").show();
+	});
+	$(".c6ProWriClose").click(function(){
+		$("#c6ProWriteN").hide();
+		$("#c6ProWrite").hide();
+		$(".maskingLayer").hide();
+	});
+	$(".c6ProWriHold").click(function(){
+		$("#c6ProWriteN").hide();
+		$("#c6ProWrite").hide();
+		$(".maskingLayer").hide();
+		alert("已保存数据")
 	});
 });
