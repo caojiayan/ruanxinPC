@@ -20,10 +20,13 @@
 
 /*con6部分*/
 .c6Techpop table{
-	margin: 10px 0 20px 30px;
+	margin: 10px 0 20px 20px;
+	padding-left: 10px;
 	width: 1020px;
 }
-
+.c6Techpop table tr td:first-child{
+	padding-left: 10px;
+}
 .c6Techpop table tr td{
 	text-align: left;
 	padding: 5px 0;
@@ -72,12 +75,9 @@
 
 /*con6中服务项目新增中的项目类型*/
 .c6pBoxSketch{
-	height: 170px;
+	/*height: 140px;*/
 }
 .c6pType,
-.c6pName,
-.c6pTime,
-.c6pBoxSketch,
 .c6pTable{
 	margin:10px 0 0 20px !important;
 	padding-left: 10px !important;
@@ -99,6 +99,11 @@
 	text-align: left;
 	padding-left: 10px;
 }
+/*补充属性按钮*/
+.c6pTabbtn button{
+	float:right;
+	margin-right:18px ;
+}
 /*提示字体设为12Px*/
 .font14px{
 	font-size: 14px;
@@ -110,7 +115,7 @@
 	border-radius: 10px;
 }
 .c6pBoxtext{
-	width:950px;
+	width:920px;
 	height: 100px;
 	margin-left:70px;
 	margin-bottom: 5px;
@@ -145,4 +150,26 @@
 .c6pBoxtThree2 tr td{
 	text-align: left;
 	padding: 5px 0;
+}
+/*已审属性*/
+.c6pRoperty{
+	background: #FFFFFF;
+	width:1010px;
+	margin-left: 0 !important;
+}
+.c6pRoperty tr td{
+	text-align: left;
+	padding-left: 10px;
+}
+/*项目盒子*/
+.c6PitemBox{
+	border: 1px solid #CCc;
+	margin: 10px 20px;
+}
+.c6pName,
+.c6pTime,
+.c6pBoxSketch,
+.c6pRoperty{
+	margin: 10px 0;
+	padding-left: 10px !important;
 }

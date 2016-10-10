@@ -132,14 +132,10 @@ $(function(){
             width:bw,
             display:"block"
         });
+        $("#c6ProWriteN input").attr("value",""); //点击新增的时候，清空input里的value值
 		$("#c6ProWriteN").show();
 	});
-	$(".c6ProWriClose").click(function(){
-		$("#c6ProWrite").hide();
-		$(".maskingLayer").hide();
-		alert("已保存数据")
-	});
-	$(".c6ProWClick").click(function(){   //服务项目修改
+	$(".c6ProteW").click(function(){   //服务项目修改
 		var bh = $("body").height();
         var bw = $("body").width();
         $(".maskingLayer").css({
@@ -161,3 +157,128 @@ $(function(){
 		alert("已保存数据")
 	});
 });
+
+//服务资源
+$(function(){
+	$(".c6PresClick").click(function(){   //服务资源新增
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+            display:"block"
+        });
+        $("#c6PresourceN input").attr("value",""); //点击新增的时候，清空input里的value值
+		$("#c6PresourceN").show();
+	});
+	$(".c6resourceW").click(function(){   //服务资源修改
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+            display:"block"
+        });
+		$("#c6Presource").show();
+	});
+	$(".c6PresClose").click(function(){
+		$("#c6PresourceN").hide();
+		$("#c6Presource").hide();
+		$(".maskingLayer").hide();
+	});
+	$(".c6PresHold").click(function(){
+		$("#c6PresourceN").hide();
+		$("#c6Presource").hide();
+		$(".maskingLayer").hide();
+		alert("已保存数据")
+	});
+});
+//上传图片部分
+$(function(){
+    $('.imgRemove').click(function(){   //点击删除键，删除该图片
+        $(this).parent().remove();  //移除掉他的父级li
+    });
+});
+
+
+//服务设置中点击全选
+//$(function(){
+//  $(".c6Choice input").click(function(){
+//      var id = $(this).attr("id");  //获取当前id
+//      $("#id .deletebtn").click(function(){
+//          $(".table_box tr").each(function(){
+//              if($(this).find("input").attr("checked")&&$(this).index()!=0){
+//                  $(this).remove();
+//              }
+//          });
+//      });
+//      $("#allcheckbox").click(function(){
+//          if($(this).attr("checked")){
+//              $(".table_box td input").attr("checked","checked");
+//          }else{
+//              $(".table_box td input").attr("checked","")
+//          }
+//      });
+//      $(".table_box input").not("#allcheckbox").click(function(){
+//          $(".table_box input").not("#allcheckbox").each(function(){
+//              if($(".table_box input[type='checkbox']:checked").not("#allcheckbox").length==$(".table_box tr").not("#titletr").length){
+//                  $("#allcheckbox").attr("checked","checked");
+//              }else{
+//                  $("#allcheckbox").attr("checked","");
+//              }
+//          });
+//      });
+//  });
+//});
+
+
+//$(function(){
+//  $(".c6Choice .deletebtn").click(function(){
+//      $(".table_box tr").each(function(){
+//          if($(this).find("input").attr("checked")&&$(this).index()!=0){
+//              $(this).remove();
+//          }
+//      });
+//  });
+//  $("#allcheckbox").click(function(){
+//      if($(this).attr("checked")){
+//          $(".table_box td input").attr("checked","checked");
+//      }else{
+//          $(".table_box td input").attr("checked","")
+//      }
+//  });
+//  $(".table_box input").not("#allcheckbox").click(function(){
+//      $(".table_box input").not("#allcheckbox").each(function(){
+//          if($(".table_box input[type='checkbox']:checked").not("#allcheckbox").length==$(".table_box tr").not("#titletr").length){
+//              $("#allcheckbox").attr("checked","checked");
+//          }else{
+//              $("#allcheckbox").attr("checked","");
+//              }
+//      })
+//  })
+
+$(".deletebtn").click(function(){
+$(".table_box tr").each(function(){
+if($(this).find("input").attr("checked")&&$(this).index()!=0){
+$(this).remove();
+}
+})
+})
+$("#allcheckbox").click(function(){
+if($(this).attr("checked")){
+$(".table_box td input").attr("checked","checked");
+}else{
+$(".table_box td input").attr("checked","")
+}
+})
+
+$(".table_box input").not("#allcheckbox").click(function(){
+$(".table_box input").not("#allcheckbox").each(function(){
+if($(".table_box input[type='checkbox']:checked").not("#allcheckbox").length==$(".table_box tr").not("#titletr").length){
+$("#allcheckbox").attr("checked","checked");
+}else{
+$("#allcheckbox").attr("checked","");
+}
+})
+
+})
