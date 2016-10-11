@@ -1,11 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 /*con1*/
 .con1,
 .cont2,
-.cont3{
+.cont3,
+.cont1Choice{
 	border-bottom: 1px solid #009843;
 }
+.c1mTable{
+	padding: 5px 0;
+	margin: 0 20px;
+	width: 1030px;
+}
+.c1mTable tr td{
+	padding: 5px 0;
+}
+.con1_main span{
+	float: left;
+}
+.c1mChanger{
+	width: 120px;
+	height: 30px;
+	padding-left: 25px;
+}
+.c1mChanger ul{
+	width:120px;
+	height: 25px;
+}
+.c1mChanger ul li{
+	display: inline-block;
+	text-align: center;
+	line-height: 25px;
+	float: left; 
+	list-style: none;
+	padding: 0 5px;
+	
+}
+.c1mChanger ul li:first-child{
+	border: 1px solid #009843;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-right: none;
+}
+.c1mChanger ul li:last-child{
+	border: 1px solid #009843;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.c1mTableul{
+	background: #EEEEEE;
+	border-radius: 10px;
+}
+.c1mTableul li{
+	display: inline-block;
+	padding:0 5px;
+}
+/*类别选择左边距*/
+.c1mTleft{
+	padding-left: 25px;
+}
+
+/*展现侧重*/
 .cont1Choice{
-	margin: 10px 20px;
+	padding:10px 45px;
 }
 .cont1Choice fieldset:first-child{
 	margin-bottom: 10px;
@@ -17,7 +76,7 @@
 /*cont2*/
 .cont2,
 .cont3{
-	padding: 10px 10px 5px 20px;
+	padding: 10px 10px 5px 45px;
 }
 /*.cont2 input{
 	width: 60px;
@@ -65,4 +124,28 @@
 /*cont4*/
 .con8{
 	border-bottom:none;
+}
+
+/*交易类型*/
+.cx3Box{
+	padding-left: 30px;
+}
+/*c4设置单位*/
+/*con4*/
+
+.c4Ul{
+	padding-left: 50px;
+	margin:5px 0;
+}
+.c4Ul:first-child{
+	margin-left: ;
+	padding-left: 20px;
+	background:url(../img/key2.png)no-repeat left center;
+}
+.c4Ul li{
+	padding-left: 25px;
+	display: inline-block;
+}
+.c4Ul li:first-child{
+	padding-left: 0;
 }
