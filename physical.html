@@ -222,10 +222,16 @@
 			     <p>3/6 8个中文内 勿与标题类同，别称、标题、属性、活动等都会搜索匹配。</p>
 		</fieldset>
 		<div class="con2_nav">
-		 	<ul>
-		 		<li class="c2navli1">小货车搬家<img src="img/delect1.png"></li>
-		 		<li class="c2navli2">小卡车搬家<img src="img/delect1.png"></li>
-		 		<li class="c2navli3">自带货车搬货<img src="img/delect1.png"></li>
+		 	<ul class="c2navList">
+		 		<li>小货车搬家
+		 			<a href="#"><img src="img/delect1.png"></a>
+		 		</li>
+		 		<li>小卡车搬家
+		 			<a href="#"><img src="img/delect1.png"></a>
+		 		</li>
+		 		<li>自带货车搬货
+		 			<a href="#"><img src="img/delect1.png"></a>
+		 		</li>
 		 	</ul>
 		</div>
 	</form>
@@ -602,11 +608,11 @@
 			        			<input type="text" value="请输入规格名称" onfocus="javascript:if(this.value=='请输入规格名称')this.value='';"/>
 			        	        <button type='submit'>新增</button>
 			        		</li>
-			        		<li class="c4deltech1">地域
-			        		    <img src="img/delete2.png">
+			        		<li>地域
+			        		    <a href="#"><img src="img/delete2.png"></a>
 			        		</li>
-			        		<li class="c4deltech2">物品
-			        			<img src="img/delete2.png">
+			        		<li>物品
+			        			<a href="#"><img src="img/delete2.png"></a>
 			        		</li>
 			        		<li>提示：请用最直观简洁的规格说明收费标准</li>
 			        	</ul>
@@ -616,11 +622,11 @@
 			        			<input type="text" value="请输入地域" onfocus="javascript:if(this.value=='请输入地域"')this.value='';"/>
 			        	        <button type='submit'>新增</button>
 			        		</li>
-			        		<li class="c4deltech3">广州内
-			        		   <img src="img/delete2.png">
+			        		<li>广州内
+			        		   <a href="#"><img src="img/delete2.png"></a>
 			        		</li>
-			        		<li class="c4deltech4">非广州
-			        			<img src="img/delete2.png">
+			        		<li>非广州
+			        			<a href="#"><img src="img/delete2.png"></a>
 			        		</li>
 			        	</ul>
 			        	<ul class="c4Ul">
@@ -629,11 +635,11 @@
 			        			<input type="text" value="请输入物品" onfocus="javascript:if(this.value=='请输入物品')this.value='';"/>
 			        	        <button type='submit'>新增</button>
 			        		</li>
-			        		<li class="c4deltech6">重设备
-			        			<img src="img/delete2.png">
+			        		<li>重设备
+			        			<a href="#"><img src="img/delete2.png"></a>
 			        		</li>
-			        		<li class="c4deltech7">常规货物
-			        			<img src="img/delete2.png">
+			        		<li>常规货物
+			        			<a href="#"><img src="img/delete2.png"></a>
 			        		</li>
 			        	</ul>
 			        </fieldset>
@@ -648,32 +654,40 @@
 			         			<li>增购<input type="text" value="1" onfocus="javascript:if(this.value=='1')this.value='';"/>确定</li>
 			         			<li>一口价<input type="text" value="29" onfocus="javascript:if(this.value=='29')this.value='';"/>确定</li>
 			         		</ul>
-			         		<ul class="cv2Ul2" onclick="delTableRow(this)">
-			         			<li><img src="img/delete2.png"></li>
+			         		<ul class="cv2Ul2">
+			         			<li>
+			         				<a href="#"><img src="img/delete2.png"></a>
+			         			</li>
 			         			<li>广州内*重设备</li>
 			         			<li>59元/客户</li>
 			         			<li>2*10公里</li>
 			         			<li>1*10公里</li>
 			         			<li>29.9元</li>
 			         		</ul>
-			         		<ul class="cv2Ul2" onclick="delTableRow(this)">
-			         			<li><img src="img/delete2.png"></li>
+			         		<ul class="cv2Ul2">
+			         			<li>
+			         				<a href="#"><img src="img/delete2.png"></a>
+			         			</li>
 			         			<li>广州内*常规货物</li>
 			         			<li>59元/客户</li>
 			         			<li>2*10公里</li>
 			         			<li>1*10个公里</li>
 			         			<li>23.9元</li>
 			         		</ul>
-			         		<ul class="cv2Ul2" onclick="delTableRow(this)">
-			         			<li><img src="img/delete2.png"></li>
+			         		<ul class="cv2Ul2">
+			         			<li>
+			         				<a href="#"><img src="img/delete2.png"></a>
+			         			</li>
 			         			<li>非广州*重设备</li>
 			         			<li>59元/客户</li>
 			         			<li>2*10公里</li>
 			         			<li>1*10公里</li>
 			         			<li>39.9元</li>
 			         		</ul>
-			         		<ul class="cv2Ul2" onclick="delTableRow(this)">
-			         			<li><img src="img/delete2.png"></li>
+			         		<ul class="cv2Ul2">
+			         			<li>
+			         				<a href="#"><img src="img/delete2.png"></a>
+			         			</li>
 			         			<li>非广州*常规货物</li>
 			         			<li>59元/客户</li>
 			         			<li>2*10公里</li>
@@ -1082,10 +1096,26 @@
 	    			<input type='button' class="c7but" onclick="msbox(1)" value="新增属性">  <!--新增商品属性按钮-->
 	    			（提交后通过审核即可显示在APP端、网页端等）<br />
 	    			<ul class="c7seven">
-	    				<li><span>食品行业协会 </span><span class="c7li1">**省食品行业协会<img src="img/delect1.png"></span></li>
-	    				<li><span>食品协会会员 </span><span class="c7li2">是<img src="img/delect1.png"></span></li>
-	    				<li><span>荣誉证书</span><span class="c7li3">2016年东莞食品先进企业<img src="img/delect1.png"></span></li>
-	    				<li><span>封装工艺</span><span class="c7li4">真空封装<img src="img/delect1.png"></span></li>
+	    				<li>
+	    					<span>食品行业协会 </span>
+	    					**省食品行业协会
+	    					<a href="#"><img src="img/delect1.png"></a>
+	    				</li>
+	    				<li>
+	    					<span>食品协会会员 </span>
+	    					是 
+	    					<a href="#"><img src="img/delect1.png"></a>
+	    				</li>
+	    				<li>
+	    					<span>荣誉证书</span>
+	    				    2016年东莞食品先进企业
+	    				    <a href="#"><img src="img/delect1.png"></a>
+	    				</li>
+	    				<li>
+	    					<span>封装工艺</span>
+	    					真空封装
+	    					<a href="#"><img src="img/delect1.png"></a>
+	    				</li>
 	    			</ul>
 	    		</fieldset>
 	    		

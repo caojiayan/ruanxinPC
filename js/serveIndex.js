@@ -71,23 +71,6 @@ $(document).ready(function(){
 	});
 });
 
-//con2中删除服务项目
-$(document).ready(function(){
-	$(".c2navli1").click(function(){
-		$(".c2navli1").hide();
-	});
-});
-$(document).ready(function(){
-	$(".c2navli2").click(function(){
-		$(".c2navli2").hide();
-	});
-});
-$(document).ready(function(){
-	$(".c2navli3").click(function(){
-		$(".c2navli3").hide();
-	});
-});
-
 //con3中交易类型选择
 
 function aCheck1(){ 
@@ -171,41 +154,31 @@ document.getElementById("cx17").style.display="none";
 document.getElementById("cx18").style.display="block";
 }
 
-//con4中点击删除当列
-function delTableRow(n){
-       n.parentNode.removeChild(n); 
-    }
-
 //con6中的服务资源新增
 function msgbox(n){
             document.getElementById('inputbox').style.display=n?'block':'none';     /* 点击按钮打开/关闭 对话框 */
     }
 
 //con7中新增商品属性
-function msbox(n){
-            document.getElementById('inputbox1').style.display=n?'block':'none';     /* 点击按钮打开/关闭 对话框 */
-    }
-
-
-//con7中商家补充属性中删除项
-$(document).ready(function(){
-	$(".c7li1").click(function(){
-		$(".c7li1").hide();
+$(function(){
+	$(".c7PpClick").click(functio(){
+	    var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+            display:"block"
+        });
+		$(".c7Popup").show();
 	});
-});
-$(document).ready(function(){
-	$(".c7li2").click(function(){
-		$(".c7li2").hide();
+	$(".c7PopupNo").click(function(){
+		$(".c7Popup").hide();
+		$(".maskingLayer").hide();
 	});
-});
-$(document).ready(function(){
-	$(".c7li3").click(function(){
-		$(".c7li3").hide();
-	});
-});
-$(document).ready(function(){
-	$(".c7li4").click(function(){
-		$(".c7li4").hide();
+	$(".c7PopupYes").click(function(){
+		$(".c7Popup").hide();
+		$(".maskingLayer").hide();
+		alert("已保存数据")
 	});
 });
 
@@ -221,8 +194,6 @@ $(document).ready(function(){
     });
  });
 
-
-
 //con8点击上传图片
 function fileSelect() {
         document.getElementById("fileToUpload").click();
@@ -232,4 +203,28 @@ function fileSelect() {
     }
 
 
-
+//点击删除图片，删除当列
+//别称
+$(function(){
+	$(".c2navList>li>a").click(function(){
+		$(this).parent().remove();
+	});
+});
+//规格
+$(function(){
+	$(".c4Ul>li>a").click(function(){
+		$(this).parent().remove();
+	});
+});
+//SKU
+$(function(){
+	$(".cv2Ul2>li>a").click(function(){
+		$(this).parent().parent().remove();
+	});
+});
+//商家补充属性
+$(function(){
+	$(".c7seven>li>a").click(function(){
+		$(this).parent().remove();
+	});
+});

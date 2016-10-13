@@ -202,83 +202,29 @@ $(function(){
 
 
 //服务设置中点击全选
-//$(function(){
-//  $(".c6Choice input").click(function(){
-//      var id = $(this).attr("id");  //获取当前id
-//      $("#id .deletebtn").click(function(){
-//          $(".table_box tr").each(function(){
-//              if($(this).find("input").attr("checked")&&$(this).index()!=0){
-//                  $(this).remove();
-//              }
-//          });
-//      });
-//      $("#allcheckbox").click(function(){
-//          if($(this).attr("checked")){
-//              $(".table_box td input").attr("checked","checked");
-//          }else{
-//              $(".table_box td input").attr("checked","")
-//          }
-//      });
-//      $(".table_box input").not("#allcheckbox").click(function(){
-//          $(".table_box input").not("#allcheckbox").each(function(){
-//              if($(".table_box input[type='checkbox']:checked").not("#allcheckbox").length==$(".table_box tr").not("#titletr").length){
-//                  $("#allcheckbox").attr("checked","checked");
-//              }else{
-//                  $("#allcheckbox").attr("checked","");
-//              }
-//          });
-//      });
-//  });
-//});
 
-
-//$(function(){
-//  $(".c6Choice .deletebtn").click(function(){
-//      $(".table_box tr").each(function(){
-//          if($(this).find("input").attr("checked")&&$(this).index()!=0){
-//              $(this).remove();
-//          }
-//      });
-//  });
-//  $("#allcheckbox").click(function(){
-//      if($(this).attr("checked")){
-//          $(".table_box td input").attr("checked","checked");
-//      }else{
-//          $(".table_box td input").attr("checked","")
-//      }
-//  });
-//  $(".table_box input").not("#allcheckbox").click(function(){
-//      $(".table_box input").not("#allcheckbox").each(function(){
-//          if($(".table_box input[type='checkbox']:checked").not("#allcheckbox").length==$(".table_box tr").not("#titletr").length){
-//              $("#allcheckbox").attr("checked","checked");
-//          }else{
-//              $("#allcheckbox").attr("checked","");
-//              }
-//      })
-//  })
-
-$(".deletebtn").click(function(){
-$(".table_box tr").each(function(){
-if($(this).find("input").attr("checked")&&$(this).index()!=0){
-$(this).remove();
-}
-})
-})
-$("#allcheckbox").click(function(){
-if($(this).attr("checked")){
-$(".table_box td input").attr("checked","checked");
-}else{
-$(".table_box td input").attr("checked","")
-}
-})
-
-$(".table_box input").not("#allcheckbox").click(function(){
-$(".table_box input").not("#allcheckbox").each(function(){
-if($(".table_box input[type='checkbox']:checked").not("#allcheckbox").length==$(".table_box tr").not("#titletr").length){
-$("#allcheckbox").attr("checked","checked");
-}else{
-$("#allcheckbox").attr("checked","");
-}
-})
-
-})
+$(function(){
+    $(".deletebtn").click(function(){
+        $(".table_box tr").each(function(){
+            if($(this).find("input").attr("checked")&&$(this).index()!=0){
+                $(this).remove();
+            }
+        });
+    });
+    $("#allcheckbox").click(function(){
+        if($(this).attr("checked")){
+            $(".table_box td input").attr("checked","checked");
+        }else{
+            $(".table_box td input").attr("checked","");
+        }
+    });
+    $(".table_box input").not("#allcheckbox").click(function(){
+        $(".table_box input").not("#allcheckbox").each(function(){
+            if($(".table_box input[type='checkbox']:checked").not("#allcheckbox").length==$(".table_box tr").not("#titletr").length){
+                $("#allcheckbox").attr("checked","checked");
+            }else{
+                $("#allcheckbox").attr("checked","");
+            }
+        });
+    });
+});

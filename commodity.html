@@ -5,6 +5,7 @@
 		<title>全新实物类商品</title>
 		<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
 		<script type="text/javascript" src="js/serveIndex.js"></script>
+		<script type="text/javascript" src="js/commodity.js" ></script>
 		<script type="text/javascript" src="js/ueditor.config.js" ></script>
 		<script type="text/javascript" src="js/ueditor.all.min.js" ></script>
 		<script type="text/javascript" src="js/zh-cn.js" ></script>
@@ -387,10 +388,18 @@
 			            <p>3/6 8个中文内 勿与标题类同，别称、标题、属性、活动等都会搜索匹配。</p>
 		            </fieldset>
 		            <div class="con2_nav">
-		 	            <ul>
-		 		            <li class="c2navli1">黑玫瑰葡萄干<img src="img/delect1.png"></li>
-		 		            <li class="c2navli2">黑葡萄干<img src="img/delect1.png"></li>
-		 		            <li class="c2navli3">黑美人葡萄干<img src="img/delect1.png"></li>
+		 	            <ul class="c2navList">
+		 		            <li>黑玫瑰葡萄干
+		 		            	<a href="#"><img src="img/delect1.png"></a>
+		 		            </li>
+		 		            <li>
+		 		            	黑葡萄干
+		 		            	<a href="#"><img src="img/delect1.png"></a>
+		 		            </li>
+		 		            <li>
+		 		            	黑美人葡萄干
+		 		            	<a href="#"><img src="img/delect1.png"></a>
+		 		            </li>
 		 	            </ul>
 		            </div>
 	            </form>
@@ -817,48 +826,68 @@
 			        	<ul class="c4Ul">
 			        		<li>商品规格</li>
 			        		<li>
-			        			<input type="text" value="请输入规格名称" onfocus="javascript:if(this.value=='请输入规格名称')this.value='';"/>
+			        			<input type="text" value="请输入商品的规格" onfocus="javascript:if(this.value=='请输入规格名称')this.value='';"/>
 			        	        <button type='submit'>新增</button>
 			        		</li>
-			        		<li class="c4deltech1">卡通
-			        		    <img src="img/delete2.png">
+			        		<li>口味
+			        		    <a href="#"><img src="img/delete2.png"></a>
 			        		</li>
-			        		<li class="c4deltech2">形式
-			        			<img src="img/delete2.png">
+			        		<li>净重
+			        		    <a href="#"><img src="img/delete2.png"></a>
 			        		</li>
-			        		<li>提示：请用最直观简洁的规格说明收费标准</li>
 			        	</ul>
 			        	<ul class="c4Ul">
 			        		<li>口味</li>
 			        		<li>
-			        			<input type="text" value="请输入内容" onfocus="javascript:if(this.value=='请输入内容')this.value='';"/>
+			        			<input type="text" value="请输入“口味”" onfocus="javascript:if(this.value=='请输入“口味”')this.value='';"/>
 			        	        <button type='submit'>新增</button>
 			        		</li>
-			        		<li class="c4deltech3">客户原创
-			        		   <img src="img/delete2.png">
+			        		<li>原味
+			        		   <a href="#"><img src="img/delete2.png"></a>
 			        		</li>
-			        		<li class="c4deltech4">我方创作
-			        			<img src="img/delete2.png">
+			        		<li>奶香味
+			        			<a href="#"><img src="img/delete2.png"></a>
 			        		</li>
-			        		<li class="c4deltech5">他方授权
-			        			<img src="img/delete2.png">
+			        		<li>五香味
+			        			<a href="#"><img src="img/delete2.png"></a>
+			        		</li>
+			        		<li>椒盐味
+			        			<a href="#"><img src="img/delete2.png"></a>
+			        		</li>
+			        		<li>烧烤味
+			        			<a href="#"><img src="img/delete2.png"></a>
+			        		</li>
+			        		<li>粽子味
+			        			<a href="#"><img src="img/delete2.png"></a>
 			        		</li>
 			        	</ul>
 			        	<ul class="c4Ul">
-			        		<li>重量<span class="letterBlue">g</span></li>
+			        		<li>重量<span class="letterBlue"> g</span></li>
 			        		<li>
-			        			<input type="text" value="请输入内容" onfocus="javascript:if(this.value=='请输入内容')this.value='';"/>
+			        			<input type="text" value="请输入“净重”" onfocus="javascript:if(this.value=='请输入“净重”')this.value='';"/>
 			        	        <button type='submit'>新增</button>
 			        		</li>
-			        		<li class="c4deltech6">平面
-			        			<img src="img/delete2.png">
+			        		<li>200
+			        			<a href="#"><img src="img/delete2.png"></a>
 			        		</li>
-			        		<li class="c4deltech7">3D
-			        			<img src="img/delete2.png">
+			        		<li>350
+			        			<a href="#"><img src="img/delete2.png"></a>
+			        		</li>
+			        		<li>450
+			        			<a href="#"><img src="img/delete2.png"></a>
+			        		</li>
+			        		<li>500
+			        			<a href="#"><img src="img/delete2.png"></a>
+			        		</li>
+			        		<li>150
+			        			<a href="#"><img src="img/delete2.png"></a>
+			        		</li>
+			        		<li>280
+			        			<a href="#"><img src="img/delete2.png"></a>
 			        		</li>
 			        	</ul>
 			        </fieldset>
-			        <fieldset class="cv21">
+			        <div class="cv21">
 			        	<div class="cv21List">
 			        		<ul class="cv21Ul1">
 			         			<li>
@@ -885,8 +914,17 @@
 			         				<img src="img/key3.png" align="center">条码
 			         			</li>
 			         			<li>
-			         				主要成分
+			         				<div class="">
+			         					<input type="text" class="li120px" value="主要成分" onfocus="javascript:if(this.value=='主要成分')this.value='';"/>
+			         				    <img src="img/img6.png" align="center">
+			         				    <img src="img/img5.png" align="center" style="display: none;">
+                                   </div>
+                                   <a href="#"><img src="img/addGS.png" align="center"></a>
 			         			</li>
+			         			<li>
+			         				
+			         			</li>
+			         			<li><img src="add" </li>
 			         		</ul>
 			        	</div>
 			        	<div class="cv21Ltitle">
@@ -927,7 +965,7 @@
 			        		</ul>
 			        	</div>
 			        	<div class="">	
-			         		<ul class="cv21Ul1" onclick="delTableRow(this)">
+			         		<ul class="cv21Ul1">
 			         			<li>
 			         				<a href="#">
 			         					<img src="img/newselect.png" align="center">
@@ -953,7 +991,7 @@
 			         		</ul>
 			         	</div>
 			         	<div class="">	
-			         		<ul class="cv21Ul1" onclick="delTableRow(this)">
+			         		<ul class="cv21Ul1">
 			         			<li>
 			         				<a href="#">
 			         					<img src="img/newselect.png" align="center">
@@ -979,7 +1017,7 @@
 			         		</ul>
 			         	</div>
 			         	<div class="">	
-			         		<ul class="cv21Ul1" onclick="delTableRow(this)">
+			         		<ul class="cv21Ul1">
 			         			<li>
 			         				<a href="#">
 			         					<img src="img/newselect.png" align="center">
@@ -1005,7 +1043,7 @@
 			         		</ul>
 			         	</div>
 			         	<div class="">	
-			         		<ul class="cv21Ul1" onclick="delTableRow(this)">
+			         		<ul class="cv21Ul1">
 			         			<li>
 			         				<a href="#">
 			         					<img src="img/newselect.png" align="center">
@@ -1030,7 +1068,7 @@
 			         			<li>葡萄干</li>
 			         		</ul>
 			         	</div>
-			        </fieldset>
+			        </div>
 			        <fieldset class="cv3">
 			        	<span class="cright">总库存</span>
 			        	<span class="coRed">3800包</span>
@@ -1532,30 +1570,33 @@
             				</li>
             			</ul>
             			<div class="cont3Box">
-            				<input type="checkbox" >干燥剂
-            				<input type="checkbox" >防腐剂
-            				<input type="checkbox" >调节剂
-            				<input type="checkbox" >抗结剂
-            				<input type="checkbox" >消泡剂
-            				<input type="checkbox" >抗氧化
-            				<input type="checkbox" >漂白剂
-            				<input type="checkbox" >膨松剂
-            				<input type="checkbox" >消泡剂
-            				<input type="checkbox" >着色剂
-            				<input type="checkbox" >护色剂
-            				<input type="checkbox" >氧化剂
-            				<input type="checkbox" >被膜剂
-            				<input type="checkbox" >乳化剂
-            				<input type="checkbox" >酶制剂
-            				<input type="checkbox" >凝固剂
-            				<input type="checkbox" >甜味剂
-            				<input type="checkbox" >增稠剂
-            				<input type="checkbox" >香料
-            				<input type="checkbox" >咸味剂
-            				<input type="checkbox" >面粉处理剂
-            				<input type="checkbox" >水分保持剂
-            				<input type="checkbox" >营养强化剂
-            				<input type="checkbox" >胶姆糖基础剂
+            				<ul>
+            					<li><input type="checkbox" >干燥剂</li>
+            					<li><input type="checkbox" >防腐剂</li>
+            					<li><input type="checkbox" >调节剂</li>
+            					<li><input type="checkbox" >抗结剂</li>
+            					<li><input type="checkbox" >消泡剂</li>
+            					<li><input type="checkbox" >抗氧化</li>
+            					<li><input type="checkbox" >漂白剂</li>
+            					<li><input type="checkbox" >漂白剂</li>
+            					<li><input type="checkbox" >膨松剂</li>
+            					<li><input type="checkbox" >消泡剂</li>
+            					<li><input type="checkbox" >着色剂</li>
+            					<li><input type="checkbox" >护色剂</li>
+            					<li><input type="checkbox" >氧化剂</li>
+            					<li><input type="checkbox" >被膜剂</li>
+            					<li><input type="checkbox" >乳化剂</li>
+            					<li><input type="checkbox" >酶制剂</li>
+            					<li><input type="checkbox" >凝固剂</li>
+            					<li><input type="checkbox" >甜味剂</li>
+            					<li><input type="checkbox" >增稠剂</li>
+            					<li><input type="checkbox" >香料</li>
+            					<li><input type="checkbox" >咸味剂</li>
+            					<li><input type="checkbox" >面粉处理剂</li>
+            					<li><input type="checkbox" >水分保持剂</li>
+            					<li><input type="checkbox" >营养强化剂</li>
+            					<li><input type="checkbox" >胶姆糖基础剂</li>
+            				</ul>
             			</div>
             		</fieldset>
             		<fieldset>

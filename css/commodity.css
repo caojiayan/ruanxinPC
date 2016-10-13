@@ -112,6 +112,10 @@
 	background: #EEEEEE;
 	border-radius: 10px;
 }
+.cont3Box ul li{
+	display: inline-block;
+	padding: 5px;
+}
 .cont3Space{
 	margin-top: 5px;
 }
@@ -131,8 +135,12 @@
 /*c4设置单位*/
 /*con4*/
 
-.c4Ul{
+.cv1one .c4Ul:nth-of-type(2){
 	padding-left: 50px;
+	margin:5px 0;
+}
+.cv1one .c4Ul:last-child{
+	padding-left: 35px;
 	margin:5px 0;
 }
 .c4Ul:first-child{
@@ -149,26 +157,31 @@
 }
 /*设置单位*/
 .con4 .cv1{
-	margin-left: 29px;
+	margin:5px 0 5px 29px;
 }
 /*服务规格*/
 .con4 .cv1one{
 	margin-left: 25px;
 }
 /*商品SKU列表*/
+#cont4Unit{
+	position: relative;
+}
 .cv21{
-	margin-top: 10px;
 	padding-bottom: 100px;
 	font-size: 14px;
+	position:relative;
+	/*top:10px;
+	left:135px;*/
 }
 .cv21Ul1{
 	width: 100%;
 	padding-left: 5px;
-	border-bottom: 1px solid #999999;
+	border-bottom: 1px solid #EEE;
 }
 .cv21List .cv21Ul1{
 	background: #EEEEEE;
-	border-top: 1px solid #999999;
+	border:1px solid #999;
 }
 .cv21Ul1 img{
 	vertical-align: middle;
@@ -199,9 +212,11 @@
 	width:160px !important;
 }
 
-.cv21List .cv2Ul1 li input{
-	border-bottom:none;
+.cv21List .cv21Ul1 li input{
+	border:1px solid #999;
 	border-radius: 5px;
+	height: 16px;
+	padding: 0 2px;
 }
 .cv21Ul1 .li50px{
 	width:35px;

@@ -5,7 +5,7 @@
 		<title>软信服务-技术类</title>
 		<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
 		<script type="text/javascript" src="js/serveIndex.js"></script>
-		<script type="text/javascript" src="js/technology.js" ></script>
+		<script type="text/javascript" src="js/technology.js"></script>
 		<script type="text/javascript" src="js/ueditor.config.js" ></script>
 		<script type="text/javascript" src="js/ueditor.all.min.js" ></script>
 		<script type="text/javascript" src="js/zh-cn.js" ></script>
@@ -221,10 +221,16 @@
 			     <p>3/6 8个中文内 勿与标题类同，别称、标题、属性、活动等都会搜索匹配。</p>
 		</fieldset>
 		<div class="con2_nav">
-		 	<ul>
-		 		<li class="c2navli1">0版动漫合成<img src="img/delect1.png"></li>
-		 		<li class="c2navli2">格子动漫制作<img src="img/delect1.png"></li>
-		 		<li class="c2navli3">二维卡通动画制作<img src="img/delect1.png"></li>
+		 	<ul class="c2navList">
+		 		<li>0版动漫合成
+		 			<a href="#"><img src="img/delect1.png"></a>
+		 		</li>
+		 		<li>格子动漫制作
+		 			<a href="#"><img src="img/delect1.png"></a>
+		 		</li>
+		 		<li>二维卡通动画制作
+		 			<a href="#"><img src="img/delect1.png"></a>
+		 		</li>
 		 	</ul>
 		</div>
 	</form>
@@ -548,8 +554,8 @@
 		        </div>
 	        </div>
 	        <!--con3结束-->
-	<!--con4开始-->
-	    <div class="con4 clearfix">
+	     <!--con4开始-->
+	    <div class="con4 clearfix" id="cont4Unit">
 	    	<form action="" method="">
 	    		<div class="cv1">
 	    		<fieldset>
@@ -601,11 +607,11 @@
 			        			<input type="text" value="请输入规格名称" onfocus="javascript:if(this.value=='请输入规格名称')this.value='';"/>
 			        	        <button type='submit'>新增</button>
 			        		</li>
-			        		<li class="c4deltech1">卡通
-			        		    <img src="img/delete2.png">
+			        		<li>卡通
+			        		    <a href="#"><img src="img/delete2.png"></a>
 			        		</li>
-			        		<li class="c4deltech2">形式
-			        			<img src="img/delete2.png">
+			        		<li>形式
+			        			<a href="#"><img src="img/delete2.png"></a>
 			        		</li>
 			        		<li>提示：请用最直观简洁的规格说明收费标准</li>
 			        	</ul>
@@ -615,14 +621,14 @@
 			        			<input type="text" value="请输入内容" onfocus="javascript:if(this.value=='请输入内容')this.value='';"/>
 			        	        <button type='submit'>新增</button>
 			        		</li>
-			        		<li class="c4deltech3">客户原创
-			        		   <img src="img/delete2.png">
+			        		<li>客户原创
+			        		   <a href="#"><img src="img/delete2.png"></a>
 			        		</li>
-			        		<li class="c4deltech4">我方创作
-			        			<img src="img/delete2.png">
+			        		<li>我方创作
+			        			<a href="#"><img src="img/delete2.png"></a>
 			        		</li>
-			        		<li class="c4deltech5">他方授权
-			        			<img src="img/delete2.png">
+			        		<li>他方授权
+			        			<a href="#"><img src="img/delete2.png"></a>
 			        		</li>
 			        	</ul>
 			        	<ul class="c4Ul">
@@ -631,11 +637,11 @@
 			        			<input type="text" value="请输入内容" onfocus="javascript:if(this.value=='请输入内容')this.value='';"/>
 			        	        <button type='submit'>新增</button>
 			        		</li>
-			        		<li class="c4deltech6">平面
-			        			<img src="img/delete2.png">
+			        		<li>平面
+			        			<a href="#"><img src="img/delete2.png"></a>
 			        		</li>
-			        		<li class="c4deltech7">3D
-			        			<img src="img/delete2.png">
+			        		<li>3D
+			        			<a href="#"><img src="img/delete2.png"></a>
 			        		</li>
 			        	</ul>
 			        </fieldset>
@@ -650,32 +656,40 @@
 			         			<li>增购<input type="text" value="1" onfocus="javascript:if(this.value=='1')this.value='';"/>确定</li>
 			         			<li>一口价<input type="text" value="29" onfocus="javascript:if(this.value=='29')this.value='';"/>确定</li>
 			         		</ul>
-			         		<ul class="cv2Ul2" onclick="delTableRow(this)">
-			         			<li><img src="img/delete2.png"></li>
+			         		<ul class="cv2Ul2">
+			         			<li>
+			         				<a href="#"><img src="img/delete2.png"></a>
+			         			</li>
 			         			<li>客户原创*平面</li>
 			         			<li>199元/客户</li>
 			         			<li>2*10秒</li>
 			         			<li>1*10秒</li>
 			         			<li>19.9元</li>
 			         		</ul>
-			         		<ul class="cv2Ul2" onclick="delTableRow(this)">
-			         			<li><img src="img/delete2.png"></li>
+			         		<ul class="cv2Ul2">
+			         			<li>
+			         				<a href="#"><img src="img/delete2.png"></a>
+			         			</li>
 			         			<li>客户制作*3D</li>
 			         			<li>1999元/客户</li>
 			         			<li>3*10秒</li>
 			         			<li>1*10秒</li>
 			         			<li>69.9元</li>
 			         		</ul>
-			         		<ul class="cv2Ul2" onclick="delTableRow(this)">
-			         			<li><img src="img/delete2.png"></li>
+			         		<ul class="cv2Ul2">
+			         			<li>
+			         				<a href="#"><img src="img/delete2.png"></a>
+			         			</li>
 			         			<li>他方授权*平面</li>
 			         			<li>299元/客户</li>
 			         			<li>2*10秒</li>
 			         			<li>1*10秒</li>
 			         			<li>15.9元</li>
 			         		</ul>
-			         		<ul class="cv2Ul2" onclick="delTableRow(this)">
-			         			<li><img src="img/delete2.png"></li>
+			         		<ul class="cv2Ul2">
+			         			<li>
+			         				<a href="#"><img src="img/delete2.png"></a>
+			         			</li>
 			         		 	<li>我方创作*平面</li>
 			         			<li>999元/客户</li>
 			         			<li>2*10秒</li>
@@ -767,8 +781,12 @@
 	    		</fieldset>
 	    		<fieldset class="c6Techtwo c6Choice" id="c6Choice1">
 	    			<span class="cright">服务资源</span>
-	    			<a href="#" class="c6PresClick"><img src="img/addlitter.png" align="center"></a>   <!--服务资源新增按钮-->
-	    			<a href="#" class="deletebtn" style="float: right;"><img src="img/trashW.png" align="center"></a>  <!--删除按钮-->
+	    			<a href="#" class="c6PresClick">
+	    				<img src="img/addlitter.png" align="center">
+	    			</a>                                                  <!--服务资源新增按钮-->
+	    			<a href="#" class="deletebtn" style="float: right;">
+	    				<img src="img/trashW.png" align="center">
+	    			</a>                                                   <!--删除按钮-->
 	    			<table class="table_box" width="1040px" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
 			        	<tr id="titletr">
 			        		<td>资源名称</td>
@@ -779,7 +797,7 @@
 			        		<td>
 			        			<a href="#">
 			        				<label>
-			        					<input class="checkAllinp" id="allcheckbox"  type="checkbox"/> <!-- 全选按钮-->
+			        					<input class="checkAllinp" id="allcheckbox" type="checkbox"/> <!-- 全选按钮-->
 			        					<span style="font-size: 12px; margin: 0;">全选</span> 
 			        				</label>
 			        			</a>
@@ -2462,23 +2480,46 @@
 	    		</fieldset>
 	    		<fieldset>
 	    			<span class="coRed cright">商家补充属性</span>
-	    			<input type='button' class="c7but" onclick="msbox(1)" value="新增属性">  <!--新增商品属性按钮-->
+	    			<input type='button' class="c7but c7PpClick" value="新增属性">  <!--新增商品属性按钮-->
 	    			（提交后通过审核即可显示在APP端、网页端等）<br />
 	    			<ul class="c7seven">
-	    				<li><span>食品行业协会 </span><span class="c7li1">**省食品行业协会<img src="img/delect1.png"></span></li>
-	    				<li><span>食品协会会员 </span><span class="c7li2">是<img src="img/delect1.png"></span></li>
-	    				<li><span>荣誉证书</span><span class="c7li3">2016年东莞食品先进企业<img src="img/delect1.png"></span></li>
-	    				<li><span>封装工艺</span><span class="c7li4">真空封装<img src="img/delect1.png"></span></li>
+	    				<li>
+	    					<span>食品行业协会 </span>
+	    					**省食品行业协会
+	    					<a href="#"><img src="img/delect1.png"></a>
+	    				</li>
+	    				<li>
+	    					<span>食品协会会员 </span>
+	    					是 
+	    					<a href="#"><img src="img/delect1.png"></a>
+	    				</li>
+	    				<li>
+	    					<span>荣誉证书</span>
+	    				    2016年东莞食品先进企业
+	    				    <a href="#"><img src="img/delect1.png"></a>
+	    				</li>
+	    				<li>
+	    					<span>封装工艺</span>
+	    					真空封装
+	    					<a href="#"><img src="img/delect1.png"></a>
+	    				</li>
 	    			</ul>
 	    		</fieldset>
-	    		
 	    		<!--新增商品属性开始-->
-	    		<div class="c7Popup" id='inputbox1' style="top:350px ;">
+	    		<div class="c7Popup" style="top:350px ;">
 	    			<div class="c7ptitle">
 	    				<ul>
-	    					<li><a class='x' href=''; onclick="msbox(1)"; return false;"><img src="img/delect1.png"></a> </li>
+	    					<li>
+	    						<a class="c7PopupNo" href="">
+	    							<img src="img/delect1.png">
+	    						</a> 
+	    					</li>
 	    					<li>新增商品属性</li>
-	    					<li><a href="">保存</a></li>
+	    					<li>
+	    						<a href="" class="c7PopupYes"> 
+	    							<img src="img/yes1.png" align="center"> 
+	    						</a>
+	    					</li>
 	    				</ul>
 	    			</div>
 	    			<div class="c7pone">
@@ -2501,8 +2542,8 @@
 	    					</li>
 	    					<li>
 	    						<input type="text" value="食协" onfocus="javascript:if(this.value=='食协')this.value='';"/>
+	    					        <span class="cright"></span> 可不填写，最多两个”别称“
 	    					</li>
-	    					<li>可不填写，最多两个”别称“</li>
 	    				</ul>
 	    				<ul>
 	    					<li>本次新增
@@ -2512,11 +2553,27 @@
 	    			</div>
 	    			<div class="c7ptwo">
 	    				<ul class="c7seven">
-	    				    <li><span>食品行业协会 </span><span class="c7li1">**省食品行业协会<img src="img/delect1.png"></span></li>
-	    				    <li><span>食品协会会员 </span><span class="c7li2">是<img src="img/delect1.png"></span></li>
-	    				    <li><span>荣誉证书</span><span class="c7li3">2016年东莞食品先进企业<img src="img/delect1.png"></span></li>
-	    				    <li><span>封装工艺</span><span class="c7li4">真空封装<img src="img/delect1.png"></span></li>
-	    			    </ul>
+	    				<li>
+	    					<span>食品行业协会 </span>
+	    					**省食品行业协会
+	    					<a href="#"><img src="img/delect1.png"></a>
+	    				</li>
+	    				<li>
+	    					<span>食品协会会员 </span>
+	    					是 
+	    					<a href="#"><img src="img/delect1.png"></a>
+	    				</li>
+	    				<li>
+	    					<span>荣誉证书</span>
+	    				    2016年东莞食品先进企业
+	    				    <a href="#"><img src="img/delect1.png"></a>
+	    				</li>
+	    				<li>
+	    					<span>封装工艺</span>
+	    					真空封装
+	    					<a href="#"><img src="img/delect1.png"></a>
+	    				</li>
+	    			</ul>
 	    			</div>
 	    		</div>
 	    		<!--新增商品属性结束-->
