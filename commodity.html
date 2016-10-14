@@ -358,7 +358,7 @@
 		        					<span class="cright">授权证书</span>
 		        					<label><input name="无" type="radio" value="" />无</label>
 		        					<label><input name="有" type="radio" value="" />有</label>
-		        					<a href="#"><img class="normalFace" src="img/upload.png" onclick="fileSelect();"></a>
+		        					<a href="#" title="上传授权证书图片"><img class="normalFace" src="img/upload.png" onclick="fileSelect();"></a>
 	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 		        				    <a class="cright"></a>
 		        				    <a href="#" class="letterBlue">品牌管理 >></a>
@@ -377,7 +377,8 @@
 					        <span class="cright">商品名称</span>
 					        <input type="text" value="小胖仓鼠葡萄干" onfocus="javascript:if(this.value=='小胖仓鼠葡萄干')this.value='';"/>
 				        </div>
-				        <p>8个中文内 提示：（无标题！品名、别称、属性等在用户搜索时均属匹配范围，智能搜索）</p>
+				        <span class="cright"></span>
+				        <span>8个中文内 提示：（无标题！品名、别称、属性等在用户搜索时均属匹配范围，智能搜索）</span>
 		            </fieldset>
 		            <fieldset>
 			            <div class="cs0">
@@ -385,7 +386,8 @@
 			     	        <input type="text"  value="请输入服务别称" onfocus="javascript:if(this.value=='请输入服务别称')this.value='';"/>
 			                <button type='submit'>新增</button>
 			            </div>
-			            <p>3/6 8个中文内 勿与标题类同，别称、标题、属性、活动等都会搜索匹配。</p>
+			            <span class="cright"></span>
+			            <span>3/6 8个中文内 勿与标题类同，别称、标题、属性、活动等都会搜索匹配。</span>
 		            </fieldset>
 		            <div class="con2_nav">
 		 	            <ul class="c2navList">
@@ -730,7 +732,7 @@
                                 <input type="checkbox" >软信币
                                 <input type="checkbox" >美元
                                 <input type="checkbox" >其他
-                                <span class="dropdown padleft5px" style="z-index: 10000;">  <!-- 模拟 select 的标记， -->
+                                <span class="dropdown padleft5px" style="z-index: 100;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="欧元" onfocus="javascript:if(this.value=='欧元')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -759,7 +761,7 @@
 		    </div>
 		    <!--con3交易类型结束-->
 		    <!--con4商品单位开始-->
-		    <div class="con4 clearfix">
+		    <div class="con4 clearfix" id="cont4Unit">
 	    	    <form>
 	    		    <fieldset class="cv1">
 	    		        <span>商品单位 </span>
@@ -887,6 +889,7 @@
 			        		</li>
 			        	</ul>
 			        </fieldset>
+			        <div class="cv21empty"></div>
 			        <div class="cv21">
 			        	<div class="cv21List">
 			        		<ul class="cv21Ul1">
@@ -909,22 +912,18 @@
 			         				一口价
 			         			</li>
 			         			<li>老客折上折</li>
-			         			<li>SKU主图</li>
+			         			<li style="text-align: center;">SKU主图</li>
 			         			<li class="cv2li150px">
 			         				<img src="img/key3.png" align="center">条码
 			         			</li>
 			         			<li>
-			         				<div class="">
+			         				<span>
 			         					<input type="text" class="li120px" value="主要成分" onfocus="javascript:if(this.value=='主要成分')this.value='';"/>
 			         				    <img src="img/img6.png" align="center">
 			         				    <img src="img/img5.png" align="center" style="display: none;">
-                                   </div>
-                                   <a href="#"><img src="img/addGS.png" align="center"></a>
+                                  </span>
 			         			</li>
-			         			<li>
-			         				
-			         			</li>
-			         			<li><img src="add" </li>
+			         			<a href="#" class="cv21addC"><img src="img/addGS.png" align="center"></a>
 			         		</ul>
 			        	</div>
 			        	<div class="cv21Ltitle">
@@ -979,12 +978,17 @@
 			         			<li>3包</li>
 			         			<li>29元</li>
 			         			<li>9.5折</li>
-			         			<li>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
+			         			<li class="cv21Img">
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 			         			</li>
 			         			<li>6970061330030</li>
 			         			<li>葡萄干</li>
@@ -1005,12 +1009,17 @@
 			         			<li>3包</li>
 			         			<li>29元</li>
 			         			<li>9.5折</li>
-			         			<li>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
+			         			<li class="cv21Img">
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 			         			</li>
 			         			<li>6970061330030</li>
 			         			<li>葡萄干</li>
@@ -1031,12 +1040,17 @@
 			         			<li>3包</li>
 			         			<li>29元</li>
 			         			<li>9.5折</li>
-			         			<li>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
+			         			<li class="cv21Img">
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 			         			</li>
 			         			<li>6970061330030</li>
 			         			<li>葡萄干</li>
@@ -1057,12 +1071,110 @@
 			         			<li>3包</li>
 			         			<li>29元</li>
 			         			<li>9.5折</li>
+			         			<li class="cv21Img">
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         			</li>
+			         			<li>6970061330030</li>
+			         			<li>葡萄干</li>
+			         		</ul>
+			         	</div>
+			         	<div class="">	
+			         		<ul class="cv21Ul1">
 			         			<li>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
-			         				<img src="img/img3.png" align="center"/>
+			         				<a href="#">
+			         					<img src="img/newselect.png" align="center">
+			         				</a>
+			         				<a href="#">
+			         				    <img src="img/delete2.png" alt="删除">
+			         				</a>
+			         			</li>
+			         			<li>原味*350g</li>
+			         			<li>500包</li>
+			         			<li>3包</li>
+			         			<li>29元</li>
+			         			<li>9.5折</li>
+			         			<li class="cv21Img">
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         			</li>
+			         			<li>6970061330030</li>
+			         			<li>葡萄干</li>
+			         		</ul>
+			         	</div>
+			         	<div class="">	
+			         		<ul class="cv21Ul1">
+			         			<li>
+			         				<a href="#">
+			         					<img src="img/newselect.png" align="center">
+			         				</a>
+			         				<a href="#">
+			         				    <img src="img/delete2.png" alt="删除">
+			         				</a>
+			         			</li>
+			         			<li>原味*350g</li>
+			         			<li>500包</li>
+			         			<li>3包</li>
+			         			<li>29元</li>
+			         			<li>9.5折</li>
+			         			<li class="cv21Img">
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         			</li>
+			         			<li>6970061330030</li>
+			         			<li>葡萄干</li>
+			         		</ul>
+			         	</div>
+			         	<div class="">	
+			         		<ul class="cv21Ul1">
+			         			<li>
+			         				<a href="#">
+			         					<img src="img/newselect.png" align="center">
+			         				</a>
+			         				<a href="#">
+			         				    <img src="img/delete2.png" alt="删除">
+			         				</a>
+			         			</li>
+			         			<li>原味*350g</li>
+			         			<li>500包</li>
+			         			<li>3包</li>
+			         			<li>29元</li>
+			         			<li>9.5折</li>
+			         			<li class="cv21Img">
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+			         				<a href="#" title="上传图片"><img class="normalFace" src="img/img3.png" onclick="fileSelect();"></a>
+	    						    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 			         			</li>
 			         			<li>6970061330030</li>
 			         			<li>葡萄干</li>
@@ -1116,7 +1228,7 @@
 		    					    <button type='submit'>增加</button>
 		    					</p>
 		    					<div class="ct51Ul">
-		    						<ul>
+		    						<ul class="ct51UList">
 		    							<li>
 		    								开壳器*1
 		    								<a href="#"><img src="img/delect.png"></a>
@@ -1239,7 +1351,7 @@
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright">有机食品</span>
-            					<span class="dropdown" style="z-index: 10010;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1001;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="有机食品" onfocus="javascript:if(this.value=='有机食品')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1257,12 +1369,12 @@
 				                        <li data-value=服务559>服务559</li>
 			                        </ul>
 		                        </span>
-		                        <a href="#"><img class="normalFace" src="img/upload.png" fileSelect();"></a>
+		                        <a href="#"><img class="normalFace" src="img/upload.png" onclick="fileSelect();"></a>
 	    						<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
             				</li>
             				<li>
             					<span class="cright">绿色食品</span>
-            					<span class="dropdown" style="z-index: 10010;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1001;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="否/LB-06-07" onfocus="javascript:if(this.value=='否/LB-06-07')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1286,7 +1398,7 @@
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright">加工工艺</span>
-            					<span class="dropdown" style="z-index: 10009;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1009;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1308,7 +1420,7 @@
             				</li>
             				<li>
             					<span class="cright">包装方式</span>
-            					<span class="dropdown" style="z-index: 10009;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1009;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="袋装/礼盒装" onfocus="javascript:if(this.value=='袋装/礼盒装')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1332,7 +1444,7 @@
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright">原料产地</span>
-            					<span class="dropdown" style="z-index: 10008;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1008;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1354,7 +1466,7 @@
             				</li>
             				<li>
             					<span class="cright">生产方式</span>
-            					<span class="dropdown" style="z-index: 10008;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1008;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1378,7 +1490,7 @@
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright cleft16px">品牌方</span>
-            					<span class="dropdown" style="z-index: 10007;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1007;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="**市**公司" onfocus="javascript:if(this.value=='**市**公司')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1400,7 +1512,7 @@
             				</li>
             				<li>
             					<span class="cright">社会信用代码</span>
-            					<span class="dropdown" style="z-index: 10007;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1007;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="91440111347" onfocus="javascript:if(this.value=='91440111347')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1424,7 +1536,7 @@
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright cleft16px">保质期</span>
-            					<span class="dropdown" style="z-index: 10006;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1006;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="12个月" onfocus="javascript:if(this.value=='12个月')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1446,7 +1558,7 @@
             				</li>
             				<li>
             					<span class="cright">储藏方式</span>
-            					<span class="dropdown" style="z-index: 10006;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1006;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="通风干燥处" onfocus="javascript:if(this.value=='通风干燥处')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1475,7 +1587,7 @@
             				</li>
             				<li>
             					<span class="cright">食用方式</span>
-            					<span class="dropdown" style="z-index: 10005;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1005;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor cs2two" type="text" value="开袋即食" onfocus="javascript:if(this.value=='开袋即食')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1499,7 +1611,7 @@
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright">执行标准号</span>
-            					<span class="dropdown" style="z-index: 10004;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1004;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor cs2two" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1522,7 +1634,7 @@
             				</li>
             				<li>
             					<span class="cright">品种/种类</span>
-            					<span class="dropdown" style="z-index: 10004;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1004;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor cs2two" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1548,7 +1660,7 @@
             					<span class="cright">食品添加剂</span>
             					<label><input name="食品添加剂" type="radio" value="" />无
             					<label><input name="食品添加剂" type="radio" value="" />有
-            					<span class="dropdown" style="z-index: 10003;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1003;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor cs2two" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1604,7 +1716,7 @@
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright cleft16px">生产方</span>
-            					<span class="dropdown" style="z-index: 10004;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1004;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="**市**公司" onfocus="javascript:if(this.value=='**市**公司')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1626,7 +1738,7 @@
             				</li>
             				<li>
             					<span class="cright">QS许可编号</span>
-            					<span class="dropdown" style="z-index: 10004;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1004;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="QS6501 1702" onfocus="javascript:if(this.value=='QS6501 1702')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1650,7 +1762,7 @@
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright">工厂地址</span>
-            					<span class="dropdown" style="z-index: 10003;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1003;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1672,7 +1784,7 @@
             				</li>
             				<li>
             					<span class="cright cleft16px">工厂电话</span>
-            					<span class="dropdown" style="z-index: 10003;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1003;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1699,7 +1811,7 @@
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright">婴幼儿可食用</span>
-            					<span class="dropdown" style="z-index: 10002;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1002;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="< 3周岁，禁食" onfocus="javascript:if(this.value=='< 3周岁，禁食')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1721,7 +1833,7 @@
             				</li>
             				<li>
             					<span class="cright">老年人可食用</span>
-            					<span class="dropdown" style="z-index: 10002;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1002;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="牙口不好者禁食" onfocus="javascript:if(this.value=='牙口不好者禁食')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1745,7 +1857,7 @@
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright cleft16px">孕妇可食用</span>
-            					<span class="dropdown" style="z-index: 10001;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1001;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="正常食用" onfocus="javascript:if(this.value=='正常食用')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1769,7 +1881,7 @@
             			<ul class="cont3Ul">-->
             				<li>
             					<span class="cright cleft16px">病患禁食</span>
-            					<span class="dropdown" style="z-index: 10001;">  <!-- 模拟 select 的标记， -->
+            					<span class="dropdown" style="z-index: 1001;">  <!-- 模拟 select 的标记， -->
 			                        <input class="editor" type="text" value="无匹配可新增" onfocus="javascript:if(this.value=='无匹配可新增')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -1791,82 +1903,135 @@
             				</li>
             			</ul>
             			<div class="cont3Ultwo">
-            				<input type="checkbox" >糖尿病
-            				<input type="checkbox" >高血压
-            				<input type="checkbox" >高血脂
-            				<input type="checkbox" >盲人
-            				<input type="checkbox" >哮喘
-            				<input type="checkbox" >中风
-            				<input type="checkbox" >癌症
-            				<input type="checkbox" >醉酒者
-            				<input type="checkbox" >肝病
-            				<input type="checkbox" >过敏人士
+            			    <ul>
+            			    	<li><input type="checkbox" >糖尿病</li>
+            			    	<li><input type="checkbox" >高血压</li>
+            			    	<li><input type="checkbox" >高血脂</li>
+            			    	<li><input type="checkbox" >盲人</li>
+            			    	<li><input type="checkbox" >哮喘</li>
+            			    	<li><input type="checkbox" >中风</li>
+            			    	<li><input type="checkbox" >癌症</li>
+            			    	<li><input type="checkbox" >醉酒者</li>
+            			    	<li><input type="checkbox" >肝病</li>
+            			    	<li><input type="checkbox" >过敏人士</li>
+            			    </ul>
             			</div>
             		</fieldset>
             		<fieldset>
-	    			<div class="cont3Space">
-	    				<span class="coRed">商家补充属性</span>
-	    			    <input type='button' class="c7but" onclick="msbox(1)" value="新增属性">  <!--新增商品属性按钮-->
-	    			        （提交后通过审核即可显示在APP端、网页端等）<br />
-	    			</div>
-	    			<ul class="c7seven">
-	    				<li><span>食品行业协会 </span><span class="c7li1">**省食品行业协会<img src="img/delect1.png"></span></li>
-	    				<li><span>食品协会会员 </span><span class="c7li2">是<img src="img/delect1.png"></span></li>
-	    				<li><span>荣誉证书</span><span class="c7li3">2016年东莞食品先进企业<img src="img/delect1.png"></span></li>
-	    				<li><span>封装工艺</span><span class="c7li4">真空封装<img src="img/delect1.png"></span></li>
-	    			</ul>
-	    		</fieldset>
-	    		
-	    		<!--新增商品属性开始-->
-	    		<div class="c7Popup" id='inputbox1' style="top:600px;">
-	    			<div class="c7ptitle">
-	    				<ul>
-	    					<li><a class='x' href=''; onclick="msbox(1)"; return false;"><img src="img/delect1.png"></a> </li>
-	    					<li>新增商品属性</li>
-	    					<li><a href="">保存</a></li>
-	    				</ul>
-	    			</div>
-	    			<div class="c7pone">
-	    				<ul>
-	    					<li>属性名称
-	    						<input type="text" value="食品行业协会" onfocus="javascript:if(this.value=='食品行业协会')this.value='';"/>
-	    					</li>
-	    					<li>数据类型
-	    						<select name="数据类型" >
-                                    <option value="">文字</option>
-                                    <option value="">文字1</option>
-                                    <option value="">文字2</option>
-                                    <option value="">文字3</option>
-                                </select>
-	    					</li>
-	    				</ul>
-	    				<ul>
-	    					<li>属性别称
-	    						<input type="text" value="食品协会" onfocus="javascript:if(this.value=='食品协会')this.value='';"/>
-	    					</li>
-	    					<li>
-	    						<input type="text" value="食协" onfocus="javascript:if(this.value=='食协')this.value='';"/>
-	    					</li>
-	    					<li>可不填写，最多两个”别称“</li>
-	    				</ul>
-	    				<ul>
-	    					<li>本次新增
-	    						<input type="text" value="**省食品行业协会" onfocus="javascript:if(this.value=='**省食品行业协会')this.value='';"/>
-	    					</li>
-	    				</ul>
-	    			</div>
-	    			<div class="c7ptwo">
-	    				<ul class="c7seven">
-	    				    <li><span>食品行业协会 </span><span class="c7li1">**省食品行业协会<img src="img/delect1.png"></span></li>
-	    				    <li><span>食品协会会员 </span><span class="c7li2">是<img src="img/delect1.png"></span></li>
-	    				    <li><span>荣誉证书</span><span class="c7li3">2016年东莞食品先进企业<img src="img/delect1.png"></span></li>
-	    				    <li><span>封装工艺</span><span class="c7li4">真空封装<img src="img/delect1.png"></span></li>
+	    			    <div class="cont3Space">
+	    				    <span class="coRed">商家补充属性</span>
+	    			        <a href="#" class="c7but c7PpClick">新增属性</a>    <!--新增商品属性按钮-->
+	    			             （提交后通过审核即可显示在APP端、网页端等）<br />
+	    			    </div>
+	    			    <ul class="c7seven">
+	    				    <li>
+	    					    <span>食品行业协会 </span>
+	    					**省食品行业协会
+	    					    <a href="#"><img src="img/delect1.png"></a>
+	    				    </li>
+	    				    <li>
+	    					    <span>食品协会会员 </span>
+	    					        是 
+	    					    <a href="#"><img src="img/delect1.png"></a>
+	    				    </li>
+	    				    <li>
+	    					    <span>荣誉证书</span>
+	    				        2016年东莞食品先进企业
+	    				        <a href="#"><img src="img/delect1.png"></a>
+	    				    </li>
+	    				    <li>
+	    					    <span>封装工艺</span>
+	    					        真空封装
+	    					    <a href="#"><img src="img/delect1.png"></a>
+	    				    </li>
 	    			    </ul>
-	    			</div>
-	    		</div>
-	    		<!--新增商品属性结束-->
-                </form>
-            </div>
+	    		    </fieldset>
+	    		    <!--新增商品属性开始-->
+	    		    <div class="c7Popup" style="top:350px ;">
+	    			    <div class="c7ptitle">
+	    				    <ul>
+	    					    <li>
+	    						    <a href="#" class="c7PopupNo" >
+	    							    <img src="img/delect1.png">
+	    						    </a> 
+	    					    </li>
+	    					    <li>新增商品属性</li>
+	    					    <li>
+	    						    <a href="#" class="c7PopupYes"> 
+	    							    <img src="img/yes1.png" align="center"> 
+	    						    </a>
+	    					    </li>
+	    				    </ul>
+	    			    </div>
+	    			    <div class="c7pone">
+	    				    <ul>
+	    					    <li>属性名称
+	    						    <input type="text" value="食品行业协会" onfocus="javascript:if(this.value=='食品行业协会')this.value='';"/>
+	    					    </li>
+	    					    <li>数据类型
+	    						    <span class="dropdown padleft5px" style="z-index: 100;">  <!-- 模拟 select 的标记， -->
+	                                    <input class="editor" type="text" value="欧元" onfocus="javascript:if(this.value=='欧元')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                            <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                            <ul>   <!-- 列表菜单 -->
+				                            <li class="search" style="border: 1px solid #EEEEEE;">
+					                            <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                            </li>   <!-- 过滤输入的列表， -->
+				                            <li data-value=欧元>欧元</li>
+				                            <li data-value=112>112</li>
+				                            <li data-value=223>223</li>
+				                            <li data-value=335>335</li>
+				                            <li data-value=224>224</li>
+				                            <li data-value=336>336</li>
+				                            <li data-value=447>447</li>
+				                            <li data-value=448>448</li>
+				                            <li data-value=559>559</li>
+			                            </ul>
+		                            </span>
+	    					    </li>
+	    				    </ul>
+	    				    <ul>
+	    					    <li>属性别称
+	    						    <input type="text" value="食品协会" onfocus="javascript:if(this.value=='食品协会')this.value='';"/>
+	    					    </li>
+	    					    <li>
+	    						    <input type="text" value="食协" onfocus="javascript:if(this.value=='食协')this.value='';"/>
+	    					        <span class="cright"></span> 可不填写，最多两个”别称“
+	    					    </li>
+	    				    </ul>
+	    				    <ul>
+	    					    <li>本次新增
+	    						    <input type="text" value="**省食品行业协会" onfocus="javascript:if(this.value=='**省食品行业协会')this.value='';"/>
+	    					    </li>
+	    				    </ul>
+	    			    </div>
+	    			    <div class="c7ptwo">
+	    				    <ul class="c7seven">
+	    				        <li>
+	    					        <span>食品行业协会 </span>
+	    					        **省食品行业协会
+	    					        <a href="#"><img src="img/delect1.png"></a>
+	    				        </li>
+	    				        <li>
+	    					         <span>食品协会会员 </span>
+	    					                是 
+	    					        <a href="#"><img src="img/delect1.png"></a>
+	    				        </li>
+	    				        <li>
+	    					        <span>荣誉证书</span>
+	    				            2016年东莞食品先进企业
+	    				            <a href="#"><img src="img/delect1.png"></a>
+	    				        </li>
+	    				        <li>
+	    					        <span>封装工艺</span>
+	    					                真空封装
+	    					        <a href="#"><img src="img/delect1.png"></a>
+	    				        </li>
+	    			        </ul>
+	    			    </div>
+	    		    </div>
+	    		    <!--新增商品属性结束-->
+	    	    </form>
+	        </div>
             <!--cont3结束-->
             <!--cont4部分开始-->
             <div class="cont4">
@@ -1992,7 +2157,8 @@
 	    <!--con9上架销售结束-->
         </div>
         <!--content结束-->
-        
+        <!--遮盖层-->
+		<div class="maskingLayer"></div>
         <!--footer部分-->
         <div class="bj4">
             <p style="color:#999;">粤ICP路1507617号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@2016&nbsp;&nbsp;软信&nbsp;&nbsp;版权所有&nbsp; <span><a href="#">申请入驻</a>&nbsp;&nbsp;<a href="#">申请合作</a>&nbsp;&nbsp;<a href="#">开发平台</a>&nbsp;&nbsp;<a href="#">关于软信</a></span></p>

@@ -162,26 +162,27 @@
 					        </div>
 				    </fieldset>
 				    <div class="c1Proinput1">
-				    	<input type="button" style="background: url(img/addlitter.png) no-repeat center;" id="" value=""> 
+				    	<a href="#"><img src="img/addlitter.png" align="center"></a>
 				    </div>
 			    </div>
 			<div class="con1Ca2">
 				<div class="cs3">
 					<fieldset>
-				    <span class="cright">选定类目</span>
-				    <div class="cs3left"></div>
-				    	<div class="cs3right">
-				    		<span class="cright">服务方式</span>
-					    <label><input name="服务方式" type="radio" value="" />插画</label> 
-                        <label><input name="服务方式" type="radio" value="" />配音 </label> 
-                        <label><input name="服务方式" type="radio" value="" />培训</label> 
-                        <label><input name="服务方式" type="radio" value="" />合成</label> 
-                        <label><input name="服务方式" type="radio" value="" /> 
-                             <input class="cs3input" value="自定义服务方式"  onfocus="javascript:if(this.value=='自定义服务方式')this.value='';"/>
-                        </label>
-                       </div>
+				        <span class="cright">选定类目</span>
+				        <div class="cs3left"></div>
+				    	    <div class="cs3right">
+				    		    <span class="cright">服务方式</span>
+					            <label><input name="服务方式" type="radio" value="" />插画</label> 
+                                <label><input name="服务方式" type="radio" value="" />配音 </label> 
+                                <label><input name="服务方式" type="radio" value="" />培训</label> 
+                                <label><input name="服务方式" type="radio" value="" />合成</label> 
+                                <label>
+                            	    <input name="服务方式" type="radio" value="" /> 
+                                    <input class="cs3input" value="自定义服务方式"  onfocus="javascript:if(this.value=='自定义服务方式')this.value='';"/>
+                                </label>
+                            </div>
 				    	<div class="c1Proinput2 c1Techinput2">
-				    		<input type="button" style="background: url(img/addlitter.png) no-repeat center;" id="" value=""> 
+				    	    <a href="#"><img src="img/addlitter.png" align="center"></a>
 				    	</div> 
 				    </fieldset>
 			    </div>
@@ -209,7 +210,8 @@
 					<span class="cright">服务项目</span>
 					<input type="text" value="卡通类动画合成制作" onfocus="javascript:if(this.value=='卡通类动画合成制作')this.value='';"/>
 				</div>
-				<p>10个中文内 提示：（用户搜索时，系统会自动匹配您的商品的相应属性，无须写标题）</p>
+				<span class="cright"></span>
+				<span>10个中文内 提示：（用户搜索时，系统会自动匹配您的商品的相应属性，无须写标题）</span>
 		</fieldset>
 		<fieldset>
 			<legend></legend>
@@ -218,7 +220,8 @@
 			     	<input type="text"  value="请输入服务别称" onfocus="javascript:if(this.value=='请输入服务别称')this.value='';"/>
 			        <button type='submit'>新增</button>
 			     </div>
-			     <p>3/6 8个中文内 勿与标题类同，别称、标题、属性、活动等都会搜索匹配。</p>
+			     <span class="cright"></span>
+			     <span>3/6 8个中文内 勿与标题类同，别称、标题、属性、活动等都会搜索匹配。</span>
 		</fieldset>
 		<div class="con2_nav">
 		 	<ul class="c2navList">
@@ -2480,7 +2483,7 @@
 	    		</fieldset>
 	    		<fieldset>
 	    			<span class="coRed cright">商家补充属性</span>
-	    			<input type='button' class="c7but c7PpClick" value="新增属性">  <!--新增商品属性按钮-->
+	    				<a href="#" class="c7but c7PpClick">新增属性</a>    <!--新增商品属性按钮-->
 	    			（提交后通过审核即可显示在APP端、网页端等）<br />
 	    			<ul class="c7seven">
 	    				<li>
@@ -2510,13 +2513,13 @@
 	    			<div class="c7ptitle">
 	    				<ul>
 	    					<li>
-	    						<a class="c7PopupNo" href="">
+	    						<a href="#" class="c7PopupNo" >
 	    							<img src="img/delect1.png">
 	    						</a> 
 	    					</li>
 	    					<li>新增商品属性</li>
 	    					<li>
-	    						<a href="" class="c7PopupYes"> 
+	    						<a href="#" class="c7PopupYes"> 
 	    							<img src="img/yes1.png" align="center"> 
 	    						</a>
 	    					</li>
@@ -2528,12 +2531,24 @@
 	    						<input type="text" value="食品行业协会" onfocus="javascript:if(this.value=='食品行业协会')this.value='';"/>
 	    					</li>
 	    					<li>数据类型
-	    						<select name="数据类型" >
-                                    <option value="">文字</option>
-                                    <option value="">文字1</option>
-                                    <option value="">文字2</option>
-                                    <option value="">文字3</option>
-                                </select>
+	    						<span class="dropdown padleft5px" style="z-index: 100;">  <!-- 模拟 select 的标记， -->
+	                                <input class="editor" type="text" value="欧元" onfocus="javascript:if(this.value=='欧元')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=欧元>欧元</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span>
 	    					</li>
 	    				</ul>
 	    				<ul>

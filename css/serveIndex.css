@@ -130,6 +130,23 @@ body{
 .numWidth{
 	width: 63px;
 }
+/*提示字体设为14Px*/
+.font14px{
+	font-size: 14px;
+}
+/*遮盖层*/
+.maskingLayer{
+	display:none;  
+    width:100%;  
+    height:100%;  
+    background:#000;  
+    position:absolute;  
+    top:0;  
+    left:0;  
+    z-index:9999;  
+    opacity:0.5;                        /*背景的透明度:(Firefox适用；）*/  
+    filter:alpha(opacity =50);          /*背景的透明度:(IE适用)； */  
+}
 
 /*下拉框样式*/
 .dropdown {
@@ -393,7 +410,6 @@ body{
 .cs3 input[type="button"],
 .c1Proinput1,
 .c1Proinput2 {
-	background:url(../img/addlitter.png) no-repeat center right;
 	border-bottom-width: 0;	
 }
 
@@ -474,9 +490,7 @@ body{
 }
 .con2_nav ul{
 	background: #EEEEEE;
-	width: 950px;
 	padding:0 5px 0 15px;
-	margin: 0 auto;
 	border-radius: 5px;
 }
 
@@ -512,11 +526,10 @@ body{
 }
 
 .cx2{
-	width: 950px;
-	padding: 10px 10px 10px 15px;
-	margin: 0 auto;
+	padding: 10px 0 10px 15px;
+	margin-left: 30px;
 	background: #EEEEEE;
-	border-radius: 10px;
+	border-radius: 5px;
 	display: none;
 }
 
@@ -717,7 +730,7 @@ body{
 
 .c5one{
 	background: #EEEEEE;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 .c5one fieldset:nth-of-type(2) input[value="no"]{
 	margin-left: 45px;
@@ -810,7 +823,6 @@ body{
 	background: #FFFFFF;
 	display:none; /* 默认对话框隐藏 */
 	position: absolute; 
-	/*box-shadow:3px 3px 40px #EEEEEE;*/
 	z-index: 10000;
 }
 .c6popup{
@@ -993,7 +1005,7 @@ body{
 }
 
 .c7five{
-	width: 950px;
+	width: 970px;
 	height: 60px;
 	margin-left:53px ;
 	border-radius: 5px;

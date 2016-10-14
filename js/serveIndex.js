@@ -52,13 +52,6 @@ $(function(){
 					p.append(fragment);  //将临时容器添加到无序列表里面，一次添加效率高
 				});
 			});
-//当点击到某个下拉框时，z-index值最大
-//$(document).ready(function(){
-//	$(".dropdown").click(function(){
-//		$(".dropdown:hover").css("z-index","100000")
-//	});
-//  });
-
 
 //con1中类目选择：下拉框的值追加到cs3left后面
 $(document).ready(function(){
@@ -71,8 +64,7 @@ $(document).ready(function(){
 	});
 });
 
-//con3中交易类型选择
-
+//con3中交易类型
 function aCheck1(){ 
 document.getElementById("cx11").style.display="block"; 
 document.getElementById("cx12").style.display="none";
@@ -153,34 +145,214 @@ document.getElementById("cx16").style.display="none";
 document.getElementById("cx17").style.display="none";
 document.getElementById("cx18").style.display="block";
 }
-
-//con6中的服务资源新增
-function msgbox(n){
-            document.getElementById('inputbox').style.display=n?'block':'none';     /* 点击按钮打开/关闭 对话框 */
-    }
-
-//con7中新增商品属性
+//服务设置
+//服务设置中服务要素
 $(function(){
-	$(".c7PpClick").click(functio(){
-	    var bh = $("body").height();
+  $('#c6Techcheck1').click(function(){
+    if($('.c6Techtwo').is(':hidden')){
+      $('.c6Techtwo').show();
+      $('#c6Techcheck1').val('点击隐藏');
+    }
+    else{
+      $('.c6Techtwo').hide();
+      $('#c6Techcheck1').val('点击显示');
+    }
+  });
+});
+
+$(function(){
+  $('#c6Techcheck2').click(function(){
+    if($('.c6Techthree').is(':hidden')){
+      $('.c6Techthree').show();
+      $('#c6Techcheck2').val('点击隐藏');
+    }
+    else{
+      $('.c6Techthree').hide();
+      $('#c6Techcheck2').val('点击显示');
+    }
+  });
+});
+
+$(function(){
+  $('#c6Techcheck3').click(function(){
+    if($('.c6Techfour').is(':hidden')){
+      $('.c6Techfour').show();
+      $('#c6Techcheck3').val('点击隐藏');
+    }
+    else{
+      $('.c6Techfour').hide();
+      $('#c6Techcheck3').val('点击显示');
+    }
+  });
+});
+
+//服务设置中服务人员
+//遮盖层
+$(function(){
+	$(".c6TechpopClick").click(function(){   //服务人员新增
+		var bh = $("body").height();
         var bw = $("body").width();
         $(".maskingLayer").css({
             height:bh,
             width:bw,
             display:"block"
         });
-		$(".c7Popup").show();
+        $("#c6TechpopupN input").attr("value",""); //点击新增的时候，清空input里的value值
+		$("#c6TechpopupN").show();
 	});
-	$(".c7PopupNo").click(function(){
-		$(".c7Popup").hide();
+	$(".c6TechpopWrite").click(function(){  //服务人员修改
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+            display:"block"
+        });
+		$("#c6Techpopup").show();
+	});
+	$(".c6TechpopClose").click(function(){
+		$("#c6Techpopup").hide(); //点击关闭
+		$("#c6TechpopupN").hide();
 		$(".maskingLayer").hide();
 	});
-	$(".c7PopupYes").click(function(){
-		$(".c7Popup").hide();
+	$(".c6TechpopHold").click(function(){
+		$("#c6Techpopup").hide(); //点击关闭
+		$("#c6TechpopupN").hide();
 		$(".maskingLayer").hide();
 		alert("已保存数据")
 	});
 });
+
+//服务设置中服务项目
+//遮盖层
+$(function(){
+	$(".c6PWriClick").click(function(){   //服务项目新增
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+            display:"block"
+        });
+        $("#c6ProWriteN input").attr("value",""); //点击新增的时候，清空input里的value值
+		$("#c6ProWriteN").show();
+	});
+	$(".c6ProteW").click(function(){   //服务项目修改
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+            display:"block"
+        });
+		$("#c6ProWrite").show();
+	});
+	$(".c6ProWriClose").click(function(){
+		$("#c6ProWriteN").hide();
+		$("#c6ProWrite").hide();
+		$(".maskingLayer").hide();
+	});
+	$(".c6ProWriHold").click(function(){
+		$("#c6ProWriteN").hide();
+		$("#c6ProWrite").hide();
+		$(".maskingLayer").hide();
+		alert("已保存数据")
+	});
+});
+//服务设置中服务资源
+$(function(){
+	$(".c6PresClick").click(function(){   //服务资源新增
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+            display:"block"
+        });
+        $("#c6PresourceN input").attr("value",""); //点击新增的时候，清空input里的value值
+		$("#c6PresourceN").show();
+	});
+	$(".c6resourceW").click(function(){   //服务资源修改
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+            display:"block"
+        });
+		$("#c6Presource").show();
+	});
+	$(".c6PresClose").click(function(){
+		$("#c6PresourceN").hide();
+		$("#c6Presource").hide();
+		$(".maskingLayer").hide();
+	});
+	$(".c6PresHold").click(function(){
+		$("#c6PresourceN").hide();
+		$("#c6Presource").hide();
+		$(".maskingLayer").hide();
+		alert("已保存数据")
+	});
+});
+//服务设置中弹框盒子里上传图片部分
+$(function(){
+    $('.imgRemove').click(function(){   //点击删除键，删除该图片
+        $(this).parent().remove();  //移除掉他的父级li
+    });
+});
+
+//商家补充属性
+//新增按钮
+$(function(){
+	$(".c7PpClick").click(function(){
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+            display:"block"
+        });
+		$(".c7Popup input").attr("value",""); 
+		$(".c7Popup").show();
+	});
+	$(".c7PopupNo").click(function(){
+		$(".maskingLayer").hide();
+		$(".c7Popup").hide();
+	});
+	$(".c7PopupYes").click(function(){
+		$(".maskingLayer").hide();
+		$(".c7Popup").hide();
+		alert("已保存数据");
+	});
+});
+
+//服务设置中点击全选
+$(function(){
+    $(".deletebtn").click(function(){
+        $(".table_box tr").each(function(){
+            if($(this).find("input").attr("checked")&&$(this).index()!=0){
+                $(this).remove();
+            }
+        });
+    });
+    $("#allcheckbox").click(function(){
+        if($(this).attr("checked")){
+            $(".table_box td input").attr("checked","checked");
+        }else{
+            $(".table_box td input").attr("checked","");
+        }
+    });
+    $(".table_box input").not("#allcheckbox").click(function(){
+        $(".table_box input").not("#allcheckbox").each(function(){
+            if($(".table_box input[type='checkbox']:checked").not("#allcheckbox").length==$(".table_box tr").not("#titletr").length){
+                $("#allcheckbox").attr("checked","checked");
+            }else{
+                $("#allcheckbox").attr("checked","");
+            }
+        });
+    });
+});
+
 
 //con7服务内容中的textarea
  $(function(){
