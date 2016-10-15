@@ -205,21 +205,20 @@
 <div class="con2 clearfix">
 	<form action="" method="">
 		<fieldset>
-			<legend></legend>
-				<div class="cs1">
-					<span class="cright">服务项目</span>
-					<input type="text" value="卡通类动画合成制作" onfocus="javascript:if(this.value=='卡通类动画合成制作')this.value='';"/>
-				</div>
-				<span class="cright"></span>
-				<span>10个中文内 提示：（用户搜索时，系统会自动匹配您的商品的相应属性，无须写标题）</span>
+			<span class="cs1">
+				<span class="cright">服务项目</span>
+				<input type="text" value="卡通类动画合成制作" onfocus="javascript:if(this.value=='卡通类动画合成制作')this.value='';"/>
+			</span>
+			<span class="cright"></span>
+			<span>10个中文内 提示：（用户搜索时，系统会自动匹配您的商品的相应属性，无须写标题）</span>
 		</fieldset>
 		<fieldset>
 			<legend></legend>
-			     <div class="cs0">
+			     <span class="cs0">
 			     	<span class="cright">服务别称</span>
 			     	<input type="text"  value="请输入服务别称" onfocus="javascript:if(this.value=='请输入服务别称')this.value='';"/>
 			        <button type='submit'>新增</button>
-			     </div>
+			     </span>
 			     <span class="cright"></span>
 			     <span>3/6 8个中文内 勿与标题类同，别称、标题、属性、活动等都会搜索匹配。</span>
 		</fieldset>
@@ -788,8 +787,8 @@
 	    				<img src="img/addlitter.png" align="center">
 	    			</a>                                                  <!--服务资源新增按钮-->
 	    			<a href="#" class="deletebtn" style="float: right;">
-	    				<img src="img/trashW.png" align="center">
-	    			</a>                                                   <!--删除按钮-->
+	    				<img src="img/trashW.png" align="center">            <!--服务资源列表删除按钮-->
+	    			</a>                                                  
 	    			<table class="table_box" width="1040px" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
 			        	<tr id="titletr">
 			        		<td>资源名称</td>
@@ -800,7 +799,7 @@
 			        		<td>
 			        			<a href="#">
 			        				<label>
-			        					<input class="checkAllinp" id="allcheckbox" type="checkbox"/> <!-- 全选按钮-->
+			        					<input class="checkAllinp" id="allcheckbox" type="checkbox"/> <!--服务资源列表全选按钮-->
 			        					<span style="font-size: 12px; margin: 0;">全选</span> 
 			        				</label>
 			        			</a>
@@ -841,10 +840,12 @@
 	    		<fieldset class="c6Techthree">
 	    			<span class="cright">服务人员</span>
 	    			<a href="#" class="c6TechpopClick"><img src="img/addlitter.png" align="center"></a>   <!--服务人员新增按钮-->
-	    			<a href="#" style="float: right;"><img src="img/trashW.png" align="center"></a>
-	    			<table width="1040px" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
+	    			<a href="#" class="deletebtn" style="float: right;">
+	    				<img src="img/trashW.png" align="center">                     <!-- 服务人员列表删除按钮-->
+	    			</a>
+	    			<table  class="table_box1" width="1040px" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
 			        	<tbody></tbody>
-			        	<tr>
+			        	<tr id="titletr1">
 			        		<td>姓名</td>
 			        		<td>性别</td>
 			        		<td>身份证号码</td>
@@ -853,8 +854,8 @@
 			        		<td>
 			        			<a href="#">
 			        				<label>
-			        					<input class="checkAllinp" type="checkbox"/>
-			        					<span style="font-size: 12px; margin: 0;">全选</span>
+			        					<input class="checkAllinp" id="allcheckbox1" type="checkbox"/>   <!-- 服务人员列表全选按钮-->
+			        					<span style="font-size: 12px; margin: 0;">全选</span>      
 			        				</label>
 			        			</a>
 			        		</td>
@@ -892,12 +893,12 @@
 			        <a href="#" class="c6PWriClick">                  <!--服务项目按钮-->
 			        	<img src="img/addlitter.png" align="center">
 			        </a>
-			        <a href="#" style="float: right;">
-			        	<img src="img/trashW.png" align="center">
-			        </a>
-			        <table width="1040px" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
+			        <a href="#" class="deletebtn" style="float: right;">
+			        	<img src="img/trashW.png" align="center">               <!--服务项目列表删除按钮-->
+			        </a>               
+			        <table class="table_box2" width="1040px" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
 			        	<tbody></tbody>
-			        	<tr>
+			        	<tr id="titletr2">
 			        		<td>资源名称</td>
 			        		<td>服务上限</td>
 			        		<td>服务项目</td>
@@ -906,8 +907,8 @@
 			        		<td>
 			        			<a href="#">
 			        				<label>
-			        					<input class="checkAllinp" type="checkbox"/>
-			        					<span style="font-size: 12px; margin: 0;">全选</span>
+			        					<input class="checkAllinp" id="allcheckbox2" type="checkbox"/>
+			        					<span style="font-size: 12px; margin: 0;">全选</span>   <!--服务项目列表全选按钮-->
 			        				</label>
 			        			</a>
 			        		</td>
@@ -1332,7 +1333,7 @@
 	    							<tr style="background: #FFFFFF;">
 	    								<td>
 	    									已审属性1
-	    									<span class="dropdown" style="width: 200px;z-index:100;" >  <!-- 模拟 select 的标记， -->
+	    									<span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor"  type="text" value="影片名称：星际迷航3" onfocus="javascript:if(this.value=='影片名称：星际迷航3')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -1353,7 +1354,7 @@
 	    								</td>
 	    								<td>
 	    									已审属性2
-	    									<span class="dropdown" style="width: 200px;z-index:100;" >  <!-- 模拟 select 的标记， -->
+	    									<span class="dropdown" style="width: 200px" >  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor"  type="text" value="制作技术：3D" onfocus="javascript:if(this.value=='制作技术：3D')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -1374,7 +1375,7 @@
 	    								</td>
 	    								<td>
 	    									已审属性3
-	    									<span class="dropdown" style="width: 200px;z-index:100;" >  <!-- 模拟 select 的标记， -->
+	    									<span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor"  type="text" value="使用语言：英语" onfocus="javascript:if(this.value=='使用语言：英语')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -1397,7 +1398,7 @@
 	    							<tr>
 	    								<td>
 	    									已审属性4
-	    									<span class="dropdown" style="width: 200px;z-index:99;" >  <!-- 模拟 select 的标记， -->
+	    									<span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor"  type="text" value="影片类型：科幻" onfocus="javascript:if(this.value=='影片类型：科幻')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -1418,7 +1419,7 @@
 	    								</td>
 	    								<td>
 	    									已审属性5
-	    									<span class="dropdown" style="width: 200px;z-index:99;" >  <!-- 模拟 select 的标记， -->
+	    									<span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor"  type="text" value="是否连载：是" onfocus="javascript:if(this.value=='是否连载：是')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -1439,7 +1440,7 @@
 	    								</td>
 	    								<td>
 	    									已审属性6
-	    									<span class="dropdown" style="width: 200px;z-index:99;" >  <!-- 模拟 select 的标记， -->
+	    									<span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor"  type="text" value="是否首映：是" onfocus="javascript:if(this.value=='是否首映：是')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -1477,7 +1478,7 @@
 	    		    			            <input type="text" value="请输入属性内容" onfocus="javascript:if(this.value=='请输入属性内容')this.value='';" />
 	    		    				        <span class="cright"></span>   
 	    		    				                数据类型
-	    		    			            <span class="dropdown padleft5px" style="z-index:98;">  <!-- 模拟 select 的标记， -->
+	    		    			            <span class="dropdown padleft5px" >  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor cs2three" type="text" value="点下拉按钮选择" onfocus="javascript:if(this.value=='点下拉按钮选择')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -1613,7 +1614,7 @@
 	    							<tr style="background: #FFFFFF;">
 	    								<td>
 	    									已审属性1
-	    									<span class="dropdown" style="width: 200px; z-index:100;" >  <!-- 模拟 select 的标记， -->
+	    									<span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor"  type="text" value="影片名称：星际迷航3" onfocus="javascript:if(this.value=='影片名称：星际迷航3')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -1634,7 +1635,7 @@
 	    								</td>
 	    								<td>
 	    									已审属性2
-	    									<span class="dropdown" style="width: 200px; z-index:100;" >  <!-- 模拟 select 的标记， -->
+	    									<span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor"  type="text" value="制作技术：3D" onfocus="javascript:if(this.value=='制作技术：3D')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -1655,7 +1656,7 @@
 	    								</td>
 	    								<td>
 	    									已审属性3
-	    									<span class="dropdown" style="width: 200px; z-index:100;" >  <!-- 模拟 select 的标记， -->
+	    									<span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor"  type="text" value="使用语言：英语" onfocus="javascript:if(this.value=='使用语言：英语')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -1678,7 +1679,7 @@
 	    							<tr>
 	    								<td>
 	    									已审属性4
-	    									<span class="dropdown" style="width: 200px; z-index:99;" >  <!-- 模拟 select 的标记， -->
+	    									<span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor"  type="text" value="影片类型：科幻" onfocus="javascript:if(this.value=='影片类型：科幻')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -1699,7 +1700,7 @@
 	    								</td>
 	    								<td>
 	    									已审属性5
-	    									<span class="dropdown" style="width: 200px; z-index:99;" >  <!-- 模拟 select 的标记， -->
+	    									<span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor"  type="text" value="是否连载：是" onfocus="javascript:if(this.value=='是否连载：是')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -1720,7 +1721,7 @@
 	    								</td>
 	    								<td>
 	    									已审属性6
-	    									<span class="dropdown" style="width: 200px; z-index:99;" >  <!-- 模拟 select 的标记， -->
+	    									<span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor"  type="text" value="是否首映：是" onfocus="javascript:if(this.value=='是否首映：是')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -1758,7 +1759,7 @@
 	    		    			            <input type="text" value="请输入属性内容" onfocus="javascript:if(this.value=='请输入属性内容')this.value='';" />
 	    		    				        <span class="cright"></span>   
 	    		    				                数据类型
-	    		    			            <span class="dropdown padleft5px"  z-index:98;>  <!-- 模拟 select 的标记， -->
+	    		    			            <span class="dropdown padleft5px">  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor cs2three" type="text" value="点下拉按钮选择" onfocus="javascript:if(this.value=='点下拉按钮选择')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -1915,7 +1916,7 @@
 		                    		    <tr style="background: #FFFFFF;">
 	    								    <td>
 	    									        已审属性1
-	    									    <span class="dropdown" style="width: 200px;z-index:100;" >  <!-- 模拟 select 的标记， -->
+	    									    <span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                        <input class="editor"  type="text" value="资源状态：R标" onfocus="javascript:if(this.value=='资源状态：R标')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                        <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                        <ul>   <!-- 列表菜单 -->
@@ -1936,7 +1937,7 @@
 	    								    </td>
 	    								    <td>
 	    									        已审属性2
-	    									    <span class="dropdown" style="width: 200px;z-index:100;" >  <!-- 模拟 select 的标记， -->
+	    									    <span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                        <input class="editor"  type="text" value="注册号：123456" onfocus="javascript:if(this.value=='注册号：123456')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                        <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                        <ul>   <!-- 列表菜单 -->
@@ -1957,7 +1958,7 @@
 	    								    </td>
 	    								    <td>
 	    									        已审属性3
-	    									    <span class="dropdown" style="width: 200px;z-index:100;" >  <!-- 模拟 select 的标记， -->
+	    									    <span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                        <input class="editor"  type="text" value="证件类型：商标注册证" onfocus="javascript:if(this.value=='证件类型：商标注册证')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                        <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                        <ul>   <!-- 列表菜单 -->
@@ -1980,7 +1981,7 @@
 	    							    <tr>
 	    								    <td>
 	    									        已审属性4
-	    									    <span class="dropdown" style="width: 200px;z-index:99;" >  <!-- 模拟 select 的标记， -->
+	    									    <span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                        <input class="editor"  type="text" value="发证日期：2015.08.11" onfocus="javascript:if(this.value=='发证日期：2015.08.11')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                        <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                        <ul>   <!-- 列表菜单 -->
@@ -2001,7 +2002,7 @@
 	    								    </td>
 	    								    <td>
 	    									        已审属性5
-	    									    <span class="dropdown" style="width: 200px;z-index:99;" >  <!-- 模拟 select 的标记， -->
+	    									    <span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                        <input class="editor"  type="text" value="有效期/止：2018.8.31" onfocus="javascript:if(this.value=='有效期/止：2018.8.31')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                        <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                        <ul>   <!-- 列表菜单 -->
@@ -2022,7 +2023,7 @@
 	    								    </td>
 	    								    <td>
 	    									        已审属性6
-	    									    <span class="dropdown" style="width: 200px;z-index:99;" >  <!-- 模拟 select 的标记， -->
+	    									    <span class="dropdown" style="width: 200px；" >  <!-- 模拟 select 的标记， -->
 			                                        <input class="editor"  type="text" value="发证机关：中国商标局" onfocus="javascript:if(this.value=='发证机关：中国商标局)this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                        <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                        <ul>   <!-- 列表菜单 -->
@@ -2061,7 +2062,7 @@
 	    		    			            <input type="text" value="请输入属性内容" onfocus="javascript:if(this.value=='请输入属性内容')this.value='';" />
 	    		    				        <span class="cright"></span>   
 	    		    				                数据类型
-	    		    			            <span class="dropdown padleft5px" style="z-index:98;">  <!-- 模拟 select 的标记， -->
+	    		    			            <span class="dropdown padleft5px">  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor cs2three" type="text" value="点下拉按钮选择" onfocus="javascript:if(this.value=='点下拉按钮选择')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -2214,7 +2215,7 @@
 		                    		    <tr style="background: #FFFFFF;">
 	    								    <td>
 	    									        已审属性1
-	    									    <span class="dropdown" style="width: 200px;z-index:100;" >  <!-- 模拟 select 的标记， -->
+	    									    <span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                        <input class="editor"  type="text" value="资源状态：R标" onfocus="javascript:if(this.value=='资源状态：R标')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                        <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                        <ul>   <!-- 列表菜单 -->
@@ -2235,7 +2236,7 @@
 	    								    </td>
 	    								    <td>
 	    									        已审属性2
-	    									    <span class="dropdown" style="width: 200px;z-index:100;" >  <!-- 模拟 select 的标记， -->
+	    									    <span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                        <input class="editor"  type="text" value="注册号：123456" onfocus="javascript:if(this.value=='注册号：123456')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                        <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                        <ul>   <!-- 列表菜单 -->
@@ -2256,7 +2257,7 @@
 	    								    </td>
 	    								    <td>
 	    									        已审属性3
-	    									    <span class="dropdown" style="width: 200px;z-index:100;" >  <!-- 模拟 select 的标记， -->
+	    									    <span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                        <input class="editor"  type="text" value="证件类型：商标注册证" onfocus="javascript:if(this.value=='证件类型：商标注册证')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                        <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                        <ul>   <!-- 列表菜单 -->
@@ -2279,7 +2280,7 @@
 	    							    <tr>
 	    								    <td>
 	    									        已审属性4
-	    									    <span class="dropdown" style="width: 200px;z-index:99;" >  <!-- 模拟 select 的标记， -->
+	    									    <span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                        <input class="editor"  type="text" value="发证日期：2015.08.11" onfocus="javascript:if(this.value=='发证日期：2015.08.11')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                        <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                        <ul>   <!-- 列表菜单 -->
@@ -2300,7 +2301,7 @@
 	    								    </td>
 	    								    <td>
 	    									        已审属性5
-	    									    <span class="dropdown" style="width: 200px;z-index:99;" >  <!-- 模拟 select 的标记， -->
+	    									    <span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                        <input class="editor"  type="text" value="有效期/止：2018.8.31" onfocus="javascript:if(this.value=='有效期/止：2018.8.31')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                        <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                        <ul>   <!-- 列表菜单 -->
@@ -2321,7 +2322,7 @@
 	    								    </td>
 	    								    <td>
 	    									        已审属性6
-	    									    <span class="dropdown" style="width: 200px;z-index:99;" >  <!-- 模拟 select 的标记， -->
+	    									    <span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
 			                                        <input class="editor"  type="text" value="发证机关：中国商标局" onfocus="javascript:if(this.value=='发证机关：中国商标局)this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                        <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                        <ul>   <!-- 列表菜单 -->
@@ -2360,7 +2361,7 @@
 	    		    			            <input type="text" value="请输入属性内容" onfocus="javascript:if(this.value=='请输入属性内容')this.value='';" />
 	    		    				        <span class="cright"></span>   
 	    		    				                数据类型
-	    		    			            <span class="dropdown padleft5px" style="z-index:98;">  <!-- 模拟 select 的标记， -->
+	    		    			            <span class="dropdown padleft5px">  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor cs2three" type="text" value="点下拉按钮选择" onfocus="javascript:if(this.value=='点下拉按钮选择')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                    <ul>   <!-- 列表菜单 -->
@@ -2531,7 +2532,7 @@
 	    						<input type="text" value="食品行业协会" onfocus="javascript:if(this.value=='食品行业协会')this.value='';"/>
 	    					</li>
 	    					<li>数据类型
-	    						<span class="dropdown padleft5px" style="z-index: 100;">  <!-- 模拟 select 的标记， -->
+	    						<span class="dropdown padleft5px">  <!-- 模拟 select 的标记， -->
 	                                <input class="editor" type="text" value="欧元" onfocus="javascript:if(this.value=='欧元')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
@@ -2724,5 +2725,10 @@
             <p style="color:#999;">粤ICP路1507617号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@2016&nbsp;&nbsp;软信&nbsp;&nbsp;版权所有&nbsp; <span><a href="#">申请入驻</a>&nbsp;&nbsp;<a href="#">申请合作</a>&nbsp;&nbsp;<a href="#">开发平台</a>&nbsp;&nbsp;<a href="#">关于软信</a></span></p>
         </div>
         <!--footer结束-->
+        <script>
+        	allCheckBox('#allcheckbox','#titletr','table_box');
+        	allCheckBox('#allcheckbox1','#titletr1','table_box1');
+        	allCheckBox('#allcheckbox2','#titletr2','table_box2');
+        </script>	
 	</body>
 </html>

@@ -159,7 +159,7 @@ body{
     border-right-width: 0px; 
     border-bottom-width: 1px;
     border-left-width: 0px;
-    z-index: 9999;
+    z-index: 999;
 }
 .dropdown .editor {
 	display:block;
@@ -352,7 +352,6 @@ body{
 }
 
 /*con1开始*/
-
 .con1_nav{
 	height: 55px;
 	line-height: 55px;
@@ -465,10 +464,6 @@ body{
 	padding:10px 16px ;
 	border-bottom: 1px solid #009946;
 }
-.con2 .cs1 {
-	float: left;
-}
-
 .con2 .cs0{
 	padding-left: 30px;
 	float: left;
@@ -1153,13 +1148,6 @@ body{
 #fileToUpload{
 	display: none ;
 }
-/*/*设置编辑器大小*/*/
-/*.editor-box{
-	width: 800px;
-	height: 300px;
-}*/
-
-
 
 /*con9开始*/
 .con9{
@@ -1214,9 +1202,10 @@ body{
 	margin-left:60px;
 }
 
-/*选择、全选按钮*/
+/*服务设置中选择、全选按钮*/
 .checkAllinp{
 	width: 20px;
 	height: 20px;
 	vertical-align:middle;
 }
+

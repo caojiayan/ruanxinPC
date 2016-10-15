@@ -51,7 +51,16 @@ $(function(){
 					}
 					p.append(fragment);  //将临时容器添加到无序列表里面，一次添加效率高
 				});
+				$(".trigger").click(function(){
+					$(this).parent().css("z-index","1000");  //点击下拉按钮的时候显示z-index为1000
+				});
 			});
+  //              $(".editor").mouseout(function(){
+//                  $(this).parent().css("z-index","1000");
+//              });
+//              $(".editor").mouseover(function(){
+//                  $(this).parent().css("z-index","999");
+//              });            
 
 //con1中类目选择：下拉框的值追加到cs3left后面
 $(document).ready(function(){
@@ -326,28 +335,32 @@ $(function(){
 	});
 });
 
+//服务设置列表全选  
+function allCheckBox(allcheckbox,titletr,classid){
+    $(allcheckbox).click(function(){
+        if($(this).attr("checked")){
+            $("."+classid+" td input").attr("checked",true);
+        }else{
+            $("."+classid+" td input").attr("checked",false);
+        }
+    });
+    $("."+classid+" input").not(allcheckbox).click(function(){
+        $("."+classid+" input").not(allcheckbox).each(function(){
+            if($("."+classid+" input[type='checkbox']:checked").not(allcheckbox).length==$("."+classid+" tr").not(titletr).length){
+                $(allcheckbox).attr("checked",true);
+            }else{
+                $(allcheckbox).attr("checked",false);
+            }
+        });
+    });
+}
+
 //服务设置中点击全选
 $(function(){
     $(".deletebtn").click(function(){
         $(".table_box tr").each(function(){
             if($(this).find("input").attr("checked")&&$(this).index()!=0){
                 $(this).remove();
-            }
-        });
-    });
-    $("#allcheckbox").click(function(){
-        if($(this).attr("checked")){
-            $(".table_box td input").attr("checked","checked");
-        }else{
-            $(".table_box td input").attr("checked","");
-        }
-    });
-    $(".table_box input").not("#allcheckbox").click(function(){
-        $(".table_box input").not("#allcheckbox").each(function(){
-            if($(".table_box input[type='checkbox']:checked").not("#allcheckbox").length==$(".table_box tr").not("#titletr").length){
-                $("#allcheckbox").attr("checked","checked");
-            }else{
-                $("#allcheckbox").attr("checked","");
             }
         });
     });
