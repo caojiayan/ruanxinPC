@@ -26,12 +26,12 @@
 	float: left;
 }
 .c1mChanger{
-	width: 120px;
+	width: 150px;
 	height: 30px;
 	padding-left: 25px;
 }
 .c1mChanger ul{
-	width:120px;
+	width:150px;
 	height: 25px;
 }
 .c1mChanger ul li{
@@ -80,6 +80,19 @@
 }
 .Choiceright{
 	margin-left: 50px;
+}
+.con1_mUl{
+	padding-left: 25px;
+	padding:5px 0 5px 25px;
+}
+.con1_mUl li{
+	display: inline-block;
+	width: 33%;
+	text-align: left;
+}
+.con1_mUl .c1mTableul li{
+	width: auto;
+	padding: 0 5px;
 }
 
 /*cont2*/
@@ -225,19 +238,23 @@
 
 /*商品SKU*/
 #table-container{
-	width:1080px;
+	width:1079px;
 	height:auto;
 	overflow: auto;
 	border: 1px solid #DDD;
+	border-right: 0;
 	font-size: 14px;
 	margin:10px 0;
 }
+
 #table-container table{
 	width: 100%;
 	border-width: 0;
 	border-collapse: collapse;
 }
+
 #table-container table td{
+	height: 34px !important;
 	padding: 0;
 	border-bottom: 1px solid #DDD;
 	background: #FFF;
@@ -256,22 +273,21 @@
 }
 #table-container td div{
 	display: inline-block;
-	max-width: 200px;
-	margin:5px;
+	margin:3px 5px;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;
 	text-align: left;
-	line-height: 24px;
+	line-height:20px; /*24*/
 }
 #table-container .table-lt{
 	position: fixed;
 	z-index:3;
 }
 #table-container .table-top{
-	position: fixed;
+	position:fixed;  /*fixed*/
 	overflow:hidden;
-	z-index:2;
+	z-index:3;
 }
 #table-container .table-left{
 	position: fixed;
@@ -290,7 +306,7 @@
 }
 .table_lUl li{
     display: inline-block;
-    padding: 0 5px;
+    padding:0 5px;
 }
 #table-container img{
 	vertical-align:middle; /*图片垂直居中*/
@@ -301,3 +317,23 @@
 	height: 16px;
 	padding: 0 2px;
 }
+.W20H24img{
+	width: 20px !important;
+}
+.tableRt td{
+	background: #EEEEEE !important;
+}
+
+
+
+/*遮住尾部*/
+/*.Cover{
+	width: 1000px;
+	height: 40px;
+	border-left: 1px solid #A0A0A0;
+	position: absolute;
+	background:#FFFFFF;
+	top:1180px;
+	left: 1215px;
+	z-index: 5;
+}*/

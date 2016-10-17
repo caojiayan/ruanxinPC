@@ -669,8 +669,8 @@ body{
 	border-radius: 5px;
 }
 .cv2Ul1 li:first-child{
-	padding: 0 0 0 16px;
-	background: url(../img/square.png) left center no-repeat;
+	padding: 0 0 0 25px;
+	background: url(../img/newselect.png) no-repeat left center;
 }
 
 
@@ -1202,7 +1202,7 @@ body{
 	margin-left:60px;
 }
 
-/*服务设置中选择、全选按钮*/
+/*服务设置中多选框选择、全选按钮*/
 .checkAllinp{
 	width: 20px;
 	height: 20px;

@@ -39,11 +39,11 @@ $(document).ready(function(argument) {
         rightTable.css("marginLeft",ltTableWidth);
         ltTableHeight = ltTable.height();
         leftTable.css("marginTop",ltTableHeight+"px");
-        rightTable.css("marginTop",ltTableHeight+"px");
+        rightTable.css("marginTop",ltTableHeight-35+"px");
   
         containerHeight = container.height();
         containerWidth = container.width();
-        topTable.width(120+(containerWidth - ltTableWidth  - (container.innerWidth() - container[0].clientWidth)));
+        topTable.width((containerWidth - ltTableWidth  - (container.innerWidth() - container[0].clientWidth)));
         leftTable.height(containerHeight - ltTableHeight - (container.innerHeight() - container[0].clientHeight));
   
         // figure out the width of each DIV in TD  --start
@@ -65,10 +65,10 @@ $(document).ready(function(argument) {
         });
   
         topTable.find("tr:first div").each(function(index){
-          $(this).width(widthJson[index]);
+          $(this).width(widthJson[index]+10);
         });
         rightTable.find("tr:first div").each(function(index){
-          $(this).width(widthJson[index]);
+          $(this).width(widthJson[index]+10);
         });
         // figure out the width of each DIV in TD  --end
   
@@ -115,16 +115,30 @@ $(document).ready(function(argument) {
       });
       
 //商品SKU添加列
-//$(function(){
-//	$("#cv21addC").click(function(){
-//		var text1="<td>;<div>
-//		    <input type="text" class="li120px" value="主要成分" onfocus="javascript:if(this.value=='主要成分')this.value='';"/>
-//		    <img src="img/img6.png" align="center">
-//          <img src="img/img5.png" align="center" style="display: none;">
-//          </div></td>";
-//      var text2="<input type="text" class="li120px" value="葡萄干" onfocus="javascript:if(this.value=='葡萄干')this.value='';"/>
-//			<a href="#">确定</a>";
-//		$(".table-maskTr").append(text1);
-//      $(".table-rFilter").append(text2);
-//  });
-//});
+$(function(){
+	$("#cv21addC").click(function(){   //在列表最右边追加内容
+		$(".tableRt").append("<td><div><input type='text' value=''/><img src='img/img6.png' align='center'><img src='img/img5.png' align='center' style='display: none;'><a href='#' id='cv21addC'><img src='img/addGS.png' align='center'></a></div></td>");
+        $(".table-rFilter").append("<td><div><input type='text' value=''/><a href='#'>确定</a></div></td>");
+        $(".table-rList").append("<td><div></div></td>");
+        $("#cv21addC").html("");
+    });
+    $(".field").change(function(){     //输入框完成之后转换图片
+        $(".tableRtAdd img").toggle();
+    });
+    $(".table-rL1").click(function(){
+        $(".table-rLone").val($(this).text()); //修改库存
+    });
+    $(".table-rLa").click(function(){//输入框完成之后转换图片
+    	var rLa=$(".table-rLone").val();
+        $(".table-rL1").text(rLa);
+    });
+    $(".table-rL2").click(function(){
+        $(".table-rLtwo").val($(this).text());  //修改起购
+    });
+    $(".table-rL3").click(function(){
+        $(".table-rLthree").val($(this).text());  //修改一口价
+    });
+    $(".table-rL4").click(function(){
+        $(".table-rLfour").val($(this).text());  //修改老客折上折
+    });
+});

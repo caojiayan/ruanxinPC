@@ -55,12 +55,7 @@ $(function(){
 					$(this).parent().css("z-index","1000");  //点击下拉按钮的时候显示z-index为1000
 				});
 			});
-  //              $(".editor").mouseout(function(){
-//                  $(this).parent().css("z-index","1000");
-//              });
-//              $(".editor").mouseover(function(){
-//                  $(this).parent().css("z-index","999");
-//              });            
+        
 
 //con1中类目选择：下拉框的值追加到cs3left后面
 $(document).ready(function(){
