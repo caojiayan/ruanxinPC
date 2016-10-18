@@ -331,7 +331,7 @@ $(function(){
 });
 
 //服务设置列表全选  
-function allCheckBox(allcheckbox,titletr,classid){
+function allCheckBox(allcheckbox,titletr,classid,delbtn){
     $(allcheckbox).click(function(){
         if($(this).attr("checked")){
             $("."+classid+" td input").attr("checked",true);
@@ -349,11 +349,24 @@ function allCheckBox(allcheckbox,titletr,classid){
         });
     });
 }
-
 //服务设置中点击全选
 $(function(){
     $(".deletebtn").click(function(){
         $(".table_box tr").each(function(){
+            if($(this).find("input").attr("checked")&&$(this).index()!=0){
+                $(this).remove();
+            }
+        });
+    });
+    $(".deletebtn1").click(function(){
+        $(".table_box1 tr").each(function(){
+            if($(this).find("input").attr("checked")&&$(this).index()!=0){
+                $(this).remove();
+            }
+        });
+    });
+    $(".deletebtn2").click(function(){
+        $(".table_box2 tr").each(function(){
             if($(this).find("input").attr("checked")&&$(this).index()!=0){
                 $(this).remove();
             }
