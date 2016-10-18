@@ -138,15 +138,11 @@ $(function(){
     var ltr=$(".table-mask table tr");
     var Len=ltr.length;
     var Lnum=ltr.index($(this).closest("tr"));  //点击删除，获取在当前tr在table中的排序
-    var newL=Lnum+1;                   //获取在左边文本列表中的真实排序
-    var newR=Lnum+3;
+    var newL=Lnum+1;                            //获取在左边文本列表中的真实排序
+    var newR=Lnum+3;                            //获取右边文本列表中的真实排序
     $(".tabletr_del").click(function(){
     	$(".table_ltr").eq(newL).remove();        //删除左边tr
     	$(".table-right tr").eq(newR).remove();   //删除右边tr
-//  	for(i=newL;i<ltr;i++){                   //删除后重新排序
-//  		newL=i+1;
-//  	    alert("排序后"+newL);
-//  	}
     });
 });   
 //点击全选删除行
