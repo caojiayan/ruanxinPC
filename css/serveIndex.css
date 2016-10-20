@@ -25,6 +25,7 @@ li{
 input,
 label{
 	padding: 0 5px;
+	border: 0;
 }
 
 
@@ -38,12 +39,17 @@ label{
 	visibility: hidden;
 	clear: both;
 }
-
+/*IE/7/6*/
 .clearfix:after{clear:both;} 
 .clearfix{ 
-    *zoom:1;/*IE/7/6*/
+    *zoom:1;
 }
-
+/*清除IE10以下出现的下划线*/
+input[type="checkbox"],
+input[type="radio"]{
+    background: transparent;
+    border: 0;
+}
 /*清除表单样式*/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,button,textarea,p,th,td{
 	padding:0;margin:0;
@@ -53,6 +59,7 @@ table{
 	border-spacing:0;
 	overflow: hidden;
 }
+/*去除IE67下图片边框*/
 fieldset,img{
 	border:0;
 }
@@ -151,6 +158,9 @@ body{
 /*下拉框样式*/
 .dropdown {
 	display:inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline; 
 	width:120px;
 	height:20px;
 	border:1px solid #a0a0a0;
@@ -491,6 +501,9 @@ body{
 
 .con2_nav ul li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	padding:5px 10px 5px 0;
 	margin-right: 10px;
 	background-size: 10px 10px;
@@ -655,6 +668,9 @@ body{
 
 .cv2Ul1 li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	width: 18%;
 	text-align: center;
 }
@@ -686,6 +702,9 @@ body{
 
 .cv2Ul2 li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	width: 18%;
 	text-align: center;
 }
@@ -772,6 +791,9 @@ body{
 }
 .con6 .c6trademark li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	padding: 0 20px;
 }
 .con6 .c6trademark li:first-child{
@@ -827,6 +849,9 @@ body{
 .c6popup ul li,
 .c7Popup ul li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 }
 .c6ptitle,
 .c7ptitle{
@@ -934,6 +959,9 @@ body{
 .c7Prothree li,
 .c7Profour li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 }
 .c7oneProli{
 	padding-right: 20px;
@@ -1090,10 +1118,10 @@ body{
 }
 .c8one li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 }
-/*.c8one li:nth-of-type(2){
-	padding-left: 50px;
-}*/
 .c8one li:nth-of-type(2) span{
 	color: dodgerblue;
 	padding: 0 10px;
@@ -1131,6 +1159,9 @@ body{
 
 .c8right ul li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	line-height: 22px;
 }
 .con8 .c8left:nth-of-type(1){
@@ -1155,6 +1186,9 @@ body{
 }
 .con9 ul li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 }
 .c9one,
 .c9two,
@@ -1208,4 +1242,23 @@ body{
 	height: 20px;
 	vertical-align:middle;
 }
+/*交易类型中清除IE10-IE7出现的边框*/
+#cx11 input[type="checkbox"], 
+#cx11 input[type="radio"],
+#cx12 input[type="checkbox"], 
+#cx12 input[type="radio"],
+#cx13 input[type="checkbox"], 
+#cx13 input[type="radio"],
+#cx14 input[type="checkbox"], 
+#cx14 input[type="radio"],
+#cx15 input[type="checkbox"], 
+#cx15 input[type="radio"],
+#cx16 input[type="checkbox"], 
+#cx16 input[type="radio"],
+#cx18 input[type="checkbox"], 
+#cx18 input[type="radio"]{
+    background: transparent;
+    border: 0;
+}
+
 

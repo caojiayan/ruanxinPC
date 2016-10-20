@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta http-equiv="x-ua-compatible" content="ie=7" />
 		<meta charset="utf-8" />
 		<title>软信服务-技术类</title>
 		<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
 		<script type="text/javascript" src="js/serveIndex.js"></script>
 		<script type="text/javascript" src="js/ueditor.config.js" ></script>
 		<script type="text/javascript" src="js/ueditor.all.min.js" ></script>
-		<script type="text/javascript" src="js/zh-cn.js" ></script>
-		<script type="text/javascript" src="js/index.js" ></script>
+		<script type="text/javascript" src="js/zh-cn.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 		<link rel="stylesheet" href="css/serveIndex.css" />
 		<link rel="stylesheet" href="css/technology.css" />
 		<link rel="stylesheet" href="css/ueditor.css" />
@@ -303,8 +304,8 @@
 			        <form>
 				        <fieldset>
 					        <span class="cx2Lspan">周期购</span>
-					        <label><input name="周期购" type="radio" value="" />不支持</label> 
-                            <label><input name="周期购" type="radio" value="" />支持</label>
+					        <label><input name="周期购" type="radio" value=""/>不支持</label> 
+                            <label><input name="周期购" type="radio" value=""/>支持</label>
                             <span class="cx2Rspan">支持周期</span>
                             <input type="checkbox" >隔N天/次
                             <input type="checkbox" >每周固定周几
@@ -790,7 +791,7 @@
 	    			<a href="javascript:void();" class="deletebtn" style="float: right;">
 	    				<img src="img/trashW.png" align="center">            <!--服务资源列表删除按钮-->
 	    			</a>                                                  
-	    			<table class="table_box" width="1040px" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
+	    			<table class="table_box" width="1039px" border="1" cellpadding="0" cellspacing="0" bordercolor="#ccc" style="border-collapse:separate;">
 			        	<tr id="titletr">
 			        		<td>资源名称</td>
 			        		<td>资源归属</td>
@@ -844,7 +845,7 @@
 	    			<a href="javascript:void();" class="deletebtn1" style="float: right;">
 	    				<img src="img/trashW.png" align="center">                     <!-- 服务人员列表删除按钮-->
 	    			</a>
-	    			<table  class="table_box1" width="1040px" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
+	    			<table  class="table_box1" width="1039px" border="1" cellpadding="0" cellspacing="0" bordercolor="#ccc" style="border-collapse:separate;">
 			        	<tbody></tbody>
 			        	<tr id="titletr1">
 			        		<td>姓名</td>
@@ -867,7 +868,7 @@
 			        		<td>5777********0000</td>
 			        		<td>8年</td>
 			        		<td>88888888</td>
-			        		<td>
+			        		<td> 
 			        			<input class="checkAllinp" type="checkbox"/>
 			        			<a href="javascript:void();" class="c6TechpopWrite">
 			        				<img src="img/writeW.png" align="center">
@@ -897,7 +898,7 @@
 			        <a href="javascript:void();" class="deletebtn2" style="float: right;">
 			        	<img src="img/trashW.png" align="center">               <!--服务项目列表删除按钮-->
 			        </a>               
-			        <table class="table_box2" width="1040px" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
+			        <table class="table_box2" width="1039px" border="1" cellpadding="0" cellspacing="0" bordercolor="#ccc" style="border-collapse:separate;">
 			        	<tbody></tbody>
 			        	<tr id="titletr2">
 			        		<td>资源名称</td>
@@ -2025,7 +2026,7 @@
 	    								    <td>
 	    									        已审属性6
 	    									    <span class="dropdown" style="width: 200px；" >  <!-- 模拟 select 的标记， -->
-			                                        <input class="editor"  type="text" value="发证机关：中国商标局" onfocus="javascript:if(this.value=='发证机关：中国商标局)this.value='';"/> <!-- 显示当前值的输入框 -->
+			                                        <input class="editor"  type="text" value="发证机关：中国商标局" onfocus="javascript:if(this.value=='发证机关：中国商标局')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                        <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                        <ul>   <!-- 列表菜单 -->
 				                                        <li class="search" style="border: 1px solid #EEEEEE;">
@@ -2324,7 +2325,7 @@
 	    								    <td>
 	    									        已审属性6
 	    									    <span class="dropdown" style="width: 200px;" >  <!-- 模拟 select 的标记， -->
-			                                        <input class="editor"  type="text" value="发证机关：中国商标局" onfocus="javascript:if(this.value=='发证机关：中国商标局)this.value='';"/> <!-- 显示当前值的输入框 -->
+			                                        <input class="editor"  type="text" value="发证机关：中国商标局" onfocus="javascript:if(this.value=='发证机关：中国商标局')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                                        <input class="trigger" style="padding:1px 8px; text-align：right; width: auto;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                                        <ul>   <!-- 列表菜单 -->
 				                                        <li class="search" style="border: 1px solid #EEEEEE;">
@@ -2722,8 +2723,19 @@
 	    <!--遮盖层-->
 		<div class="maskingLayer"></div>
         <!--footer开始-->
-        <div class="bj4">
-            <p style="color:#999;">粤ICP路1507617号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@2016&nbsp;&nbsp;软信&nbsp;&nbsp;版权所有&nbsp; <span><a href="javascript:void();">申请入驻</a>&nbsp;&nbsp;<a href="javascript:void();">申请合作</a>&nbsp;&nbsp;<a href="javascript:void();">开发平台</a>&nbsp;&nbsp;<a href="javascript:void();">关于软信</a></span></p>
+        <div class="bj4 clearfix">
+            <p style="color:#999;">
+  	            <span>
+  		            <a href="#">申请入驻</a>
+  		            &nbsp;&nbsp;
+  		            <a href="#">申请合作</a>
+  		            &nbsp;&nbsp;
+  		            <a href="#">开发平台</a>
+  		            &nbsp;&nbsp;
+  		            <a href="#">关于软信</a>
+  	            </span>
+  	                                  粤ICP路1507617号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@2016&nbsp;&nbsp;软信&nbsp;&nbsp;版权所有&nbsp; 
+            </p>
         </div>
         <!--footer结束-->
         <script>
