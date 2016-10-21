@@ -36,6 +36,9 @@
 }
 .c1mChanger ul li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	text-align: center;
 	line-height: 25px;
 	float: left; 
@@ -64,6 +67,9 @@
 }
 .c1mTableul li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	padding:0 5px;
 }
 /*类别选择左边距*/
@@ -87,6 +93,9 @@
 }
 .con1_mUl li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	width: 33%;
 	text-align: left;
 }
@@ -121,6 +130,9 @@
 }
 .cont3Ul li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	width: 47%;
 }
 .cont3Box{
@@ -131,6 +143,9 @@
 }
 .cont3Box ul li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	padding: 5px;
 }
 .cont3Space{
@@ -142,6 +157,9 @@
 .cont3Ultwo ul li{
 	padding: 5px 10px;
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 }
 
 /*cont4*/
@@ -172,6 +190,9 @@
 .c4Ul li{
 	padding-left: 25px;
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 }
 .c4Ul li:first-child{
 	padding-left: 0;
@@ -233,6 +254,9 @@
 }
 .ct5oneBox .ct51Ul li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	padding: 0 10px;
 }
 
@@ -273,6 +297,9 @@
 }
 #table-container td div{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	margin:3px 5px;
 	overflow:hidden;
 	text-overflow:ellipsis;
@@ -306,10 +333,15 @@
 }
 .table_lUl li{
     display: inline-block;
+    /*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
     padding:0 5px;
 }
 #table-container img{
 	vertical-align:middle; /*图片垂直居中*/
+	/*去除IE6/7中图片边框*/
+	border: 0;
 }
 #table-container td input{
 	border:1px solid #999;
@@ -319,21 +351,9 @@
 }
 .W20H24img{
 	width: 20px !important;
+	/*去除IE6/7中图片边框*/
+	border: 0;
 }
 .tableRt td{
 	background: #EEEEEE !important;
 }
-
-
-
-/*遮住尾部*/
-/*.Cover{
-	width: 1000px;
-	height: 40px;
-	border-left: 1px solid #A0A0A0;
-	position: absolute;
-	background:#FFFFFF;
-	top:1180px;
-	left: 1215px;
-	z-index: 5;
-}*/

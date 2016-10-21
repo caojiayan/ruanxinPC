@@ -98,15 +98,22 @@ button{
 	padding: 3px 10px;
 	margin-left: 10px;
 	background: #a0a0a0;
-	border-radius: 10px;
+	-moz-border-radius:10px; /* Firefox */
+    -webkit-border-radius:10px; /* Safari 和 Chrome */
+    border-radius:10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 	border: #a0a0a0;
 	color:#FFFFFF;
+	position:relative;
+    z-index:2;
+    behavior:url(../js/iecss3/ie-css3.htc);
 }
 /*去掉点击框时自带的颜色*/
 input:focus,
 button:focus{
-	outline: none ;
+	outline:none ;
+	*border:none;
 }
+	
 /*鼠标变成“手型”*/
 button,input{
 	cursor:pointer;
@@ -152,7 +159,7 @@ body{
     left:0;  
     z-index:9999;  
     opacity:0.5;                        /*背景的透明度:(Firefox适用；）*/  
-    filter:alpha(opacity =50);          /*背景的透明度:(IE适用)； */  
+    filter:alpha(opacity=50);          /*背景的透明度:(IE适用)； */  
 }
 
 /*下拉框样式*/
@@ -193,12 +200,13 @@ body{
 	display:none;
 	width:100%;
 	height:140px;
-	/*padding:2px;*/
 	position:absolute;
 	top:100%;
 	background-color:#FFF;
 	border:1px solid #DDD;
-	border-radius: 0 0 5px 5px;
+	-moz-border-radius:0 0 5px 5px; /* Firefox */
+    -webkit-border-radius:0 0 5px 5px; /* Safari 和 Chrome */
+    border-radius:0 0 5px 5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 	overflow-y:auto;
 	overflow-x:hidden;
 }
@@ -313,8 +321,7 @@ body{
 	margin: 0 auto;
 	background-color: #ff6600;
 }
-.bj3 ul {
-}
+
 .bj3 ul li {
 	float: left;
 	list-style-type: none;
@@ -408,7 +415,7 @@ body{
 	height: 30px;
 }
 .con1Ca1{
-	margin-top: 5px;
+	padding-top: 10px;
 }
 /*con1中类别选择新增*/
 .c1Proinput1,
@@ -464,7 +471,6 @@ body{
 	color: #fc6700;
 }
 .cs3right span{
-	/*margin-left: 10px;*/
 	padding-left: 25px;
 	background: url(../img/keylitter.png) left center no-repeat;
 }
@@ -496,7 +502,9 @@ body{
 .con2_nav ul{
 	background: #EEEEEE;
 	padding:0 5px 0 15px;
-	border-radius: 5px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 }
 
 .con2_nav ul li{
@@ -537,7 +545,9 @@ body{
 	padding: 10px 0 10px 15px;
 	margin-left: 30px;
 	background: #EEEEEE;
-	border-radius: 5px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 	display: none;
 }
 
@@ -664,6 +674,8 @@ body{
 
 .cv2Ul1 img{
 	vertical-align: middle;
+	/*去除IE6/7中图片边框*/
+	border: 0;
 }
 
 .cv2Ul1 li{
@@ -682,7 +694,9 @@ body{
 .cv2Ul1 li input{
 	width: 30px;
 	border-bottom:none;
-	border-radius: 5px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 }
 .cv2Ul1 li:first-child{
 	padding: 0 0 0 25px;
@@ -744,7 +758,9 @@ body{
 
 .c5one{
 	background: #EEEEEE;
-	border-radius: 5px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 }
 .c5one fieldset:nth-of-type(2) input[value="no"]{
 	margin-left: 45px;
@@ -786,7 +802,9 @@ body{
 	margin-top: 10px;
 	margin-left: 22px;
 	padding: 0 0 5px 26px;
-	border-radius: 5px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 	background: #EEEEEE;
 }
 .con6 .c6trademark li{
@@ -836,8 +854,9 @@ body{
 	margin-left: 5px;
 	padding-bottom: 20px;
 	border: 1px solid #EEEEEE;
-	border-radius: 10px;
-	background: #FFFFFF;
+	border-radius: 10px;-moz-border-radius:10px; /* Firefox */
+    -webkit-border-radius:10px; /* Safari 和 Chrome */
+    border-radius:10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */background: #FFFFFF;
 	display:none; /* 默认对话框隐藏 */
 	position: absolute; 
 	z-index: 10000;
@@ -883,7 +902,9 @@ body{
 	margin: 15px;
 	padding:5px;
 	border: 1px solid #999;
-	border-radius: 5px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 }
 .c6pone ul li{
 	height: 30px;
@@ -917,6 +938,8 @@ body{
 }
 .c6pthree img{
 	margin-left: 10px;
+	/*去除IE6/7中图片边框*/
+	border: 0;
 }
 .c6five,
 .c6six,
@@ -928,7 +951,9 @@ body{
 	border: 1px solid #999;
 	margin: 5px 16px;
 	padding: 5px 0 5px 20px;
-	border-radius: 10px;
+	-moz-border-radius:10px; /* Firefox */
+    -webkit-border-radius:10px; /* Safari 和 Chrome */
+    border-radius:10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 }
 .c6five .c6f1 li{
 	width: 19%;
@@ -1012,7 +1037,9 @@ body{
 	width: 3px;
 	height: 3px;
 	background:#999999;
-	border-radius: 1.5px;
+	-moz-border-radius:1.5px; /* Firefox */
+    -webkit-border-radius:1.5px; /* Safari 和 Chrome */
+    border-radius:1.5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 	float: left;
 	margin: 0 32px;
 }
@@ -1031,7 +1058,9 @@ body{
 	width: 970px;
 	height: 60px;
 	margin-left:53px ;
-	border-radius: 5px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 	padding: 5px;
 	border: 1px solid #A0A0A0;
 	font-family: "microsoft yahei";
@@ -1044,7 +1073,9 @@ body{
 	margin-left: 53px;
 	padding: 5px;
 	margin: 10px 0;
-	border-radius: 5px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 }
 
 .c7six ul{
@@ -1080,7 +1111,9 @@ body{
 .c7but{
 	background: #009946;
 	padding: 3px 10px;
-	border-radius:10px;
+	-moz-border-radius:10px; /* Firefox */
+    -webkit-border-radius:10px; /* Safari 和 Chrome */
+    border-radius:10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 	color: #FFFFFF;
 }
 /*新增商品属性部分*/
@@ -1102,8 +1135,9 @@ body{
 
 
 /*con8开始*/
-.con8{border-bottom: 1px solid #009843;
-	  padding:10px 5px 5px 16px ;
+.con8{
+	border-bottom: 1px solid #009843;
+	padding:10px 5px 5px 16px ;
 }
 .c8one,
 .c8three,
@@ -1132,7 +1166,9 @@ body{
 	height: auto;
 	background: #EEEEEE;
 	padding: 5px 25px;
-	border-radius: 5px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 }
 .c8two li,
 .c8three li{
@@ -1203,7 +1239,9 @@ body{
 .c9two{
 	width: 880px;
 	border: 1px solid #999;
-	border-radius: 10px;
+	-moz-border-radius:10px; /* Firefox */
+    -webkit-border-radius:10px; /* Safari 和 Chrome */
+    border-radius:10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 	padding:5px 0px 5px 70px;
 }
 .c9two li{
@@ -1219,7 +1257,9 @@ body{
 .c9three li{
 	padding: 8px 40px;
 	margin-right: 50px;
-	border-radius: 5px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 	background: #c9c9c9;
 }
 .c9three li a{
@@ -1238,9 +1278,11 @@ body{
 
 /*服务设置中多选框选择、全选按钮*/
 .checkAllinp{
-	width: 20px;
-	height: 20px;
 	vertical-align:middle;
+	去除IE6/7中图片边框
+	overflow: visible;/*只有设置这个属性IE下padding才能生效*/
+    width: auto;   /*现代浏览器下识别*/
+    *width: 1;    /*IE7和IE6识别，设置值为1,*/
 }
 /*交易类型中清除IE10-IE7出现的边框*/
 #cx11 input[type="checkbox"], 

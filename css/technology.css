@@ -12,6 +12,9 @@
 .c4Ul li{
 	padding-left: 25px;
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 }
 .c4Ul li:first-child{
 	padding-left: 0;
@@ -55,6 +58,9 @@
 .c7Ultech li{
 	width: 30%;
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 }
 
 /*遮盖层*/

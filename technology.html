@@ -90,7 +90,7 @@
 					<fieldset>
 					    <legend></legend>
 					        <div class="cs1">
-					        	<span class="cright">类目搜索 </span>
+					        	<span class="cright">类目搜索</span>
 					        	<input type="text"  value="动画制作" onfocus="javascript:if(this.value=='动画制作')this.value='';"/>
 					            <button type='submit'>确定</button>
 					        </div>
@@ -164,25 +164,24 @@
 				    <div class="c1Proinput1">
 				    	<a href="javascript:void();"><img src="img/addlitter.png" align="center"></a>
 				    </div>
-			    </div>
+			 </div>
 			<div class="con1Ca2">
 				<div class="cs3">
 					<fieldset>
-				        <span class="cright">选定类目</span>
-				        <div class="cs3left"></div>
-				    	    <div class="cs3right">
-				    		    <span class="cright">服务方式</span>
-					            <label><input name="服务方式" type="radio" value="" />插画</label> 
-                                <label><input name="服务方式" type="radio" value="" />配音 </label> 
-                                <label><input name="服务方式" type="radio" value="" />培训</label> 
-                                <label><input name="服务方式" type="radio" value="" />合成</label> 
-                                <label>
-                            	    <input name="服务方式" type="radio" value="" /> 
-                                    <input class="cs3input" value="自定义服务方式"  onfocus="javascript:if(this.value=='自定义服务方式')this.value='';"/>
-                                </label>
-                            </div>
-				    	<div class="c1Proinput2 c1Techinput2">
-				    	    <a href="javascript:void();"><img src="img/addlitter.png" align="center"></a>
+				    <span class="cright">选定类目</span>
+				    <div class="cs3left" style="margin-right: 30px !important;"></div>
+				    	<div class="cs3right">
+				    		<span class="cright">服务方式</span>
+					    <label><input name="服务方式" type="radio" value="" />插画</label> 
+                        <label><input name="服务方式" type="radio" value="" />配音</label> 
+                        <label><input name="服务方式" type="radio" value="" />培训</label>
+                        <label><input name="服务方式" type="radio" value="" />合成</label>
+                        <label><input name="服务方式" type="radio" value="" /> 
+                             <input type="text" class="cs3input"  value="自定义服务方式"  onfocus="javascript:if(this.value=='自定义服务方式')this.value='';"/>
+                        </label>
+                       </div>
+				    	<div class="c1Proinput2 c1Resinput2">
+				    		<a href="javascript:void();"><img src="img/addlitter.png" align="center"></a>
 				    	</div> 
 				    </fieldset>
 			    </div>
@@ -190,7 +189,7 @@
 		    <div class="con1Ca3 clearfix">
 		        <fieldset>
 				    <div class="cs1">
-				    	<span class="cright">连锁品牌</span>
+				    	<span class="cright">连锁品牌</span>  
 				    	<input type="text"  value="**动漫" onfocus="javascript:if(this.value=='**动漫')this.value='';"/>
 				        <button type='submit'>确定</button>
 				        <button type='submit'>新增品牌</button>
@@ -564,7 +563,7 @@
 	    		        <span>设置单位 </span>
 	    		        计量
 	    		        <span class="dropdown padleft5px numWidth">  <!-- 模拟 select 的标记， -->
-			                        <input class="editor cs2three" type="text" value="秒" onfocus="javascript:if(this.value=='秒')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                <input class="editor cs2three" type="text" value="秒" onfocus="javascript:if(this.value=='秒')this.value='';"/> <!-- 显示当前值的输入框 -->
 			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
 			                        <ul>   <!-- 列表菜单 -->
 				                        <li class="search" style="border: 1px solid #EEEEEE;">
@@ -2739,9 +2738,11 @@
         </div>
         <!--footer结束-->
         <script>
+         function _doPostBack(eventTarget, eventArgument){
         	allCheckBox('#allcheckbox','#titletr','table_box');
         	allCheckBox('#allcheckbox1','#titletr1','table_box1');
         	allCheckBox('#allcheckbox2','#titletr2','table_box2');
+        	}
         </script>	
 	</body>
 </html>
