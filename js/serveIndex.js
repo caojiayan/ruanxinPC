@@ -68,7 +68,16 @@ $(document).ready(function(){
 	});
 });
 
-//con3中交易类型
+//服务别称新增
+function Check(servebtn,serveName){
+	var va1=$("."+serveName).val();
+	$(servebtn).click(function{
+		alert(va1);
+	});
+});
+
+
+//交易类型
 function aCheck1(){ 
 document.getElementById("cx11").style.display="block"; 
 document.getElementById("cx12").style.display="none";
@@ -149,6 +158,35 @@ document.getElementById("cx16").style.display="none";
 document.getElementById("cx17").style.display="none";
 document.getElementById("cx18").style.display="block";
 }
+
+//服务规格SKU列表
+function allCheck(allcheck,listBox,ulName,delectbtn){
+    $(allcheck).click(function(){
+        if($(this).attr("checked")){
+            $("."+listBox+" li input").attr("checked","true");
+        }else{
+            $("."+listBox+" li input").attr("checked","false");
+        }
+    });
+    $("."+listBox+" input").not(allcheckbox).click(function(){
+        $("."+listBox+" input").not(allcheckbox).each(function(){
+            if($("."+listBox+" input[type='checkbox']:checked").not(allcheck).length==$("."+listBox+" li").not("."+ulName).length){
+                $(allcheck).attr("checked","true");
+            }else{
+                $(allcheck).attr("checked","false");
+            }
+        });
+    });
+    //删除
+    $(delectbtn).click(function(){
+        $("."+listBox+" ul").each(function(){
+            if($(this).find("input").attr("checked")&&$(this).index()!=0){
+                $(this).remove();
+            }
+        });
+    });
+}
+
 //服务设置
 //服务设置中服务要素
 $(function(){
@@ -330,8 +368,8 @@ $(function(){
 	});
 });
 
-//服务设置列表全选  
-function allCheckBox(allcheckbox,titletr,classid,delbtn){
+//服务设置列表 
+function allCheckBox(allcheckbox,titletr,classid,delect){
     $(allcheckbox).click(function(){
         if($(this).attr("checked")){
             $("."+classid+" td input").attr("checked",true);
@@ -348,34 +386,17 @@ function allCheckBox(allcheckbox,titletr,classid,delbtn){
             }
         });
     });
+    //删除
+    $(delect).click(function(){
+        $("."+classid+" tr").each(function(){
+            if($(this).find("input").attr("checked")&&$(this).index()!=0){
+                $(this).remove();
+            }
+        });
+    });
 }
-//服务设置中点击全选
-$(function(){
-    $(".deletebtn").click(function(){
-        $(".table_box tr").each(function(){
-            if($(this).find("input").attr("checked")&&$(this).index()!=0){
-                $(this).remove();
-            }
-        });
-    });
-    $(".deletebtn1").click(function(){
-        $(".table_box1 tr").each(function(){
-            if($(this).find("input").attr("checked")&&$(this).index()!=0){
-                $(this).remove();
-            }
-        });
-    });
-    $(".deletebtn2").click(function(){
-        $(".table_box2 tr").each(function(){
-            if($(this).find("input").attr("checked")&&$(this).index()!=0){
-                $(this).remove();
-            }
-        });
-    });
-});
 
-
-//con7服务内容中的textarea
+//服务内容中的textarea
  $(function(){
     $("#c7textarea").keyup(function(){
         var len = $(this).val().length;
@@ -396,7 +417,7 @@ function fileSelect() {
     }
 
 
-//点击删除图片，删除当列
+//点击"删除"，删除当列
 //别称
 $(function(){
 	$(".c2navList>li>a").click(function(){

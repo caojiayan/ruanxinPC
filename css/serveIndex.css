@@ -17,9 +17,9 @@ a{
 .letterBlue{
 	color: #66b0fe;
 }
-/*每个列表行间距离设置为10px的*/
+/*每个列表行间距离设置为10px*/
 li{
-	line-height: 22px;
+	line-height: 26px;
 }
 /*每个label之间的间距*/
 input,
@@ -668,6 +668,7 @@ body{
 	padding-left: 5px;
 	margin-top: 5px;
 	background: #EEEEEE;
+	font-size: 14px;
 	border-top: 1px solid #999999;
 	border-bottom: 1px solid #999999;
 }
@@ -683,26 +684,21 @@ body{
 	/*兼容IE67中display：inline-block属性*/
 	*zoom:1;
 	*display:inline;
-	width: 18%;
+	width:18%;
 	text-align: center;
 }
 
 .cv2Ul1 li:first-child{
-	width: 15px !important;
+	width: 55px !important;
 }
 
-.cv2Ul1 li input{
+.cv2Ul1 li input[type="text"]{
 	width: 30px;
 	border-bottom:none;
 	-moz-border-radius:5px; /* Firefox */
     -webkit-border-radius:5px; /* Safari 和 Chrome */
     border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 }
-.cv2Ul1 li:first-child{
-	padding: 0 0 0 25px;
-	background: url(../img/newselect.png) no-repeat left center;
-}
-
 
 .cv2Ul1 li:nth-of-type(2),
 .cv2Ul2 li:nth-of-type(2){
@@ -710,8 +706,10 @@ body{
 }
 
 .cv2Ul2{
+	font-size: 14px;
 	padding: 2px 5px;
 	border-bottom: 1px solid #EEEEEE;
+	vertical-align:middle;
 }
 
 .cv2Ul2 li{
@@ -722,12 +720,14 @@ body{
 	width: 18%;
 	text-align: center;
 }
-
-.cv2Ul2 li:first-child{
-	width: 15px !important;
+.cv2Ul1 li input[type="checkbox"],
+.cv2Ul2 li input[type="checkbox"]{
+	vertical-align:middle;
+	width: 20px;
+	height: 16px;
 }
-.cv2Ul2 li:nth-of-type(2){
-	padding-left: 20px;
+.cv2Ul2 li:first-child{
+	width: 55px !important;
 }
 
 .cv2Ul2 li:last-child{
@@ -862,7 +862,7 @@ body{
 	z-index: 10000;
 }
 .c6popup{
-	top: 70px;
+	top:-470px;
 	left: 0;
 }
 .c6popup ul li,
@@ -1279,9 +1279,10 @@ body{
 /*服务设置中多选框选择、全选按钮*/
 .checkAllinp{
 	vertical-align:middle;
-	去除IE6/7中图片边框
+/*	去除IE6/7中图片边框*/
 	overflow: visible;/*只有设置这个属性IE下padding才能生效*/
-    width: auto;   /*现代浏览器下识别*/
+    width:20px;   /*现代浏览器下识别*/
+    height: 20px;
     *width: 1;    /*IE7和IE6识别，设置值为1,*/
 }
 /*交易类型中清除IE10-IE7出现的边框*/

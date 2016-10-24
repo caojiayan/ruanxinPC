@@ -39,7 +39,7 @@ $(document).ready(function(argument) {
         rightTable.css("marginLeft",ltTableWidth);
         ltTableHeight = ltTable.height();
         leftTable.css("marginTop",ltTableHeight+"px");
-        rightTable.css("marginTop",ltTableHeight-35+"px");
+        rightTable.css("marginTop",ltTableHeight-37+"px");
   
         containerHeight = container.height();
         containerWidth = container.width();

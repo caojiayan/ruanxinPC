@@ -162,7 +162,7 @@
 					        </div>
 				    </fieldset>
 				    <div class="c1Proinput1">
-				    	<a href="javascript:void();"><img src="img/addlitter.png" align="center"></a>
+				    	<a href="javascript:void();"><img src="img/addlitter.png" alt="添加" align="center" style="vertical-align:top"></a>
 				    </div>
 			 </div>
 			<div class="con1Ca2">
@@ -181,7 +181,7 @@
                         </label>
                        </div>
 				    	<div class="c1Proinput2 c1Resinput2">
-				    		<a href="javascript:void();"><img src="img/addlitter.png" align="center"></a>
+				    		<a href="javascript:void();"><img src="img/addlitter.png" alt="添加" align="center" style="vertical-align:top"></a>
 				    	</div> 
 				    </fieldset>
 			    </div>
@@ -215,22 +215,22 @@
 			<legend></legend>
 			     <span class="cs0">
 			     	<span class="cright">服务别称</span>
-			     	<input type="text"  value="请输入服务别称" onfocus="javascript:if(this.value=='请输入服务别称')this.value='';"/>
-			        <button type='submit'>新增</button>
+			     	<input type="text" class="serveName1"  value="请输入服务别称" onfocus="javascript:if(this.value=='请输入服务别称')this.value='';"/>
+			        <button type='submit' id="servebtn1">新增</button>
 			     </span>
 			     <span class="cright"></span>
 			     <span>3/6 8个中文内 勿与标题类同，别称、标题、属性、活动等都会搜索匹配。</span>
 		</fieldset>
 		<div class="con2_nav">
-		 	<ul class="c2navList">
+		 	<ul class="c2navList" id="serveList">
 		 		<li>0版动漫合成
-		 			<a href="javascript:void();"><img src="img/delect1.png"></a>
+		 			<a href="javascript:void();"><img src="img/delect1.png" alt="删除"></a>
 		 		</li>
 		 		<li>格子动漫制作
-		 			<a href="javascript:void();"><img src="img/delect1.png"></a>
+		 			<a href="javascript:void();"><img src="img/delect1.png" alt="删除"></a>
 		 		</li>
 		 		<li>二维卡通动画制作
-		 			<a href="javascript:void();"><img src="img/delect1.png"></a>
+		 			<a href="javascript:void();"><img src="img/delect1.png" alt="删除"></a>
 		 		</li>
 		 	</ul>
 		</div>
@@ -496,11 +496,11 @@
 			            <fieldset>
 			                <h4>付款方式</h4>
 			                <div class="cx3_in">
-				                <img src="img/cxno.png" />
+				                <img src="img/cxno.png" alt="图标"/>
 				                <input type="checkbox" >全付<span>(全付，先金额付款再发货，不支持预售交易类型）</span>
 			                </div>
 			                <div class="cx3_in">
-				                <img src="img/cxno.png" />
+				                <img src="img/cxno.png" alt="图标"/>
 				                <input type="checkbox" >到付<span>(到付，下单后商家发货，客户验收合格后全额支付货款）</span>
 			                </div>
 			                <div class="cx3_in">服务费 
@@ -508,11 +508,11 @@
                                 <label><input name="服务费" type="radio" value="" />客户出 </label>
 			                </div>
                             <div class="cx3_in">
-            	                <img src="img/cxno.png" />
+            	                <img src="img/cxno.png" alt="图标"/>
             	                <input type="checkbox" >面付<span>(面付，面对面交易，常用于同城、附近的交易支付）</span>
                             </div>
 			                <div class="cx3_in">
-				                <img src="img/cxno.png" />
+				                <img src="img/cxno.png" alt="图标" />
 				                <input type="checkbox" >分段<span>(分段，即先付定金，验收合格后再付尾款）</span>
 			                </div>
 			                <div class="cx3_in">订金占比
@@ -609,10 +609,10 @@
 			        	        <button type='submit'>新增</button>
 			        		</li>
 			        		<li>卡通
-			        		    <a href="javascript:void();"><img src="img/delete2.png"></a>
+			        		    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
 			        		</li>
 			        		<li>形式
-			        			<a href="javascript:void();"><img src="img/delete2.png"></a>
+			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
 			        		</li>
 			        		<li>提示：请用最直观简洁的规格说明收费标准</li>
 			        	</ul>
@@ -623,13 +623,13 @@
 			        	        <button type='submit'>新增</button>
 			        		</li>
 			        		<li>客户原创
-			        		   <a href="javascript:void();"><img src="img/delete2.png"></a>
+			        		   <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
 			        		</li>
 			        		<li>我方创作
-			        			<a href="javascript:void();"><img src="img/delete2.png"></a>
+			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
 			        		</li>
 			        		<li>他方授权
-			        			<a href="javascript:void();"><img src="img/delete2.png"></a>
+			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
 			        		</li>
 			        	</ul>
 			        	<ul class="c4Ul">
@@ -639,20 +639,24 @@
 			        	        <button type='submit'>新增</button>
 			        		</li>
 			        		<li>平面
-			        			<a href="javascript:void();"><img src="img/delete2.png"></a>
+			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
 			        		</li>
 			        		<li>3D
-			        			<a href="javascript:void();"><img src="img/delete2.png"></a>
+			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
 			        		</li>
 			        	</ul>
 			        </fieldset>
 			    </div>
 			    <div class="cv2">
-			        <fieldset>
-			         		<ul class="cv2Ul1">
+			        <fieldset >
+			        	<div class="listBox">
+			         		<ul class="cv2Ul1 ulName">
 			         			<li>
-			         				<img src="img/trash.png" alt="删除">
-			         			</li>
+			        	            <input type="checkbox" id="allcheck" border="none"/>   <!--全选按钮-->
+			         	            <a href="javascript:void();" class="deletebtna">
+			         		            <img src="img/trash.png" alt="删除" id="delect" align="center" style="width:15px;height: 20px;">
+			         	            </a>
+			                    </li>
 			         			<li>服务规格SKU</li>
 			         			<li>最低消费<input type="text" value="1" onfocus="javascript:if(this.value=='1')this.value='';"/>确定</li>
 			         			<li>起购<input type="text" value="1" onfocus="javascript:if(this.value=='1')this.value='';"/>确定</li>
@@ -661,7 +665,8 @@
 			         		</ul>
 			         		<ul class="cv2Ul2">
 			         			<li>
-			         				<a href="javascript:void();"><img src="img/delete2.png"></a>
+			         				<input type="checkbox"/>
+			         				<a href="javascript:void();"><img src="img/delete2.png" alt="删除"  align="center"></a>
 			         			</li>
 			         			<li>客户原创*平面</li>
 			         			<li>199元/客户</li>
@@ -671,7 +676,8 @@
 			         		</ul>
 			         		<ul class="cv2Ul2">
 			         			<li>
-			         				<a href="javascript:void();"><img src="img/delete2.png"></a>
+			         				<input type="checkbox"/>
+			         				<a href="javascript:void();"><img src="img/delete2.png" alt="删除"  align="center"></a>
 			         			</li>
 			         			<li>客户制作*3D</li>
 			         			<li>1999元/客户</li>
@@ -681,7 +687,8 @@
 			         		</ul>
 			         		<ul class="cv2Ul2">
 			         			<li>
-			         				<a href="javascript:void();"><img src="img/delete2.png"></a>
+			         				<input type="checkbox"/>
+			         				<a href="javascript:void();"><img src="img/delete2.png" alt="删除"  align="center"></a>
 			         			</li>
 			         			<li>他方授权*平面</li>
 			         			<li>299元/客户</li>
@@ -691,7 +698,8 @@
 			         		</ul>
 			         		<ul class="cv2Ul2">
 			         			<li>
-			         				<a href="javascript:void();"><img src="img/delete2.png"></a>
+			         				<input type="checkbox"/>
+			         				<a href="javascript:void();"><img src="img/delete2.png" alt="删除" align="center" ></a>
 			         			</li>
 			         		 	<li>我方创作*平面</li>
 			         			<li>999元/客户</li>
@@ -699,6 +707,7 @@
 			         			<li>1*10秒</li>
 			         			<li>25.9元</li>
 			         		</ul>
+			         	</div>
 			        </fieldset>
 			    </div>
 			    </form>
@@ -785,12 +794,12 @@
 	    		<fieldset class="c6Techtwo c6Choice" id="c6Choice1">
 	    			<span class="cright">服务资源</span>
 	    			<a href="javascript:void();" class="c6PresClick">
-	    				<img src="img/addlitter.png" align="center">
+	    				<img src="img/addlitter.png" align="center"style="vertical-align:top">
 	    			</a>                                                  <!--服务资源新增按钮-->
-	    			<a href="javascript:void();" class="deletebtn" style="float: right;">
-	    				<img src="img/trashW.png" align="center">            <!--服务资源列表删除按钮-->
+	    			<a href="javascript:void();" id="deletebtn" style="float: right;">
+	    				<img src="img/trashW.png" align="center" style="vertical-align:top">            <!--服务资源列表删除按钮-->
 	    			</a>                                                  
-	    			<table class="table_box" width="1039px" border="1" cellpadding="0" cellspacing="0" bordercolor="#ccc" style="border-collapse:separate;">
+	    			<table class="table_box" width="1040px" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
 			        	<tr id="titletr">
 			        		<td>资源名称</td>
 			        		<td>资源归属</td>
@@ -812,14 +821,14 @@
 			        		<td>公司所有</td>
 			        		<td>99人</td>
 			        		<td>
-			        			<img src="img/phoneS.png" align="center">
-			        			<img src="img/phoneS.png" align="center">
-			        			<img src="img/phoneS.png" align="center">
+			        			<img src="img/phoneS.png" alt="上传的图片"  align="center" style="vertical-align:top">
+			        			<img src="img/phoneS.png" alt="上传的图片"  align="center" style="vertical-align:top">
+			        			<img src="img/phoneS.png" alt="上传的图片" align="center" style="vertical-align:top">
 			        		</td>
 			        		<td>
 			        			<input class="checkAllinp" type="checkbox"/>
 			        			<a href="javascript:void();" class="c6resourceW">            <!-- 服务资源修改按钮-->
-			        				<img src="img/writeW.png" align="center">
+			        				<img src="img/writeW.png" alt="点击修改" align="center" style="vertical-align:top">
 			        			</a>
 			        		</td>
 			        	</tr>
@@ -832,7 +841,7 @@
 			        		<td>
 			        			<input class="checkAllinp" type="checkbox"/>
 			        			<a href="javascript:void();" class="c6TechpopWrite">
-			        				<img src="img/writeW.png" align="center">
+			        				<img src="img/writeW.png" alt="点击修改" align="center" style="vertical-align:top">
 			        			</a>
 			        		</td>
 			        	</tr>
@@ -840,11 +849,11 @@
 	    		</fieldset>
 	    		<fieldset class="c6Techthree">
 	    			<span class="cright">服务人员</span>
-	    			<a href="javascript:void();" class="c6TechpopClick"><img src="img/addlitter.png" align="center"></a>   <!--服务人员新增按钮-->
-	    			<a href="javascript:void();" class="deletebtn1" style="float: right;">
-	    				<img src="img/trashW.png" align="center">                     <!-- 服务人员列表删除按钮-->
+	    			<a href="javascript:void();" class="c6TechpopClick"><img src="img/addlitter.png" alt="点击添加" align="center" style="vertical-align:top"></a>   <!--服务人员新增按钮-->
+	    			<a href="javascript:void();" id="deletebtn1" style="float: right;">
+	    				<img src="img/trashW.png" alt="点击删除" align="center" style="vertical-align:top">                     <!-- 服务人员列表删除按钮-->
 	    			</a>
-	    			<table  class="table_box1" width="1039px" border="1" cellpadding="0" cellspacing="0" bordercolor="#ccc" style="border-collapse:separate;">
+	    			<table  class="table_box1" width="1040px" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
 			        	<tbody></tbody>
 			        	<tr id="titletr1">
 			        		<td>姓名</td>
@@ -870,7 +879,7 @@
 			        		<td> 
 			        			<input class="checkAllinp" type="checkbox"/>
 			        			<a href="javascript:void();" class="c6TechpopWrite">
-			        				<img src="img/writeW.png" align="center">
+			        				<img src="img/writeW.png" alt="点击修改" align="center" style="vertical-align:top">
 			        			</a>
 			        		</td>
 			        	</tr>
@@ -883,7 +892,7 @@
 			        		<td>
 			        			<input class="checkAllinp" type="checkbox"/>
 			        			<a href="javascript:void();" class="c6TechpopWrite">
-			        				<img src="img/writeW.png" align="center">  <!-- 服务人员修改按钮-->
+			        				<img src="img/writeW.png" alt="点击修改" align="center" style="vertical-align:top">  <!-- 服务人员修改按钮-->
 			        			</a>
 			        		</td>
 			        	</tr>
@@ -892,12 +901,12 @@
 	    		<div class="c6Techfour">
 	    			<span class="cright" style="margin-left: 20px;">服务项目</span>
 			        <a href="javascript:void();" class="c6PWriClick">                  <!--服务项目按钮-->
-			        	<img src="img/addlitter.png" align="center">
+			        	<img src="img/addlitter.png" alt="添加" align="center" style="vertical-align:top">
 			        </a>
-			        <a href="javascript:void();" class="deletebtn2" style="float: right;">
-			        	<img src="img/trashW.png" align="center">               <!--服务项目列表删除按钮-->
+			        <a href="javascript:void();" id="deletebtn2" style="float: right;">
+			        	<img src="img/trashW.png" alt="点击删除" align="center" style="vertical-align:top">               <!--服务项目列表删除按钮-->
 			        </a>               
-			        <table class="table_box2" width="1039px" border="1" cellpadding="0" cellspacing="0" bordercolor="#ccc" style="border-collapse:separate;">
+			        <table class="table_box2" width="1040px" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
 			        	<tbody></tbody>
 			        	<tr id="titletr2">
 			        		<td>资源名称</td>
@@ -923,7 +932,7 @@
 			        		<td>
 			        			<input class="checkAllinp" type="checkbox"/>   
 			        			<a href="javascript:void();" class="c6ProteW">
-			        				<img src="img/writeW.png" align="center">   <!--服务项目修改按钮-->
+			        				<img src="img/writeW.png" align="center" alt="点击修改" style="vertical-align:top">   <!--服务项目修改按钮-->
 			        			</a>
 			        		</td>
 			        	</tr>
@@ -936,25 +945,25 @@
 			        		<td>
 			        			<input class="checkAllinp" type="checkbox"/>
 			        			<a href="javascript:void();" class="">
-			        				<img src="img/writeW.png" align="center">
+			        				<img src="img/writeW.png" alt="点击修改" align="center" style="vertical-align:top">
 			        			</a>
 			        		</td>
 			        	</tr>
 			        </table>
 	    		</div>
 	    		<!--服务人员新增-->
-	    		<div class="c6popup" id="c6TechpopupN" style="top:110px;">
+	    		<div class="c6popup" id="c6TechpopupN" style="top: -440px;">
 	    			<div class="c6ptitle">
 	    				<ul>
 	    					<li>
 	    						<a href="javascript:void();" class="c6TechpopClose">
-	    							<img src="img/delect1.png">
+	    							<img src="img/delect1.png" alt="删除">
 	    						</a>
 	    					</li>
 	    					<li>服务人员新增</li>
 	    					<li>
 	    						<a href="javascript:void();" class="c6TechpopHold">
-	    							<img src="img/yes1.png" align="center">
+	    							<img src="img/yes1.png" alt="保存" align="center" style="vertical-align:top">
 	    						</a>
 	    					</li>
 	    				</ul>
@@ -1024,15 +1033,15 @@
 	    		    			</tr>
 	    		    			<tr>
 	    		    				<td>
-	    		    					<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
+	    		    					<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片" onclick="fileSelect();"></a>
 	    						        <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 	    		    				</td>
 	    		    				<td>
-	    		    					<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
+	    		    					<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片" onclick="fileSelect();"></a>
 	    						        <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 	    		    				</td>
 	    		    				<td>
-	    		    					<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
+	    		    					<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片" onclick="fileSelect();"></a>
 	    						        <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 	    		    				</td>
 	    		    			</tr>
@@ -1093,18 +1102,18 @@
 	    		</div>
 	    		<!--新增服务人员部分结束-->
 	    		<!--修改服务人员部分开始-->
-	    		<div class="c6popup" id="c6Techpopup" style="top:110px;">
+	    		<div class="c6popup" id="c6Techpopup" style="top: -440px;">
 	    			<div class="c6ptitle">
 	    				<ul>
 	    					<li>
 	    						<a href="javascript:void();" class="c6TechpopClose">
-	    							<img src="img/delect1.png">
+	    							<img src="img/delect1.png" alt="删除">
 	    						</a>
 	    					</li>
-	    					<li>服务人员新增</li>
+	    					<li>服务人员修改</li>
 	    					<li>
 	    						<a href="javascript:void();" class="c6TechpopHold">
-	    							<img src="img/yes1.png" align="center">
+	    							<img src="img/yes1.png" alt="保存" align="center" style="vertical-align:top">
 	    						</a>
 	    					</li>
 	    				</ul>
@@ -1173,15 +1182,15 @@
 	    		    			</tr>
 	    		    			<tr>
 	    		    				<td>
-	    		    					<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
+	    		    					<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片" onclick="fileSelect();"></a>
 	    						        <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 	    		    				</td>
 	    		    				<td>
-	    		    					<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
+	    		    					<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片" onclick="fileSelect();"></a>
 	    						        <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 	    		    				</td>
 	    		    				<td>
-	    		    					<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
+	    		    					<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片" onclick="fileSelect();"></a>
 	    						        <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 	    		    				</td>
 	    		    			</tr>
@@ -1246,11 +1255,11 @@
 	    				<div class="c6ptitle">
 	    					<ul>
 	    						<li><a class='c6ProWriClose' href='#';>
-	    							    <img src="img/delect1.png" align="center">
+	    							    <img src="img/delect1.png" alt="删除" align="center" style="vertical-align:top">
 	    						    </a>
 	    						</li>
 	    						<li>服务项目新增</li>
-	    						<li><a href="javascript:void();" class="c6ProWriHold"><img src="img/yes1.png" align="center"></a></li>
+	    						<li><a href="javascript:void();" class="c6ProWriHold"><img src="img/yes1.png" alt="保存" align="center" style="vertical-align:top"></a></li>
 	    					</ul>
 	    				</div>
 	    				<div class="c6pType">
@@ -1523,15 +1532,15 @@
 	    			</div>
 	    		<!--新增服务项目部分结束-->
 	    		<!--修改服务项目部分开始-->
-	    		    <div class="c6popup box" id="c6ProWrite">
+	    		    <div class="c6popup box" id="c6ProWrite" style="top:-630px">
 	    				<div class="c6ptitle">
 	    					<ul>
 	    						<li><a class='c6ProWriClose' href='#';>
-	    							    <img src="img/delect1.png" align="center">
+	    							    <img src="img/delect1.png" alt="删除" align="center" style="vertical-align:top">
 	    						    </a>
 	    						</li>
 	    						<li>服务项目修改</li>
-	    						<li><a href="javascript:void();" class="c6ProWriHold"><img src="img/yes1.png" align="center"></a></li>
+	    						<li><a href="javascript:void();" class="c6ProWriHold"><img src="img/yes1.png" alt="保存" align="center" style="vertical-align:top"></a></li>
 	    					</ul>
 	    				</div>
 	    				<div class="c6pType">
@@ -1812,11 +1821,11 @@
 	    				<div class="c6ptitle">
 	    					<ul>
 	    						<li><a class='c6PresClose' href='#';>
-	    							    <img src="img/delect1.png" align="center">
+	    							    <img src="img/delect1.png" alt="删除" align="center" style="vertical-align:top">
 	    						    </a>
 	    						</li>
 	    						<li>服务资源新增</li>
-	    						<li><a href="javascript:void();" class="c6PresHold"><img src="img/yes1.png" align="center"></a></li>
+	    						<li><a href="javascript:void();" class="c6PresHold"><img src="img/yes1.png" alt="保存" align="center" style="vertical-align:top"></a></li>
 	    					</ul>
 	    				</div>
 	    				<div class="c6pType">
@@ -1890,7 +1899,7 @@
 		                    		    <tr>
 		                    			    <td>
 		                    				    <span style="padding-right: 2px;">资源图片</span>
-	    			    	                    <a href="javascript:void();"><img class="normalFace" src="img/upload.png" onclick="fileSelect();" align="center"></a>
+	    			    	                    <a href="javascript:void();"><img class="normalFace" src="img/upload.png" alt="上传图片" onclick="fileSelect();" align="center" style="vertical-align:top"></a>
 	    					                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 		                    				</td>
 		                    				<td>
@@ -1900,16 +1909,16 @@
 		                    				<td>
 		                    					<ul class="UpimgUl">
 		                    						<li>
-		                    							<a href="javascript:void();"><img src="img/phoneS.png" align="center" /></a>
-		                    					        <a href="javascript:void();" class="cright imgRemove"><img src="img/delete2.png" ></a>
+		                    							<a href="javascript:void();"><img src="img/phoneS.png" alt="上传的图片" align="center" style="vertical-align:top"/></a>
+		                    					        <a href="javascript:void();" class="cright imgRemove"><img src="img/delete2.png" alt="删除"></a>
 		                    						</li>
 		                    						<li>
-		                    							<a href="javascript:void();"><img src="img/phoneS.png" align="center" /></a>
-		                    					        <a href="javascript:void();" class="cright imgRemove"><img src="img/delete2.png" ></a>
+		                    							<a href="javascript:void();"><img src="img/phoneS.png" alt="上传的图片" align="center" style="vertical-align:top"/></a>
+		                    					        <a href="javascript:void();" class="cright imgRemove"><img src="img/delete2.png" alt="删除" ></a>
 		                    						</li>
 		                    						<li>
-		                    							<a href="javascript:void();"><img src="img/phoneS.png" align="center" /></a>
-		                    					        <a href="javascript:void();" class="cright imgRemove"><img src="img/delete2.png" ></a>
+		                    							<a href="javascript:void();"><img src="img/phoneS.png" alt="上传的图片" align="center" style="vertical-align:top"/></a>
+		                    					        <a href="javascript:void();" class="cright imgRemove"><img src="img/delete2.png" alt="删除" ></a>
 		                    						</li>
 		                    					</ul>
 		                    				</td>
@@ -2111,11 +2120,11 @@
 	    				<div class="c6ptitle">
 	    					<ul>
 	    						<li><a class='c6PresClose' href='#';>
-	    							    <img src="img/delect1.png" align="center">
+	    							    <img src="img/delect1.png" alt="删除" align="center" style="vertical-align:top">
 	    						    </a>
 	    						</li>
 	    						<li>服务资源修改</li>
-	    						<li><a href="javascript:void();" class="c6PresHold"><img src="img/yes1.png" align="center"></a></li>
+	    						<li><a href="javascript:void();" class="c6PresHold"><img src="img/yes1.png" alt="保存" align="center" style="vertical-align:top"></a></li>
 	    					</ul>
 	    				</div>
 	    				<div class="c6pType">
@@ -2189,7 +2198,7 @@
 		                    		    <tr>
 		                    			    <td>
 		                    				    <span style="padding-right: 2px;">资源图片</span>
-	    			    	                    <a href="javascript:void();"><img class="normalFace" src="img/upload.png" onclick="fileSelect();" align="center"></a>
+	    			    	                    <a href="javascript:void();"><img class="normalFace" alt="上传图片按钮片" src="img/upload.png" onclick="fileSelect();" align="center" style="vertical-align:top"></a>
 	    					                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 		                    				</td>
 		                    				<td>
@@ -2199,16 +2208,16 @@
 		                    				<td>
 		                    					<ul class="UpimgUl">
 		                    						<li>
-		                    							<a href="javascript:void();"><img src="img/phoneS.png" align="center" /></a>
-		                    					        <a href="javascript:void();" class="cright imgRemove"><img src="img/delete2.png" ></a>
+		                    							<a href="javascript:void();"><img src="img/phoneS.png"  alt="上传的图片" align="center" style="vertical-align:top"/></a>
+		                    					        <a href="javascript:void();" class="cright imgRemove"><img src="img/delete2.png" alt="删除"></a>
 		                    						</li>
 		                    						<li>
-		                    							<a href="javascript:void();"><img src="img/phoneS.png" align="center" /></a>
-		                    					        <a href="javascript:void();" class="cright imgRemove"><img src="img/delete2.png" ></a>
+		                    							<a href="javascript:void();"><img src="img/phoneS.png" alt="上传的图片" align="center" style="vertical-align:top" /></a>
+		                    					        <a href="javascript:void();" class="cright imgRemove"><img src="img/delete2.png" alt="删除" ></a>
 		                    						</li>
 		                    						<li>
-		                    							<a href="javascript:void();"><img src="img/phoneS.png" align="center" /></a>
-		                    					        <a href="javascript:void();" class="cright imgRemove"><img src="img/delete2.png" ></a>
+		                    							<a href="javascript:void();"><img src="img/phoneS.png" alt="上传的图片" align="center" style="vertical-align:top" /></a>
+		                    					        <a href="javascript:void();" class="cright imgRemove"><img src="img/delete2.png" alt="删除"></a>
 		                    						</li>
 		                    					</ul>
 		                    				</td>
@@ -2455,7 +2464,7 @@
 	    		</fieldset>
 	    		<fieldset>
 	    			<span class="coRed cright">服务内容</span>
-	    			<img src="img/why.png">
+	    			<img src="img/why.png" alt="图标" align="center" style="vertical-align: top;">
 	    			<span>提示：重点内容、服务优势等简要说明，限100字数</span>
 	    		</fieldset>
 	    		<fieldset>
@@ -2491,38 +2500,38 @@
 	    				<li>
 	    					<span>食品行业协会 </span>
 	    					**省食品行业协会
-	    					<a href="javascript:void();"><img src="img/delect1.png"></a>
+	    					<a href="javascript:void();"><img src="img/delect1.png" alt="删除"></a>
 	    				</li>
 	    				<li>
 	    					<span>食品协会会员 </span>
 	    					是 
-	    					<a href="javascript:void();"><img src="img/delect1.png"></a>
+	    					<a href="javascript:void();"><img src="img/delect1.png" alt="删除"></a>
 	    				</li>
 	    				<li>
 	    					<span>荣誉证书</span>
 	    				    2016年东莞食品先进企业
-	    				    <a href="javascript:void();"><img src="img/delect1.png"></a>
+	    				    <a href="javascript:void();"><img src="img/delect1.png" alt="删除"></a>
 	    				</li>
 	    				<li>
 	    					<span>封装工艺</span>
 	    					真空封装
-	    					<a href="javascript:void();"><img src="img/delect1.png"></a>
+	    					<a href="javascript:void();"><img src="img/delect1.png" alt="删除"></a>
 	    				</li>
 	    			</ul>
 	    		</fieldset>
 	    		<!--新增商品属性开始-->
-	    		<div class="c7Popup" style="top:350px ;">
+	    		<div class="c7Popup" style="top:50px ;">
 	    			<div class="c7ptitle">
 	    				<ul>
 	    					<li>
 	    						<a href="javascript:void();" class="c7PopupNo" >
-	    							<img src="img/delect1.png">
+	    							<img src="img/delect1.png" alt="删除">
 	    						</a> 
 	    					</li>
 	    					<li>新增商品属性</li>
 	    					<li>
 	    						<a href="javascript:void();" class="c7PopupYes"> 
-	    							<img src="img/yes1.png" align="center"> 
+	    							<img src="img/yes1.png" alt="保存" align="center" style="vertical-align:top"> 
 	    						</a>
 	    					</li>
 	    				</ul>
@@ -2573,22 +2582,22 @@
 	    				<li>
 	    					<span>食品行业协会 </span>
 	    					**省食品行业协会
-	    					<a href="javascript:void();"><img src="img/delect1.png"></a>
+	    					<a href="javascript:void();"><img src="img/delect1.png" alt="删除"></a>
 	    				</li>
 	    				<li>
 	    					<span>食品协会会员 </span>
 	    					是 
-	    					<a href="javascript:void();"><img src="img/delect1.png"></a>
+	    					<a href="javascript:void();"><img src="img/delect1.png" alt="删除"></a>
 	    				</li>
 	    				<li>
 	    					<span>荣誉证书</span>
 	    				    2016年东莞食品先进企业
-	    				    <a href="javascript:void();"><img src="img/delect1.png"></a>
+	    				    <a href="javascript:void();"><img src="img/delect1.png" alt="删除"></a>
 	    				</li>
 	    				<li>
 	    					<span>封装工艺</span>
 	    					真空封装
-	    					<a href="javascript:void();"><img src="img/delect1.png"></a>
+	    					<a href="javascript:void();"><img src="img/delect1.png" alt="删除"></a>
 	    				</li>
 	    			</ul>
 	    			</div>
@@ -2647,17 +2656,17 @@
 	    					<li>3 支持jpg等图片格式，最大2M/张，上传时须设定“预览图”区域（主页、搜索列表、推荐区等的展示图）</li>
 	    				</ul>
 	    				<div class="c8photo"> <!--上传图片-->
-	    						<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" onclick="fileSelect();"></a>
+	    						<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片"  onclick="fileSelect();"></a>
 	    						<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    						<a href="javascript:void();"><img class="normalFace" src="img/addpic3.png" onclick="fileSelect();"></a>
+	    						<a href="javascript:void();"><img class="normalFace" src="img/addpic3.png" alt="点击上传图片" onclick="fileSelect();"></a>
 	    						<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    						<a href="javascript:void();"><img class="normalFace" src="img/addpic3.png" onclick="fileSelect();"></a>
+	    						<a href="javascript:void();"><img class="normalFace" src="img/addpic3.png" alt="点击上传图片" onclick="fileSelect();"></a>
 	    						<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    						<a href="javascript:void();"><img class="normalFace" src="img/addpic3.png" onclick="fileSelect();"></a>
+	    						<a href="javascript:void();"><img class="normalFace" src="img/addpic3.png" alt="点击上传图片" onclick="fileSelect();"></a>
 	    						<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    						<a href="javascript:void();"><img class="normalFace" src="img/addpic3.png" onclick="fileSelect();"></a>
+	    						<a href="javascript:void();"><img class="normalFace" src="img/addpic3.png" alt="点击上传图片" onclick="fileSelect();"></a>
 	    						<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    						<a href="javascript:void();"><img class="normalFace" src="img/addpic2.png" onclick="fileSelect();"></a>
+	    						<a href="javascript:void();"><img class="normalFace" src="img/addpic2.png" alt="点击上传图片" onclick="fileSelect();"></a>
 	    						<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 	    				</div>
 	    			</div>
@@ -2671,9 +2680,9 @@
 	    					<li>横条形：1200*600px 或 竖条形：600*1000px,各1张（服务相关实拍照片），无文字、无牛皮鲜、无logo上传时可指定“预览图区域”，更容易吸引客户，显示位置：APP内服务新主页推荐区</li>
 	    				</ul>
 	    				<div class="c8photo"> <!--上传图片-->
-	    					<a href="javascript:void();"><img class="normalFace" src="img/addpic4.png" onclick="fileSelect();"></a>
+	    					<a href="javascript:void();"><img class="normalFace" alt="点击上传图片" src="img/addpic4.png" onclick="fileSelect();"></a>
 	    					<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
-	    					<a href="javascript:void();"><img class="normalFace" src="img/addpic5.png" onclick="fileSelect();"></a>
+	    					<a href="javascript:void();"><img class="normalFace" alt="点击上传图片" src="img/addpic5.png" onclick="fileSelect();"></a>
 	    					<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
 	    				</div>
 	    			</div>
@@ -2738,11 +2747,14 @@
         </div>
         <!--footer结束-->
         <script>
-         function _doPostBack(eventTarget, eventArgument){
-        	allCheckBox('#allcheckbox','#titletr','table_box');
-        	allCheckBox('#allcheckbox1','#titletr1','table_box1');
-        	allCheckBox('#allcheckbox2','#titletr2','table_box2');
-        	}
+//      服务要素
+        	allCheckBox('#allcheckbox','#titletr','table_box',"#deletebtn");
+        	allCheckBox('#allcheckbox1','#titletr1','table_box1',"#deletebtn1");
+        	allCheckBox('#allcheckbox2','#titletr2','table_box2',"#deletebtn2");
+//      服务规格SKU
+        	allCheck('#allcheck','listBox','ulName','#delect');
+//      服务别称新增
+        	Check('#servebtn1','serveName1');
         </script>	
 	</body>
 </html>
