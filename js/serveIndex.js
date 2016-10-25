@@ -1,5 +1,19 @@
+//百度副文本编辑器
+$(function() {
+	initUEditor();
 
-//所有下拉框
+	// 初始化百度副文本编辑器
+	function initUEditor(){
+		var editor = UE.getEditor('editor', {
+			initialFrameWidth: null,
+			initialFrameHeight:600,
+			scaleEnabled: true,
+			autoHeightEnabled: false,
+		});
+	}
+});
+
+//所有可筛选的下拉框
 $(function(){
 				//当列表项被点击时，把列表项的值放在输入框里面，
 				$(".dropdown").delegate("li", "click", function(e){
@@ -69,12 +83,6 @@ $(document).ready(function(){
 });
 
 //服务别称新增
-function Check(servebtn,serveName){
-	var va1=$("."+serveName).val();
-	$(servebtn).click(function{
-		alert(va1);
-	});
-});
 
 
 //交易类型
@@ -229,7 +237,6 @@ $(function(){
 });
 
 //服务设置中服务人员
-//遮盖层
 $(function(){
 	$(".c6TechpopClick").click(function(){   //服务人员新增
 		var bh = $("body").height();
@@ -266,7 +273,6 @@ $(function(){
 });
 
 //服务设置中服务项目
-//遮盖层
 $(function(){
 	$(".c6PWriClick").click(function(){   //服务项目新增
 		var bh = $("body").height();
@@ -408,7 +414,7 @@ function allCheckBox(allcheckbox,titletr,classid,delect){
     });
  });
 
-//con8点击上传图片
+//点击上传图片
 function fileSelect() {
         document.getElementById("fileToUpload").click();
    }
