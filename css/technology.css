@@ -2,14 +2,14 @@
 
 /*con4*/
 .c4Ul{
-	padding-left: 50px;
 	margin-bottom: 5px;
 }
 .c4Ul:first-child{
 	padding-left: 20px;
 	background:url(../img/key2.png)no-repeat left center;
 }
-.c4Ul li{
+.c4Ul li,
+.c4Ul-li li{
 	padding-left: 25px;
 	display: inline-block;
 	/*兼容IE67中display：inline-block属性*/

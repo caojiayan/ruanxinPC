@@ -93,6 +93,18 @@ input,select{
     border-bottom-width: 1px;
     border-left-width: 0px;
 }
+/*提交按钮样式*/
+input[type="button"]{
+	padding: 3px 10px;
+	margin-left: 10px;
+	background: #a0a0a0;
+	-moz-border-radius:10px; /* Firefox */
+    -webkit-border-radius:10px; /* Safari 和 Chrome */
+    border-radius:10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+	border: #a0a0a0;
+	color:#FFFFFF;
+}
+
 /*button的样式设置*/
 button{
 	padding: 3px 10px;
@@ -103,9 +115,6 @@ button{
     border-radius:10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
 	border: #a0a0a0;
 	color:#FFFFFF;
-	position:relative;
-    z-index:2;
-    behavior:url(../js/iecss3/ie-css3.htc);
 }
 /*去掉点击框时自带的颜色*/
 input:focus,
@@ -161,6 +170,13 @@ body{
     opacity:0.5;                        /*背景的透明度:(Firefox适用；）*/  
     filter:alpha(opacity=50);          /*背景的透明度:(IE适用)； */  
 }
+/*时间日历样式框*/
+.date-T{
+	width:175px;
+	margin:10px auto;
+}
+
+
 
 /*下拉框样式*/
 .dropdown {
@@ -549,12 +565,12 @@ body{
 	display: none;
 }
 
-.cx2 form fieldset:first-child input,
+/*.cx2 form fieldset:first-child input,
 .cx2 form fieldset:nth-of-type(2) input{
 	border-color: #878787; 
     border-style: solid; 
     border-width:1px;
-}
+}*/
 
 .cx2 form fieldset{
 	padding-bottom: 10px;
@@ -638,7 +654,7 @@ body{
 }
 
 .con4 .cv1 fieldset:first-child{
-	padding:0 0 5px 20px;
+	padding:0 0 10px 25px;
 }
 
 .con4 .cv1 span,
@@ -654,6 +670,27 @@ body{
 }
 .cvTaimg2{
 	background: url(../img/keylitter.png) 18px center no-repeat;
+}
+/*服务规格*/
+#spec1{
+	padding:0 0 5px 25px;
+	background: url(../img/key2.png) left top no-repeat;
+}
+#spec2,
+#spec3{
+	/*display: none;*/
+	padding:0 0 5px 25px;
+}
+.specn,
+.c4Ul,
+.spectip{
+	float: left;
+}
+.spectip{
+	padding-left: 20px;	
+}
+.specn{
+	height: 35px;
 }
 
 /*商品SKU列表*/

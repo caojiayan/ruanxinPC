@@ -8,6 +8,7 @@
 		<script type="text/javascript" src="js/ueditor.config.js" ></script>
 		<script type="text/javascript" src="js/ueditor.all.min.js" ></script>
 		<script type="text/javascript" src="js/zh-cn.js" ></script>
+		<script type="text/javascript" src="laydate/laydate.js" ></script>   <!--时间日历-->
 		<link rel="stylesheet" href="css/serveIndex.css" />
 		<link rel="stylesheet" href="css/technology.css" />
 		<link rel="stylesheet" href="css/ueditor.css" />
@@ -214,15 +215,16 @@
 		<fieldset>
 			<legend></legend>
 			    <span class="cs0">
-			     	<span class="cright">服务别称 </span> 
-			     	<input type="text"  value="请输入服务别称" onfocus="javascript:if(this.value=='请输入服务别称')this.value='';"/>
-			        <button type='submit'>新增</button>
+			     	<span class="cright">服务别称</span>
+			     	<input type="text" class="serveName3" value="请输入服务别称" onfocus="javascript:if(this.value=='请输入服务别称')this.value='';" />
+			        <input type="button" id="servebtn3" value="新增">
+			        <span class="Error" style="font-size: 14px;"></span>
 			    </span>
 			    <span class="cright"></span>
 			    <span>3/6 8个中文内 勿与标题类同，别称、标题、属性、活动等都会搜索匹配。</span>
 		</fieldset>
 		<div class="con2_nav">
-		 	<ul class="c2navList">
+		 	<ul class="c2navList" id="serveList3">
 		 		<li>29类零食商标
 		 			<a href="javascript:void();"><img src="img/delect1.png" alt="删除"></a>
 		 		</li>
@@ -258,13 +260,17 @@
 		        <div class="cx2" id="cx17">
 			        <form action="" method="">
 				        <fieldset>
-					                     预约时间   <input type="date" name="star_date" /> 至 
-					        <input type="date" name="stop_date" />
+					                预约时间
+					        <input id="Time1" placeholder="请输入预约开始时间" class="laydate-icon" onClick="laydate({elem: '#Time1', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+					        至 
+					        <input id="Time2" placeholder="请输入预约结束时间" class="laydate-icon" onClick="laydate({elem: '#Time2', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 					                      预约：最长15天
 				        </fieldset>
 				        <fieldset>
-					                      拍卖时间   <input type="date" name="star_date" /> 至 
-					        <input type="date" name="stop_date" />
+					                      拍卖时间
+					        <input id="Time3" placeholder="请输入拍卖开始时间" class="laydate-icon" onClick="laydate({elem: '#Time3', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+					        至 
+					        <input id="Time4" placeholder="请输入拍卖结束时间" class="laydate-icon" onClick="laydate({elem: '#Time4', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 					                      拍卖：最长30分钟
 				        </fieldset>
 				        <fieldset>
@@ -276,62 +282,61 @@
 				        <fieldset>
 					                      详细地址
 					        <span class="dropdown padleft5px" >  <!-- 模拟 select 的标记， -->
-			                        <input class="editor" type="text" value="广东省" onfocus="javascript:if(this.value=='广东省')this.value='';"/> <!-- 显示当前值的输入框 -->
-			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
-			                        <ul>   <!-- 列表菜单 -->
-				                        <li class="search" style="border: 1px solid #EEEEEE;">
-					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
-				                        </li>   <!-- 过滤输入的列表， -->
-				                        <li data-value=广东省>广东省</li>
-				                        <li data-value=112>112</li>
-				                        <li data-value=223>223</li>
-				                        <li data-value=335>335</li>
-				                        <li data-value=224>224</li>
-				                        <li data-value=336>336</li>
-				                        <li data-value=447>447</li>
-				                        <li data-value=448>448</li>
-				                        <li data-value=559>559</li>
-			                        </ul>
-		                        </span>
+			                    <input class="editor" type="text" value="广东省" onfocus="javascript:if(this.value=='广东省')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li data-value=广东省>广东省</li>
+				                    <li data-value=112>112</li>
+				                    <li data-value=223>223</li>
+				                    <li data-value=335>335</li>
+				                    <li data-value=224>224</li>
+				                    <li data-value=336>336</li>
+				                    <li data-value=447>447</li>
+				                    <li data-value=448>448</li>
+				                    <li data-value=559>559</li>
+			                    </ul>
+		                    </span>
                             <span class="dropdown padleft5px" >  <!-- 模拟 select 的标记， -->
-			                        <input class="editor" type="text" value="广州市" onfocus="javascript:if(this.value=='广州市')this.value='';"/> <!-- 显示当前值的输入框 -->
-			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
-			                        <ul>   <!-- 列表菜单 -->
-				                        <li class="search" style="border: 1px solid #EEEEEE;">
-					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
-				                        </li>   <!-- 过滤输入的列表， -->
-				                        <li data-value=广州市>广州市</li>
-				                        <li data-value=112>112</li>
-				                        <li data-value=223>223</li>
-				                        <li data-value=335>335</li>
-				                        <li data-value=224>224</li>
-				                        <li data-value=336>336</li>
-				                        <li data-value=447>447</li>
-				                        <li data-value=448>448</li>
-				                        <li data-value=559>559</li>
-			                        </ul>
-		                        </span>
+			                    <input class="editor" type="text" value="广州市" onfocus="javascript:if(this.value=='广州市')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li data-value=广州市>广州市</li>
+				                    <li data-value=112>112</li>
+				                    <li data-value=223>223</li>
+				                    <li data-value=335>335</li>
+				                    <li data-value=224>224</li>
+				                    <li data-value=336>336</li>
+				                    <li data-value=447>447</li>
+				                    <li data-value=448>448</li>
+				                    <li data-value=559>559</li>
+			                    </ul>
+		                    </span>
                             <span class="dropdown padleft5px" >  <!-- 模拟 select 的标记， -->
-			                        <input class="editor" type="text" value="白云区" onfocus="javascript:if(this.value=='白云区')this.value='';"/> <!-- 显示当前值的输入框 -->
-			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
-			                        <ul>   <!-- 列表菜单 -->
-				                        <li class="search" style="border: 1px solid #EEEEEE;">
-					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
-				                        </li>   <!-- 过滤输入的列表， -->
-				                        <li data-value=白云区>白云区</li>
-				                        <li data-value=112>112</li>
-				                        <li data-value=223>223</li>
-				                        <li data-value=335>335</li>
-				                        <li data-value=224>224</li>
-				                        <li data-value=336>336</li>
-				                        <li data-value=447>447</li>
-				                        <li data-value=448>448</li>
-				                        <li data-value=559>559</li>
-			                        </ul>
-		                        </span>
-					        
+			                    <input class="editor" type="text" value="白云区" onfocus="javascript:if(this.value=='白云区')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li data-value=白云区>白云区</li>
+				                    <li data-value=112>112</li>
+				                    <li data-value=223>223</li>
+				                    <li data-value=335>335</li>
+				                    <li data-value=224>224</li>
+				                    <li data-value=336>336</li>
+				                    <li data-value=447>447</li>
+				                    <li data-value=448>448</li>
+				                    <li data-value=559>559</li>
+			                    </ul>
+		                    </span>
 					        <input type="text"  value="**建筑**层**房" onfocus="javascript:if(this.value=='**建筑**层**房')this.value='';"/>
-					                      地图未标注<span>*</span><img src="img/map.png" alt="地图标注">
+					                      地图未标注<span style="color: red;">*</span><img src="img/map.png" alt="地图标注">
 				        </fieldset>
 			        </form>
 		        </div>
@@ -504,13 +509,13 @@
 				        </fieldset>
 				        <fieldset class="cx2Fieinput">
 					        <span class="cx2Lspan">发货日期</span>
-					        <input type="date" />
+					        <input id="Time5" placeholder="请输入发货日期" class="laydate-icon" onClick="laydate({elem: '#Time5', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 					        <span class="cx2Rspan">撤单日期</span>
-					        <input type="date" />
+					        <input id="Time6" placeholder="请输入撤单日期" class="laydate-icon" onClick="laydate({elem: '#Time6', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 				        </fieldset>
 				        <fieldset class="cx2Fieinput">
 					        <span class="cx2Lspan">余款期限</span>
-					        <input type="date" />
+					        <input id="Time7" placeholder="请输入余款期限" class="laydate-icon" onClick="laydate({elem: '#Time7', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 					        <span class="cx2Rspan">未收到余款，则</span>
 					        <label><input name="未收到余款" type="radio" value="" />撤销订单
 					        <label><input name="未收到余款" type="radio" value="" />转为到付
@@ -2807,6 +2812,8 @@
         	allCheckBox('#allcheckbox2','#titletr2','table_box2',"#deletebtn2");
 //         服务规格SKU
         	allCheck('#allcheck2','listBox2','ulName2','#delect2');
+//      服务别称新增
+        	Check('#servebtn3','serveName3','#serveList3');
         </script>
 	</body>
 </html>

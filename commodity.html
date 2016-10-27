@@ -9,6 +9,7 @@
 		<script type="text/javascript" src="js/ueditor.config.js"></script>
 		<script type="text/javascript" src="js/ueditor.all.min.js"></script>
 		<script type="text/javascript" src="js/zh-cn.js" ></script>
+		<script type="text/javascript" src="laydate/laydate.js" ></script>   <!--时间日历-->
 		<link rel="stylesheet" href="css/serveIndex.css" />
 		<link rel="stylesheet" href="css/commodity.css" />
 		<link rel="stylesheet" href="css/ueditor.css" />
@@ -383,14 +384,15 @@
 		            <fieldset>
 			            <span class="cs0">
 			     	        <span class="cright">商品别称</span>
-			     	        <input type="text"  value="请输入服务别称" onfocus="javascript:if(this.value=='请输入服务别称')this.value='';"/>
-			                <button type='submit'>新增</button>
+			     	        <input type="text" class="serveName5" value="请输入商品别称" onfocus="javascript:if(this.value=='请输入商品别称')this.value='';" />
+			                <input type="button" id="servebtn5" value="新增">
+			                <span class="Error" style="font-size: 14px;"></span>
 			            </span>
 			            <span class="cright"></span>
 			            <span>3/6 8个中文内 勿与标题类同，别称、标题、属性、活动等都会搜索匹配。</span>
 		            </fieldset>
 		            <div class="con2_nav">
-		 	            <ul class="c2navList">
+		 	            <ul class="c2navList" id="serveList5">
 		 		            <li>黑玫瑰葡萄干
 		 		            	<a href="javascript:void();"><img src="img/delect1.png" alt="删除"></a>
 		 		            </li>
@@ -427,13 +429,17 @@
 		        <div class="cx2" id="cx17">
 			        <form action="" method="">
 				        <fieldset>
-					                     预约时间   <input type="date" name="star_date" /> 至 
-					        <input type="date" name="stop_date" />
+					                预约时间
+					        <input id="Time1" placeholder="请输入预约开始时间" class="laydate-icon" onClick="laydate({elem: '#Time1', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+					        至 
+					        <input id="Time2" placeholder="请输入预约结束时间" class="laydate-icon" onClick="laydate({elem: '#Time2', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 					                      预约：最长15天
 				        </fieldset>
 				        <fieldset>
-					                      拍卖时间   <input type="date" name="star_date" /> 至 
-					        <input type="date" name="stop_date" />
+					                      拍卖时间
+					        <input id="Time3" placeholder="请输入拍卖开始时间" class="laydate-icon" onClick="laydate({elem: '#Time3', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+					        至 
+					        <input id="Time4" placeholder="请输入拍卖结束时间" class="laydate-icon" onClick="laydate({elem: '#Time4', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 					                      拍卖：最长30分钟
 				        </fieldset>
 				        <fieldset>
@@ -672,13 +678,13 @@
 				        </fieldset>
 				        <fieldset class="cx2Fieinput">
 					        <span class="cx2Lspan">发货日期</span>
-					        <input type="date" />
+					        <input id="Time5" placeholder="请输入发货日期" class="laydate-icon" onClick="laydate({elem: '#Time5', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 					        <span class="cx2Rspan">撤单日期</span>
-					        <input type="date" />
+					        <input id="Time6" placeholder="请输入撤单日期" class="laydate-icon" onClick="laydate({elem: '#Time6', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 				        </fieldset>
 				        <fieldset class="cx2Fieinput">
 					        <span class="cx2Lspan">余款期限</span>
-					        <input type="date" />
+					        <input id="Time7" placeholder="请输入余款期限" class="laydate-icon" onClick="laydate({elem: '#Time7', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 					        <span class="cx2Rspan">未收到余款，则</span>
 					        <label><input name="未收到余款" type="radio" value="" />撤销订单
 					        <label><input name="未收到余款" type="radio" value="" />转为到付
@@ -2243,6 +2249,9 @@
             allCheckfour("t_rfour6");
            });
         })(jQuery);
+        
+//      服务别称新增
+        	Check('#servebtn5','serveName5','#serveList5');
         </script>
 	</body>
 </html>
