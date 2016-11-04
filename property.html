@@ -688,12 +688,12 @@
 			    </div>
 			    <div class="cv2">
 			        <fieldset>
-			        	<div class="listBox2">
-			         		<ul class="cv2Ul1 ulName2">
+			        	<div class="listBox">
+			         		<ul class="cv2Ul1">
 			         			<li>
-			        	            <input type="checkbox" id="allcheck2" border="none"/>   <!--全选按钮-->
-			         	            <a href="javascript:void();" class="deletebtna">
-			         		            <img src="img/trash.png" alt="删除" id="delect2" align="center" style="width:15px;height: 20px;">
+			        	            <input type="checkbox" id="checkall" border="none"/>   <!--全选按钮-->
+			         	            <a href="javascript:void();" id="delBtn">
+			         		            <img src="img/trash.png" alt="删除" align="center" style="width:15px;height: 20px;">
 			         	            </a>
 			                    </li>
 			         			<li>服务规格SKU</li>
@@ -704,7 +704,7 @@
 			         		</ul>
 			         		<ul class="cv2Ul2">
 			         			<li>
-			         				<input type="checkbox"/>
+			         				<input type="checkbox" name="test[]"/>
 			         				<a href="javascript:void();"><img src="img/delete2.png" alt="删除" align="center"></a>
 			         			</li>
 			         			<li>天堂美食*R标</li>
@@ -715,7 +715,7 @@
 			         		</ul>
 			         		<ul class="cv2Ul2">
 			         			<li>
-			         				<input type="checkbox"/>
+			         				<input type="checkbox" name="test[]"/>
 			         				<a href="javascript:void();"><img src="img/delete2.png" alt="删除" align="center"></a>
 			         			</li>
 			         			<li>天堂美食*R标</li>
@@ -726,7 +726,7 @@
 			         		</ul>
 			         		<ul class="cv2Ul2">
 			         			<li>
-			         				<input type="checkbox"/>
+			         				<input type="checkbox" name="test[]"/>
 			         				<a href="javascript:void();"><img src="img/delete2.png" alt="删除" align="center"></a>
 			         			</li>
 			         			<li>天堂美食*R标</li>
@@ -2810,8 +2810,10 @@
         	allCheckBox('#allcheckbox','#titletr','table_box',"#deletebtn");
         	allCheckBox('#allcheckbox1','#titletr1','table_box1',"#deletebtn1");
         	allCheckBox('#allcheckbox2','#titletr2','table_box2',"#deletebtn2");
-//         服务规格SKU
-        	allCheck('#allcheck2','listBox2','ulName2','#delect2');
+//      服务规格SKU中input的全选
+        $(function(){
+            $("#checkall").checkall({chname:"test[]", callback: function(e){}});
+        });
 //      服务别称新增
         	Check('#servebtn3','serveName3','#serveList3');
         </script>

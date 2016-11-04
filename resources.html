@@ -74,7 +74,7 @@
                 <li><a href="javascript:void();">钱包</a></li>
             </ul>
         </div>
-        <!--content开始-->
+         <!--content开始-->
          <div class="content">
 	<div class="con1 clearfix">
 		<div class="con1_nav">
@@ -213,17 +213,15 @@
 				<span class="cright"></span>
 				<span>10个中文内 提示：（用户搜索时，系统会自动匹配您的商品的相应属性，无须写标题）</span>
 		</fieldset>
-		
 		<fieldset>
-			<legend></legend>
-			    <span class="cs0">
-			     	<span class="cright">服务别称 </span> 
-			     	<input type="text" class="serveName2"  value="请输入服务别称" onfocus="javascript:if(this.value=='请输入服务别称')this.value='';"/>
-			        <input type="button" id="servebtn2" value="新增">
-			        <span class="Error" style="font-size: 14px;"></span>
-			    </span>
-			    <span class="cright"></span>
-			    <span>3/6 8个中文内 勿与标题类同，别称、标题、属性、活动等都会搜索匹配。</span>
+			<span class="cs0">
+			    <span class="cright">服务别称 </span> 
+			    <input type="text" class="serveName2"  value="请输入服务别称" onfocus="javascript:if(this.value=='请输入服务别称')this.value='';"/>
+			    <input type="button" id="servebtn2" value="新增">
+			    <span class="Error" style="font-size: 14px;"></span>
+			</span>
+			<span class="cright"></span>
+			<span>3/6 8个中文内 勿与标题类同，别称、标题、属性、活动等都会搜索匹配。</span>
 		</fieldset>
 		<div class="con2_nav">
 		 	<ul class="c2navList" id="serveList2">
@@ -240,7 +238,7 @@
 		</div>
 	</form>
 </div>
-	<!--con2结束-->
+<!--con2结束-->
 	        <!--con3开始-->
 	        <div class="con3 clearfix">
 		        <div class="cx1">
@@ -718,12 +716,12 @@
 			    </div>
 			    <div class="cv2">
 			        <fieldset>
-			        	<div class="listBox3">
-			         		<ul class="cv2Ul1 ulName3">
+			        	<div class="listBox">
+			         		<ul class="cv2Ul1">
 			         			<li>
-			        	            <input type="checkbox" id="allcheck3" border="none"/>   <!--全选按钮-->
-			         	            <a href="javascript:void();" class="deletebtna">
-			         		            <img src="img/trash.png" alt="删除" id="delect3" align="center" style="width:15px;height: 20px;">
+			        	            <input type="checkbox" id="checkall" border="none"/>   <!--全选按钮-->
+			         	            <a href="javascript:void();" id="delBtn">
+			         		            <img src="img/trash.png" alt="删除" align="center" style="width:15px;height: 20px;">
 			         	            </a>
 			                    </li>
 			         			<li>服务规格SKU</li>
@@ -734,7 +732,7 @@
 			         		</ul>
 			         		<ul class="cv2Ul2">
 			         			<li>
-			         				<input type="checkbox"/>
+			         				<input type="checkbox" name="test[]"/>
 			         				<a href="javascript:void();"><img src="img/delete2.png" alt="删除" align="center"></a>
 			         			</li>
 			         			<li>星际迷航3：超越星辰*普通座*日场</li>
@@ -745,7 +743,7 @@
 			         		</ul>
 			         		<ul class="cv2Ul2">
 			         			<li>
-			         				<input type="checkbox"/>
+			         				<input type="checkbox" name="test[]"/>
 			         				<a href="javascript:void();"><img src="img/delete2.png" alt="删除" align="center"></a>
 			         			</li>
 			         			<li>大话西游*情侣座*夜场</li>
@@ -756,7 +754,7 @@
 			         		</ul>
 			         		<ul class="cv2Ul2">
 			         			<li>
-			         				<input type="checkbox"/>
+			         				<input type="checkbox" name="test[]"/>
 			         				<a href="javascript:void();"><img src="img/delete2.png" alt="删除" align="center"></a>
 			         			</li>
 			         			<li>幸运是我*普通座*日场</li>
@@ -767,7 +765,7 @@
 			         		</ul>
 			         		<ul class="cv2Ul2">
 			         			<li>
-			         				<input type="checkbox"/>
+			         				<input type="checkbox" name="test[]"/>
 			         				<a href="javascript:void();"><img src="img/delete2.png" alt="删除" align="center"></a>
 			         			</li>
 			         			<li>铁拳*情侣座*夜场</li>
@@ -2821,8 +2819,10 @@
         	allCheckBox('#allcheckbox','#titletr','table_box',"#deletebtn");
         	allCheckBox('#allcheckbox1','#titletr1','table_box1',"#deletebtn1");
         	allCheckBox('#allcheckbox2','#titletr2','table_box2',"#deletebtn2");
-//      服务规格SKU
-        	allCheck('#allcheck3','listBox3','ulName3','#delect3');
+//      服务规格SKU中input的全选
+        $(function(){
+            $("#checkall").checkall({chname:"test[]", callback: function(e){}});
+        })
 //      服务别称新增
         	Check('#servebtn2','serveName2','#serveList2');
         </script>

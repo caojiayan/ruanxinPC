@@ -6,13 +6,6 @@ $(function(){
 	});
 });
 
-//包装配置中的附增内容删除项
-$(function(){
-	$(".ct51UList>li>a").click(function(){
-		$(this).parent().remove();
-	});
-});
-
 //商品SKU
 $(document).ready(function(argument) {
 		
@@ -210,3 +203,20 @@ function allCheckfour(t_rfour){
         allCheckfour_obj.text(rLa);
     });
 };
+//SKU间差异属性新增
+$(function(){
+	var val=$("#SKUval").val();
+	var text="输入名称点“新增”按钮";
+	var text1="<td>"+val+"<img src='img/delect1.png' alt='删除'></td>";
+	var text2="<td>&nbsp</td>"
+	if(val == ""||val == text){
+	    	//是，则显示提示内容
+	    	error.html("<font color='red'>提示：请输入SKU属性!</font>");
+	    	//否，将文本追加在列表
+	   }else{
+	    	$(".tr1").append(text1);
+		    $(".tr2").append(text2);
+		    $(".tr3").append(text2);
+	    }
+	});
+});

@@ -243,21 +243,8 @@
 	background: #999;
 	color: #FFFFFF;
 }
-.ct5oneBox p,
-.ct5oneBox .ct51Ul{
+.ct5oneBox p{
 	padding: 5px 0;
-}
-.ct5oneBox .ct51Ul{
-	background: #EEEEEE;
-	padding: 5px 10px;
-	border-radius:5px;
-}
-.ct5oneBox .ct51Ul li{
-	display: inline-block;
-	/*兼容IE67中display：inline-block属性*/
-	*zoom:1;
-	*display:inline;
-	padding: 0 10px;
 }
 
 /*商品SKU*/

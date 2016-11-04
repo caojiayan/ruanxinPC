@@ -15,47 +15,45 @@ $(function() {
 
 //所有可筛选的下拉框
 $(function(){
-				//当列表项被点击时，把列表项的值放在输入框里面，
-				$(".dropdown").delegate("li", "click", function(e){
-					var v = $(this).attr("data-value"),
-						drop = $(this).closest(".dropdown");
-					drop.attr("data-value", v);
-					drop.find(".editor").val(v);
-					$(this).parent().hide();
-					e.stopPropagation();
-				}).delegate(".trigger", "click", function(e){    //当下拉按钮被点击时，显示数据列表
-					$(this).closest(".dropdown").find("ul").show();
-					e.stopPropagation();  //阻止冒泡，因为冒泡到 document 的时候，会隐藏列表
-				}).delegate(".search input", "click", function(e){
-					e.stopPropagation(); 
-				}).delegate(".search input", "keyup", function(e){    //当检测到列表中的输入框的时候，启动过滤，不满足的项隐藏
-					var v = $.trim(this.value), list = $(this).closest("ul").children("li");
-					if(v == "") {    //特殊情况，过滤输入框中没有值的时候迭代所有的列表项并显示它们
-						list.each(function(){
-							if(this.className.indexOf("search") != -1) {return;}//不考虑过滤输入框所在的列表项
-							$(this).text(this.innerText || this.textContent).show();
-						});
-					} else {
-						list.each(function(){   //迭代列表，
-							if(this.className.indexOf("search") != -1) {return;}  //不考虑过滤输入框所在的列表项
-							var lv = $(this).text();   //列表的文本
-							if(lv.indexOf(v) === -1) {   //不匹配过滤文本，就隐藏
-								$(this).hide();
-							} else {                 //匹配，把匹配的文本替换会含有标记的文本（红色）
-								$(this).html(lv.replace(v, '<span class="hot">'+v+'</span>')).show();
-							}
-						});
-					}
-					
-				});
-				
-				$(this).click(function(){   //当数据列表在显示时，如果点击了页面其它区域，则隐藏列表
-					$(".dropdown ul:visible").hide();   
-				});
-				//加载数据，数据列表中的每一项是一个列表，为了模拟select，每个列表项目还包括一个自定义的属性 data-value,用于保存此列表项的值
-				$("#load").click(function(){
-					var p = $(".dropdown ul");
-					var fragment = document.createDocumentFragment(), li;  //临时容器，为了避免多次添加引起页面高频率重绘
+	//当列表项被点击时，把列表项的值放在输入框里面，
+	$(".dropdown").delegate("li", "click", function(e){
+		var v = $(this).attr("data-value"),
+		drop = $(this).closest(".dropdown");
+		drop.attr("data-value", v);
+		drop.find(".editor").val(v);
+		$(this).parent().hide();
+		e.stopPropagation();
+	}).delegate(".trigger", "click", function(e){    //当下拉按钮被点击时，显示数据列表
+		$(this).closest(".dropdown").find("ul").show();
+		e.stopPropagation();  //阻止冒泡，因为冒泡到 document 的时候，会隐藏列表
+		}).delegate(".search input", "click", function(e){
+			e.stopPropagation(); 
+			}).delegate(".search input", "keyup", function(e){    //当检测到列表中的输入框的时候，启动过滤，不满足的项隐藏
+			var v = $.trim(this.value), list = $(this).closest("ul").children("li");
+			if(v == "") {    //特殊情况，过滤输入框中没有值的时候迭代所有的列表项并显示它们
+			list.each(function(){
+				if(this.className.indexOf("search") != -1) {return;}//不考虑过滤输入框所在的列表项
+				$(this).text(this.innerText || this.textContent).show();
+			});
+			} else {
+				list.each(function(){   //迭代列表，
+					if(this.className.indexOf("search") != -1) {return;}  //不考虑过滤输入框所在的列表项
+						var lv = $(this).text();   //列表的文本
+						if(lv.indexOf(v) === -1) {   //不匹配过滤文本，就隐藏
+							$(this).hide();
+						} else {                 //匹配，把匹配的文本替换会含有标记的文本（红色）
+							$(this).html(lv.replace(v, '<span class="hot">'+v+'</span>')).show();
+						}
+					});
+				}
+			});
+			$(this).click(function(){   //当数据列表在显示时，如果点击了页面其它区域，则隐藏列表
+			    $(".dropdown ul:visible").hide();   
+			});
+			//加载数据，数据列表中的每一项是一个列表，为了模拟select，每个列表项目还包括一个自定义的属性 data-value,用于保存此列表项的值
+			$("#load").click(function(){
+				var p = $(".dropdown ul");
+				var fragment = document.createDocumentFragment(), li;  //临时容器，为了避免多次添加引起页面高频率重绘
 					for(var i=1, len=30;i<len;i++) {
 						li = document.createElement("li");
 						li.setAttribute("data-value", i);
@@ -82,7 +80,7 @@ $(document).ready(function(){
 	});
 });
 
-//服务别称新增
+//服务别称/全新实物类商品中包装配置的附赠内容新增
 function Check(servebtn,serveName,serveList){
 	$(servebtn).click(function(){
 		var error = $('.Error');
@@ -97,8 +95,12 @@ function Check(servebtn,serveName,serveList){
 	    	//否，将文本追加在列表
 	    }else($(serveList).append(text1));
 	});
-	//点击删除
+	//服务别称列表点击删除
     $(document).on("click", ".c2navList>li>a", function(e) {
+        $(this).parent().remove();
+    });
+    //附赠内容列表点击删除
+    $(document).on("click",".ct51UList>li>a", function(e) {
         $(this).parent().remove();
     });
 }
@@ -195,7 +197,6 @@ function specCheck(specbtn,specName,specList,Error,specAll){
 	    var text2="请输入规格名称";
 		var text3="请输入内容";
 		var text4="<div id='spec2' class='clearfix'><span class='specn'><span>"+text+"</span><input type='text' class='specName2' value='请输入内容' onfocus='javascript:if(this.value=='请输入内容')this.value='';'/><input type='button' id='specbtn2' value='新增'><span class='Error2' style='font-size: 14px;'></span></span><ul class='c4Ul' id='specList2'></ul>";
-//		alert(text4);
 	    //判断值是否为空或为输入框的提示内容
 	    if(text == ""||text == text2||text == text3){
 	    	//是，则显示提示内容
@@ -209,35 +210,46 @@ function specCheck(specbtn,specName,specList,Error,specAll){
     });
 }
 
-
-
 //服务规格SKU列表
-function allCheck(allcheck,listBox,ulName,delectbtn){
-    $(allcheck).click(function(){
-        if($(this).attr("checked")){
-            $("."+listBox+" li input").attr("checked","true");
-        }else{
-            $("."+listBox+" li input").attr("checked","false");
-        }
-    });
-    $("."+listBox+" input").not(allcheckbox).click(function(){
-        $("."+listBox+" input").not(allcheckbox).each(function(){
-            if($("."+listBox+" input[type='checkbox']:checked").not(allcheck).length==$("."+listBox+" li").not("."+ulName).length){
-                $(allcheck).attr("checked","true");
+(function($){
+    $.fn.checkall = function(options){
+        var defaults = {chname:"checkname[]", callback:function(){}},
+        options = $.extend(defaults, options),
+        $obj = $(this),
+        $items = $("input[name='"+options.chname+"']"),
+        checkedItem = 0;
+        $items.click(function(){
+            if($items.filter(":checked").length === $items.length){
+                $obj.attr("checked",true);
             }else{
-                $(allcheck).attr("checked","false");
+                $obj.removeAttr("checked");
+            }
+            checkedItem = $items.filter(":checked").length;
+            if(typeof options.callback === 'function') options.callback(checkedItem);
+        });
+        return $obj.each(function(){
+            $(this).click(function(){
+                if($(this).attr('checked')){
+                    $items.attr("checked",true);
+                }else{
+                    $items.removeAttr("checked");
+                }
+                checkedItem = $items.filter(":checked").length;
+                if(typeof options.callback === 'function') options.callback(checkedItem);
+            });
+        });
+    }
+})(jQuery);
+//删除
+$(function(){
+	$("#delBtn").click(function () {
+        $(".listBox").find("input[name='test[]']").each(function () {
+            if($(this).prop("checked")) {
+               $(this).parent().parent().remove();
             }
         });
     });
-    //删除
-    $(delectbtn).click(function(){
-        $("."+listBox+" ul").each(function(){
-            if($(this).find("input").attr("checked")&&$(this).index()!=0){
-                $(this).remove();
-            }
-        });
-    });
-}
+});
 
 //服务设置
 //服务设置中服务要素

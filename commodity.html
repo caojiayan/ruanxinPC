@@ -1267,11 +1267,12 @@
 		    					<p>
 		    						<span class="ct51s">2</span>
 		    						<span class="cright">附增内容</span>
-		    						<input type="text" value="输入附赠内容" onfocus="javascript:if(this.value=='输入附赠内容')this.value='';"/>
-		    					    <button type='submit'>增加</button>
+		    						<input type="text" class="serveName" value="输入附赠内容" onfocus="javascript:if(this.value=='输入附赠内容')this.value='';"/>
+		    					    <input type="button" id="servebtn" value="新增">
+		    					    <span class="Error" style="font-size: 14px;"></span>
 		    					</p>
-		    					<div class="ct51Ul">
-		    						<ul class="ct51UList">
+		    					<div class="con2_nav">  <!--ct51Ul-->
+		    						<ul class="c2navList" id="serveList"> <!--ct51UList-->
 		    							<li>
 		    								开壳器*1
 		    								<a href="javascript:void();"><img src="img/delect.png" alt="删除"></a>
@@ -1348,12 +1349,12 @@
             	<form>
             		<fieldset>
             			<span>SKU间差异属性</span>
-            			<input type="text" value="输入名称点“新增”按钮" onfocus="javascript:if(this.value=='输入名称点“新增”按钮')this.value='';"/>
-            			<button type='submit'>新增</button>
+            			<input type="text" id="SKUval" value="输入名称点“新增”按钮" onfocus="javascript:if(this.value=='输入名称点“新增”按钮')this.value='';"/>
+            			<input type="button" id="SKUbtn" value="新增">
             			<span>说明：（属性、规格、参数）等，由商家根据自身商品特点新增，系统默认部分不可删除</span><br />
             			<table class="cont2Table" width="950px" border="1" cellpadding="0" cellspacing="0" bordercolor="#999" style="border-collapse:collapse;">
             				<tbody></tbody>
-            				<tr>
+            				<tr class="tr1">
             					<td>商品规格SKU</td>
             					<td>包装正面<img src="img/delect1.png" alt="删除"></td>
             					<td>包装背面<img src="img/delect1.png" alt="删除"></td>
@@ -1362,7 +1363,7 @@
             					<td>差异属性5<img src="img/delect1.png" alt="删除"></td>
             					<td>差异属性6<img src="img/delect1.png" alt="删除"></td>
             				</tr>
-            				<tr>
+            				<tr class="tr2">
             					<td>原味*200g</td>
             					<td>&nbsp</td>
             					<td>&nbsp</td>
@@ -1371,7 +1372,7 @@
             					<td>&nbsp</td>
             					<td>&nbsp</td>
             				</tr>
-            				<tr>
+            				<tr class="tr3">
             					<td>奶香味*350g</td>
             					<td>&nbsp</td>
             					<td>&nbsp</td>
@@ -1625,8 +1626,7 @@
             			<ul class="cont3Ul">
             				<li>
             					<span class="cright">生产日期</span>
-            					<input type="date"/> ~
-            					<input type="date"/>
+            					<input id="Time9" placeholder="请输入生产日期" class="laydate-icon" onClick="laydate({elem: '#Time9', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
             				</li>
             				<li>
             					<span class="cright">食用方式</span>
@@ -2252,6 +2252,8 @@
         
 //      服务别称新增
         	Check('#servebtn5','serveName5','#serveList5');
+//      附赠内容新增
+        	Check('#servebtn','serveName','#serveList');
         </script>
 	</body>
 </html>
